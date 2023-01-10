@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Rocket from "../public/Rocket-Launch.gif"
+import Rocket from "../public/Space.png"
 import Navbar from './Navbar';
 
 const Header = ({ children }) => {
@@ -10,9 +10,7 @@ const Header = ({ children }) => {
                 <br /><br /><br />
                 <Image
                     src={Rocket}
-                    alt="Rocket Launch Logo gif"
-                    width="200"
-                    height="220"
+                    alt="Rocket Launch Logo"
                     className='rocket'
                 />
                 {children}

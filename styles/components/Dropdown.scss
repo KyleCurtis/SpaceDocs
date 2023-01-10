@@ -1,6 +1,7 @@
 .dropdown {
     color: white;
     background: var(--cat-mocha-mantle);
+    border-radius: 10px;
     border: 2px solid var(--cat-mocha-surface0);
     font-size: 19px;
 }
@@ -12,6 +13,7 @@
 }
 
 .Collapsible__trigger {
+    border-radius: 10px;
     display: block;
     text-decoration: none;
     position: relative;

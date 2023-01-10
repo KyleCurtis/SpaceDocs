@@ -16,7 +16,7 @@ const CppPage = () => {
   return (
     <>
       <Header>
-        <h1>C++ Language</h1>
+        <h1>C++</h1>
         <br />
         <div className="header-section">
           <div className="header-info">

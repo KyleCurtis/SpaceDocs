@@ -4,6 +4,8 @@ import Link from "next/link";
 import { SiCplusplus, SiJavascript, SiRust, SiPython, SiPytorch, SiGit, SiVim } from "react-icons/si";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+import Rocket from "../public/Space.png"
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -21,17 +23,17 @@ const Navbar = () => {
         <ul className="hidden sm:flex">
           <li className="p-4">
             <Link href="/topics/languages/cpp">
-              <SiCplusplus className="text-2xl text-blue-400" />
+              <SiCplusplus className="text-2xl text-blue-400 hover:text-blue-300" />
             </Link>
           </li>
           <li className="p-4">
             <Link href="/">
-              <SiJavascript className="text-2xl text-yellow-400" />
+              <SiJavascript className="text-2xl text-yellow-400 hover:text-yellow-100" />
             </Link>
           </li>
           <li className="p-4">
             <Link href="/">
-              <SiRust className="text-2xl text-orange-400" />
+              <SiRust className="text-2xl text-orange-400 hover:text-orange-100" />
             </Link>
           </li>
           <li className="p-4">
