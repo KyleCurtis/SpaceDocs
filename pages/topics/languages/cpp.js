@@ -17,7 +17,6 @@ const CppPage = () => {
     <>
       <Header>
         <h1>C++</h1>
-        <br />
         <div className="header-section">
           <div className="header-info">
             The systems programming language that powers:
