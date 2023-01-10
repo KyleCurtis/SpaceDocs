@@ -7,7 +7,7 @@ const Header = ({ children }) => {
         <div>
             <header>
                 <Navbar />
-                <br /><br /><br />
+                <br />
                 <Image
                     src={Rocket}
                     alt="Rocket Launch Logo"
