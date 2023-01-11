@@ -6,29 +6,26 @@ import Dropdown from "../../../components/Dropdown";
 
 import Typewriter from "typewriter-effect";
 
-import {HelloWorld, Comments} from "../../../code/cpp-code";
+//import {HelloWorld, Comments} from "../../../code/cpp-code";
 
 
-const CppPage = () => {
+const JsPage = () => {
 
   return (
     <>
       <Header>
-        <h1 className="text-[var(--cat-mocha-blue)]">C++</h1>
+        <h1 className="text-[var(--cat-mocha-blue)]">JavaScript</h1>
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
-            The systems programming language that powers:
+            The programming language that powers:
             <Typewriter
               options={{
                 strings: [
-                  "Operating Systems",
+                  "Interactive Websites",
                   "Desktop Applications",
-                  "Web-browsers",
-                  "Game Engines",
-                  "Robots",
-                  "Machine Learning",
-                  "AI",
-                  "Rockets",
+                  "Mobile Applications",
+                  "Web Servers",
+                  "Video Games",
                 ],
                 autoStart: true,
                 loop: true,
@@ -57,8 +54,8 @@ const CppPage = () => {
       ====================================================================================================== */}
       <Dropdown triggerWord={"Hello, World!"}>
         <div className="code-block">
-          <SyntaxHighlighter language="cpp" style={dracula}>
-            {HelloWorld}
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
           </SyntaxHighlighter>
         </div>
         <br />
@@ -72,8 +69,8 @@ const CppPage = () => {
       ====================================================================================================== */}
       <Dropdown triggerWord={"Comments"}>
         <div className="code-block">
-          <SyntaxHighlighter language="cpp" style={dracula}>
-            {Comments}
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
           </SyntaxHighlighter>
         </div>
         <br />
@@ -94,4 +91,4 @@ const CppPage = () => {
   );
 };
 
-export default CppPage;
+export default JsPage;

@@ -29,7 +29,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/">
+            <Link href="/topics/languages/js">
               <SiJavascript className="text-2xl text-yellow-400 hover:text-yellow-100" />
             </Link>
           </li>
