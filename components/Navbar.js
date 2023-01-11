@@ -6,6 +6,8 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import Rocket from "../public/Space.png"
 
+import ThemeToggler from "./ThemeToggle";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -55,6 +57,9 @@ const Navbar = () => {
             <Link href="/">
               <SiVim className="text-2xl text-green-400" />
             </Link>
+          </li>
+          <li className="p-4">
+          <ThemeToggler />
           </li>
         </ul>
 

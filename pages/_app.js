@@ -6,14 +6,20 @@ import "../styles/globals.scss";
 import "../styles/components/Header.scss";
 import "../styles/components/Dropdown.scss";
 
+import { ThemeProvider } from "next-themes";
+
 export default function App({ Component, pageProps }) {
+
+
   return (
-    <div>
-      <div className="content-br"></div>
+    <ThemeProvider enableSystem={false} attribute="class">
+      <div>
+        <div className="content-br"></div>
         <br /> <br />
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-    </div>
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+      </div>
+    </ThemeProvider>
   );
 }

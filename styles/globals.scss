@@ -124,7 +124,6 @@ body {
 
 /* TRY TO GET GRADIENT TO BE FULL HEIGHT ON ALL PAGES*/
 .content {
-  background-color: transparent;
   min-height: 100%;
 
 }
@@ -133,7 +132,6 @@ body {
   position: relative;
   margin-left: var(--padding);
   margin-right: var(--padding);
-  background-color: transparent;
   /*border: 1px solid white;*/
   z-index: var(--paralax-mid);
 }
@@ -161,7 +159,6 @@ h1 {
   padding-top: 20px;
   font-size: 40px;
   font-family: 'Righteous', cursive;
-  color: var(--cat-mocha-text) !important;
 }
 
 h2 {
