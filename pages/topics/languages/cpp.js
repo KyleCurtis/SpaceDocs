@@ -16,7 +16,7 @@ const CppPage = () => {
   return (
     <>
       <Header>
-        <h1 className="text-black">C++</h1>
+        <h1 className="text-[var(--cat-mocha-blue)]">C++</h1>
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
             The systems programming language that powers:
