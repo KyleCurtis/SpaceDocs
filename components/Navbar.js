@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed left-0 top-0 w-full z-10 ease-in durration-300 bg-white dark:bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-black dark:border-[var(--cat-mocha-text)]">
-      <nav className="h-20 max-w-[1540px] m-auto flex justify-between items-center p-2 text-white">
+      <nav className="h-20 max-w-[92%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
         
         <Link href='/'>
             <h2 className="font-bold text-3xl">🚀 Rocket Docs</h2>
