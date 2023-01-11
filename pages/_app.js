@@ -15,7 +15,6 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider enableSystem={false} attribute="class">
       <div>
         <div className="content-br"></div>
-        <br /> <br />
         <MainLayout>
           <Component {...pageProps} />
         </MainLayout>
