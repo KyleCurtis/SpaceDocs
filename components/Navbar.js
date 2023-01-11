@@ -4,8 +4,6 @@ import Link from "next/link";
 import { SiCplusplus, SiJavascript, SiRust, SiPython, SiPytorch, SiGit, SiVim } from "react-icons/si";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import Rocket from "../public/Space.png"
-
 import ThemeToggler from "./ThemeToggle";
 
 const Navbar = () => {
@@ -16,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-10 ease-in durration-300 bg-[#11111b] border-b-2">
-      <nav className="h-20 max-w-[1240px] m-auto flex justify-between items-center p-2 text-white">
+    <div className="fixed left-0 top-0 w-full z-10 ease-in durration-300 bg-white dark:bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-black dark:border-[var(--cat-mocha-text)]">
+      <nav className="h-20 max-w-[1540px] m-auto flex justify-between items-center p-2 text-white">
         
         <Link href='/'>
             <h2 className="font-bold text-3xl">🚀 Rocket Docs</h2>
