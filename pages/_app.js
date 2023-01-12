@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
 
 
   return (
-    <ThemeProvider enableSystem={false} attribute="class">
+    <ThemeProvider enableSystem={true} attribute="class">
       <div>
         <div className="content-br"></div>
         <MainLayout>

@@ -46,8 +46,6 @@ const JsPage = () => {
       <div className="content-br"></div>
 
       <h2>The Basics</h2>
-
-      <br />
       <br />
 
       {/* HELLO WORLD SECTION
@@ -68,6 +66,98 @@ const JsPage = () => {
       {/* COMMENTS SECTION
       ====================================================================================================== */}
       <Dropdown triggerWord={"Comments"}>
+        <div className="code-block">
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
+          </SyntaxHighlighter>
+        </div>
+        <br />
+        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      </Dropdown>
+
+      <br />
+      <br />
+
+      {/* VARIABLES SECTION
+      ====================================================================================================== */}
+      <Dropdown triggerWord={"Variables"}>
+        <div className="code-block">
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
+          </SyntaxHighlighter>
+        </div>
+        <br />
+        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      </Dropdown>
+
+      <br />
+      <br />
+
+      {/* DATA TYPES SECTION
+      ====================================================================================================== */}
+      <Dropdown triggerWord={"Data Types"}>
+        <div className="code-block">
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
+          </SyntaxHighlighter>
+        </div>
+        <br />
+        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      </Dropdown>
+
+      <br />
+      <br />
+
+      {/* TYPE CONVERSION SECTION
+      ====================================================================================================== */}
+      <Dropdown triggerWord={"Type Conversion"}>
+        <div className="code-block">
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
+          </SyntaxHighlighter>
+        </div>
+        <br />
+        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      </Dropdown>
+
+      <br />
+      <br />
+
+      {/* MATHEMATICS SECTION
+      ====================================================================================================== */}
+      <Dropdown triggerWord={"Mathematics"}>
+        <div className="code-block">
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
+          </SyntaxHighlighter>
+        </div>
+        <br />
+        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      </Dropdown>
+
+      <br />
+      <br />
+
+      {/* OPERATORS SECTION
+      ====================================================================================================== */}
+      <Dropdown triggerWord={"Operators"}>
+        <div className="code-block">
+          <SyntaxHighlighter language="js" style={dracula}>
+            {/*hello*/}
+          </SyntaxHighlighter>
+        </div>
+        <br />
+        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      </Dropdown>
+
+      <div className="content-br"></div>
+
+      <h2>Data Structures</h2>
+      <br />
+
+      {/* OBJECTS SECTION
+      ====================================================================================================== */}
+      <Dropdown triggerWord={"Objects"}>
         <div className="code-block">
           <SyntaxHighlighter language="js" style={dracula}>
             {/*hello*/}
