@@ -1,16 +1,12 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-
 import Header from "../../../components/Header";
 import Dropdown from "../../../components/Dropdown";
 
 import Typewriter from "typewriter-effect";
 
-import {HelloWorld, Comments} from "../../../code/cpp-code";
-
+import { HelloWorld, Comments } from "../../../code/cpp-code";
+import CppBlock from "../../../components/CppBlock";
 
 const CppPage = () => {
-
   return (
     <>
       <Header>
@@ -46,6 +42,10 @@ const CppPage = () => {
       ====================================================================================================== */}
       <Dropdown triggerWord={"Terminology"}>test</Dropdown>
 
+      <br />
+
+      <Dropdown triggerWord={"Useful links"}>test</Dropdown>
+
       <div className="content-br"></div>
 
       <h2>The Basics</h2>
@@ -55,30 +55,16 @@ const CppPage = () => {
 
       {/* HELLO WORLD SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Hello, World!"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="cpp" style={dracula}>
-            {HelloWorld}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
+      <h3>Hello, World!</h3>
+      <CppBlock lang="{cpp}">{HelloWorld}</CppBlock>
+      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
-      <br />
-      <br />
+      <div className="content-br"></div>
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Comments"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="cpp" style={dracula}>
-            {Comments}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
+      <CppBlock lang="{cpp}">{Comments}</CppBlock>
+      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
       <div className="content-br"></div>
       <div className="content-br"></div>

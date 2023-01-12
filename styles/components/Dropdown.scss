@@ -10,11 +10,10 @@
 }
 
 .Collapsible__trigger {
-    border-radius: 10px;
     display: block;
     text-decoration: none;
     position: relative;
     padding: 10px;
-    background: var(--cat-mocha-base);
     color: white;
+    background-color: var(--cat-mocha-surface0);
 }

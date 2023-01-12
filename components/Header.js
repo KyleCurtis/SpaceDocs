@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 const Header = ({ children }) => {
     return (
         <div>
-            <header className='bg-[#11111b] border-solid border-2 border-black dark:border-black'>
+            <header className='bg-[var(--cat-mocha-base)] border-solid border-2 border-black'>
                 <Navbar />
                 <br />
                 <Image
