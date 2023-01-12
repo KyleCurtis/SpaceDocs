@@ -6,6 +6,9 @@ import Typewriter from "typewriter-effect";
 import { HelloWorld, Comments } from "../../../code/cpp-code";
 import CppBlock from "../../../components/CppBlock";
 
+import Clipboard from "../../../components/Clipboard";
+
+
 const CppPage = () => {
   return (
     <>
@@ -56,6 +59,7 @@ const CppPage = () => {
       {/* HELLO WORLD SECTION
       ====================================================================================================== */}
       <h3>Hello, World!</h3>
+      <Clipboard code={HelloWorld}></Clipboard>
       <CppBlock lang="{cpp}">{HelloWorld}</CppBlock>
       <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
@@ -63,6 +67,8 @@ const CppPage = () => {
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
+      <h3>Comments</h3>
+      <Clipboard code={Comments}></Clipboard>
       <CppBlock lang="{cpp}">{Comments}</CppBlock>
       <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
