@@ -70,7 +70,7 @@ const CppPage = () => {
       <h3>Comments</h3>
       <Clipboard code={Comments}></Clipboard>
       <CppBlock lang="{cpp}">{Comments}</CppBlock>
-      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      <Dropdown triggerWord={"Result"}></Dropdown>
 
       <div className="content-br"></div>
       <div className="content-br"></div>
