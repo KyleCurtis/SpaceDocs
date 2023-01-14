@@ -1,7 +1,7 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
-const CppBlock = ({lang, children}) => {
+const Code = ({lang, children}) => {
     return (
         <div>
         <div className="code-block">
@@ -14,4 +14,4 @@ const CppBlock = ({lang, children}) => {
     )
 }
 
-export default CppBlock;
+export default Code;

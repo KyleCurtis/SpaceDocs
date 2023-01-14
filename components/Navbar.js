@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className="h-20 max-w-[92%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
         
         <Link href='/'>
-            <h2 className="font-bold text-3xl">🚀 Rocket Docs</h2>
+            <h2 className="font-bold text-3xl text-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-text)]">🚀 Rocket Docs</h2>
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-4">
@@ -73,8 +73,8 @@ const Navbar = () => {
           }
         >
           <ul>
-          <li className="p-4">
-          <ThemeToggler />
+          <li className="m-auto w-10 h-20">
+            <ThemeToggler />
           </li>
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/topics/languages/cpp">C++</Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/">Rust</Link>
             </li>
-            <li>
+            <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/">Python</Link>
             </li>
           </ul>

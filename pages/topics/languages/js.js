@@ -1,16 +1,24 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-
 import Header from "../../../components/Header";
 import Dropdown from "../../../components/Dropdown";
 
 import Typewriter from "typewriter-effect";
 
-//import {HelloWorld, Comments} from "../../../code/cpp-code";
+import Code from "../../../components/Code";
+import Clipboard from "../../../components/Clipboard";
 
+import {
+  HelloWorld,
+  Comments,
+  Variables,
+  Types,
+  TypeOf,
+  TypeConversions,
+} from "../../../code/js-code";
+
+import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/default-highlight";
+import Link from "next/link";
 
 const JsPage = () => {
-
   return (
     <>
       <Header>
@@ -43,129 +51,87 @@ const JsPage = () => {
       ====================================================================================================== */}
       <Dropdown triggerWord={"Terminology"}>test</Dropdown>
 
-      <div className="content-br"></div>
+      <br />
+
+      <Dropdown triggerWord={"Table of Contents"}>
+        <Link href='#hello-world'>Hello, World!</Link> <br />
+        <Link href='#comments'>Comments</Link> <br />
+        <Link href='#variables'>Variables</Link> <br />
+        <Link href='#data-types'>Data Types</Link> <br />
+        <Link href='#type-checking'>Type checking</Link> <br />
+        <Link href='#type-conversions'>Type Conversions</Link> <br />
+      </Dropdown>
+
+      <div id="hello-world" className="content-br"></div>
 
       <h2>The Basics</h2>
       <br />
 
       {/* HELLO WORLD SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Hello, World!"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
+      <h3>Hello, World!</h3>
+      <Clipboard code={HelloWorld}></Clipboard>
+      <Code lang="javascript">{HelloWorld}</Code>
+      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
-      <br />
-      <br />
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Comments"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
+      <div id="comments" className="content-br"></div>
 
-      <br />
-      <br />
+      <h3>Comments</h3>
+      <Clipboard code={HelloWorld}></Clipboard>
+      <Code lang="javascript">{Comments}</Code>
+      <Dropdown triggerWord={"Result"}></Dropdown>
+
 
       {/* VARIABLES SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Variables"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
+      <div id="variables" className="content-br"></div>
 
-      <br />
-      <br />
+      <h3>Variables</h3>
+      <Clipboard code={Variables}></Clipboard>
+      <Code lang="javascript">{Variables}</Code>
+      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
       {/* DATA TYPES SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Data Types"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
+      <div id="data-types" className="content-br"></div>
+      
+      <h3>Primitive Data Types (Value Types)</h3>
+      <Clipboard code={Types}></Clipboard>
+      <Code lang="javascript">{Types}</Code>
+      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
-      <br />
-      <br />
+      {/* TYPEOF SECTION
+      ====================================================================================================== */}
+      <div id="type-checking" className="content-br"></div>
+
+      <h3>Checking the Type</h3>
+      <Clipboard code={TypeOf}></Clipboard>
+      <Code lang="javascript">{TypeOf}</Code>
+      <Dropdown triggerWord={"Result"}>
+        string <br />
+        number <br />
+        boolean <br />
+        undefined <br />
+        object
+      </Dropdown>
 
       {/* TYPE CONVERSION SECTION
       ====================================================================================================== */}
-      <Dropdown triggerWord={"Type Conversion"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
-
-      <br />
-      <br />
-
-      {/* MATHEMATICS SECTION
-      ====================================================================================================== */}
-      <Dropdown triggerWord={"Mathematics"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
-
-      <br />
-      <br />
-
-      {/* OPERATORS SECTION
-      ====================================================================================================== */}
-      <Dropdown triggerWord={"Operators"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      <div id="type-conversions" className="content-br"></div>
+      <h3>Type Conversions</h3>
+      <Clipboard code={TypeConversions}></Clipboard>
+      <Code lang="javascript">{TypeConversions}</Code>
+      <Dropdown triggerWord={"Result"}>
+        <p>number</p> <br />
+        <p>string</p>
       </Dropdown>
 
       <div className="content-br"></div>
+      <div className="content-br"></div>
 
-      <h2>Data Structures</h2>
-      <br />
-
-      {/* OBJECTS SECTION
-      ====================================================================================================== */}
-      <Dropdown triggerWord={"Objects"}>
-        <div className="code-block">
-          <SyntaxHighlighter language="js" style={dracula}>
-            {/*hello*/}
-          </SyntaxHighlighter>
-        </div>
-        <br />
-        <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-      </Dropdown>
 
       <div className="content-br"></div>
       <div className="content-br"></div>

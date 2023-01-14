@@ -4,7 +4,7 @@ import Dropdown from "../../../components/Dropdown";
 import Typewriter from "typewriter-effect";
 
 import { HelloWorld, Comments } from "../../../code/cpp-code";
-import CppBlock from "../../../components/CppBlock";
+import Code from "../../../components/Code";
 
 import Clipboard from "../../../components/Clipboard";
 
@@ -60,7 +60,7 @@ const CppPage = () => {
       ====================================================================================================== */}
       <h3>Hello, World!</h3>
       <Clipboard code={HelloWorld}></Clipboard>
-      <CppBlock lang="{cpp}">{HelloWorld}</CppBlock>
+      <Code lang="cpp">{HelloWorld}</Code>
       <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
 
       <div className="content-br"></div>
@@ -69,7 +69,7 @@ const CppPage = () => {
       ====================================================================================================== */}
       <h3>Comments</h3>
       <Clipboard code={Comments}></Clipboard>
-      <CppBlock lang="{cpp}">{Comments}</CppBlock>
+      <Code lang="cpp">{Comments}</Code>
       <Dropdown triggerWord={"Result"}></Dropdown>
 
       <div className="content-br"></div>
