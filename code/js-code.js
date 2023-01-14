@@ -61,16 +61,43 @@ console.log(typeof value); // we can verify the type with typeof
 ========================================================== */
 // Number() Method
 let num1 = Number(value);
-console.log(typeof num1); // verify
+console.log(typeof num1); // verification
 
 // String() Method
 let num2 = String(value);
-console.log(typeof num2); // verify
+console.log(typeof num2); // verification
 
 /* Using Parse
 ========================================================== */
 `
 
+/* OBJECTS
+======================================================================================================== */
+export const Objects = `// Object Example ()
+const planet = {
+    name: "Earth",
+    position_from_sun: 3,
+    orbit_in_days: 365,
+    is_habitable: true,
+}
+
+/* Modifying & Reading Objects (Dot Notation)
+========================================================== */
+player.level = 2;
+
+console.log(player.name);
+console.log(player.level);
+console.log(player.is_alive);
+
+/* Modifying & Reading Objects (Bracket Notation)
+========================================================== */
+player['level'] = 3;
+console.log(player.level);
+
+let username = 'name';
+player[username] = 'Player01';
+console.log(player.name);
+`
 
 
 

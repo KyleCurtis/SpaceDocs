@@ -1,11 +1,11 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { atomOneDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 const Code = ({lang, children}) => {
     return (
         <div>
-        <div className="code-block">
-          <SyntaxHighlighter language={lang} style={dracula} showLineNumbers={true}>
+        <div className="code-block pr-[50px]">
+          <SyntaxHighlighter language={lang} style={atomOneDark} showLineNumbers={true}>
             {children}
           </SyntaxHighlighter>
         </div>
