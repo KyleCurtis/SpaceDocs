@@ -13,21 +13,26 @@ line comment*/`;
 /* VARIABLES
 ======================================================================================================== */
 export const Variables = `// let keyword
-let first_num = 32;
+let first_moonwalker = "Neil Armstrong";
 
 // const keyword
-const days_in_week = 7;`;
+const year = 1969;
+
+/* Ouput
+========================================================== */
+console.log(first_moonwalker);
+console.log(year);`;
 
 /* PRIMITIVE DATA TYPES
 ======================================================================================================== */
 export const Types = `// String
-const name = 'John Smith;'
+const planet = 'Earth;'
 
 // Number
-const age = 32;
+const orbit_in_days = 365;
 
 // Boolean
-const is_pavascript = true;
+const is_habitable = true;
 
 // Undefined
 const value = undefined;
