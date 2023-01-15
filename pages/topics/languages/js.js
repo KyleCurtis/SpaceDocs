@@ -96,7 +96,10 @@ const JsPage = () => {
       <h3>Variables</h3>
       <Clipboard code={Variables}></Clipboard>
       <Code lang="javascript">{Variables}</Code>
-      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      <Dropdown triggerWord={"Result"}>
+        Apollo 11 1969 <br />
+        Neil Armstrong Edwin Aldrin Michael Collins
+      </Dropdown>
 
       {/* DATA TYPES SECTION
       ====================================================================================================== */}

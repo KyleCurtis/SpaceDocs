@@ -12,16 +12,23 @@ line comment*/`;
 
 /* VARIABLES
 ======================================================================================================== */
-export const Variables = `// let keyword ()
-let first_moonwalker = "Neil Armstrong";
+export const Variables = `// let keyword (for mutable values)
+let lunar_mission; // Initialize
+lunar_mission = "Apollo 11"; // Declare
 
-// const keyword
+// It's recommended to declare and initialize a variable at the same time:
+let mission_commander = "Neil Armstrong";
+
+// Declaring multiple variables on same line
+let lunar_mod_pilot = "Edwin Aldrin", commander_mod_pilot = "Michael Collins";
+
+// const keyword (for immutable values)
 const year = 1969;
 
-/* Ouput
+/* Output
 ========================================================== */
-console.log(first_moonwalker);
-console.log(year);`;
+console.log(lunar_mission, year);
+console.log(mission_commander, lunar_mod_pilot, commander_mod_pilot);`
 
 /* PRIMITIVE DATA TYPES
 ======================================================================================================== */
@@ -107,27 +114,39 @@ console.log(player.name);
 
 /* ARRAYS
 ======================================================================================================== */
-export const Arrays = `// empty array
+export const Arrays = `/* Initializing Arrays
+========================================================== */
+// empty array
 const example = [];
 
 // custom arrays 
 const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupyter", "Saturn", "Uranus", "Neptune"];
 
-// array elements
+/* Array Index (elements)
+========================================================== */
+// Getting the length of array (# of elements)
+console.log(planets.length); // 8
+
+// Getting specific element by index
 console.log(planets[0]); // Mercury
 console.log(planets[1]); // Venus
 console.log(planets[2]); // Earth
 
 // Getting the last element of an array
-// Could also use: planets.at(-1)
 console.log(planets[planets.length -1]); // Neptune
 
+// Could also use: planets.at(-1)
+console.log(planets.at(-1)); // Neptune
+
+/* Modifying Arrays
+========================================================== */
 // Adding element to end of array
 planets.push("Pluto");
 console.log(planets);
 
 // Adding element to the beginning of array
 planets.unshift("Pandora");
+console.log(planets);
 
 // Removing the first element from array
 planets.shift();
@@ -137,16 +156,3 @@ console.log(planets);
 planets.pop();
 console.log(planets);
 `
-
-
-
-
-
-
-
-
-
-
-
-
-
