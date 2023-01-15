@@ -12,7 +12,7 @@ line comment*/`;
 
 /* VARIABLES
 ======================================================================================================== */
-export const Variables = `// let keyword
+export const Variables = `// let keyword ()
 let first_moonwalker = "Neil Armstrong";
 
 // const keyword
@@ -105,10 +105,38 @@ console.log(player.name);
 `
 
 
+/* ARRAYS
+======================================================================================================== */
+export const Arrays = `// empty array
+const example = [];
 
+// custom arrays 
+const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupyter", "Saturn", "Uranus", "Neptune"];
 
+// array elements
+console.log(planets[0]); // Mercury
+console.log(planets[1]); // Venus
+console.log(planets[2]); // Earth
 
+// Getting the last element of an array
+// Could also use: planets.at(-1)
+console.log(planets[planets.length -1]); // Neptune
 
+// Adding element to end of array
+planets.push("Pluto");
+console.log(planets);
+
+// Adding element to the beginning of array
+planets.unshift("Pandora");
+
+// Removing the first element from array
+planets.shift();
+console.log(planets);
+
+// Remove last element from array
+planets.pop();
+console.log(planets);
+`
 
 
 

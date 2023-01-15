@@ -20,6 +20,7 @@ import {
   TypeOf,
   TypeConversions,
   Objects,
+  Arrays,
 } from "../../../code/js-code";
 
 const JsPage = () => {
@@ -140,12 +141,20 @@ const JsPage = () => {
       <Clipboard code={Objects}></Clipboard>
       <Code lang="javascript">{Objects}</Code>
       <Dropdown triggerWord={"Result"}>
-      Player <br />
+        Player <br />
         2 <br />
         true <br />
         3 <br />
         Player01
       </Dropdown>
+
+      {/* ARRAYS SECTION
+      ====================================================================================================== */}
+      <div id="arrays" className="content-br"></div>
+      <h3>Arrays</h3>
+      <Clipboard code={Arrays}></Clipboard>
+      <Code lang="javascript">{Arrays}</Code>
+      <Dropdown triggerWord={"Result"}></Dropdown>
 
       <div className="content-br"></div>
       <div className="content-br"></div>
