@@ -13,8 +13,8 @@ line comment*/`;
 /* VARIABLES
 ======================================================================================================== */
 export const Variables = `// let keyword (for mutable values)
-let lunar_mission; // Initialize
-lunar_mission = "Apollo 11"; // Declare
+let lunar_mission; // Declare
+lunar_mission = "Apollo 11"; // Initialize
 
 // It's recommended to declare and initialize a variable at the same time:
 let mission_commander = "Neil Armstrong";
