@@ -50,16 +50,16 @@ const selection = null;`;
 /* TYPEOF
 ======================================================================================================== */
 export const TypeOf = `// Let's take the variables from the previous section:
-const name = 'John Smith';
-const age = 32;
-const is_javascript = true;
+const planet = "Earth";
+const orbit_in_days = 365;
+const is_habitable = true;
 const value = undefined;
 const selection = null;
 
 // Getting the data type using typeof:
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof is_javascript);
+console.log(typeof planet);
+console.log(typeof orbit_in_days);
+console.log(typeof is_habitable);
 console.log(typeof value);
 console.log(typeof selection);`;
 
