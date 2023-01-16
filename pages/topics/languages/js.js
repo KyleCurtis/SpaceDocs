@@ -21,6 +21,12 @@ import {
   TypeConversions,
   Objects,
   Arrays,
+  Functions,
+  Arithmetic_Operators,
+  Plus_Minus_Operators,
+  Assignment_Operators,
+  Comparison_Operators,
+  Mathematics,
 } from "../../../code/js-code";
 
 const JsPage = () => {
@@ -101,9 +107,13 @@ const JsPage = () => {
         Neil Armstrong Edwin Aldrin Michael Collins
       </Dropdown>
 
+
       {/* DATA TYPES SECTION
       ====================================================================================================== */}
       <div id="data-types" className="content-br"></div>
+
+      <h2>Value Types</h2>
+      <br />
 
       <h3>Primitive Data Types (Value Types)</h3>
       <Clipboard code={Types}></Clipboard>
@@ -140,6 +150,10 @@ const JsPage = () => {
       {/* OBJECTS SECTION
       ====================================================================================================== */}
       <div id="objects" className="content-br"></div>
+
+      <h2>Reference Types</h2>
+      <br />
+
       <h3>Objects</h3>
       <Clipboard code={Objects}></Clipboard>
       <Code lang="javascript">{Objects}</Code>
@@ -158,6 +172,58 @@ const JsPage = () => {
       <Clipboard code={Arrays}></Clipboard>
       <Code lang="javascript">{Arrays}</Code>
       <Dropdown triggerWord={"Result"}></Dropdown>
+
+      {/* FUNCTIONS SECTION
+      ====================================================================================================== */}
+      <div id="functions" className="content-br"></div>
+      <h3>Functions</h3>
+      <Clipboard code={Functions}></Clipboard>
+      <Code lang="javascript">{Functions}</Code>
+      <Dropdown triggerWord={"Result"}></Dropdown>
+
+      {/* ARITHMETIC OPERATORS SECTION
+      ====================================================================================================== */}
+      <div id="arithmetic-operators" className="content-br"></div>
+
+      <h2>Operators</h2>
+      <br />
+
+      <h3>Arithmetic Operators</h3>
+      <Clipboard code={Arithmetic_Operators}></Clipboard>
+      <Code lang="javascript">{Arithmetic_Operators}</Code>
+      <Dropdown triggerWord={"Result"}>
+
+      </Dropdown>
+
+      {/* PLUS & MINUS OPERATORS SECTION
+      ====================================================================================================== */}
+      <div id="plus-minus-operators" className="content-br"></div>
+      <h3>Plus and Minus Operators</h3>
+      <Clipboard code={Plus_Minus_Operators}></Clipboard>
+      <Code lang="javascript">{Plus_Minus_Operators}</Code>
+      <Dropdown triggerWord={"Result"}>
+
+      </Dropdown>
+
+      {/* ASSIGNMENT OPERATORS SECTION
+      ====================================================================================================== */}
+      <div id="assignment-operators" className="content-br"></div>
+      <h3>Assignment Operators</h3>
+      <Clipboard code={Assignment_Operators}></Clipboard>
+      <Code lang="javascript">{Assignment_Operators}</Code>
+      <Dropdown triggerWord={"Result"}>
+
+      </Dropdown>
+
+      {/* COMPARISON OPERATORS SECTION
+      ====================================================================================================== */}
+      <div id="comparison-operators" className="content-br"></div>
+      <h3>Comparison Operators</h3>
+      <Clipboard code={Comparison_Operators}></Clipboard>
+      <Code lang="javascript">{Comparison_Operators}</Code>
+      <Dropdown triggerWord={"Result"}>
+
+      </Dropdown>
 
       <div className="content-br"></div>
       <div className="content-br"></div>

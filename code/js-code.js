@@ -61,7 +61,11 @@ console.log(typeof planet);
 console.log(typeof orbit_in_days);
 console.log(typeof is_habitable);
 console.log(typeof value);
-console.log(typeof selection);`;
+console.log(typeof selection);
+
+// Getting the data type after a calculation
+// typeof() is the same as typeof, except it can contain multiple arguments
+console.log(typeof(150 + 150))`;
 
 
 /* TYPE CONVERSIONS
@@ -156,3 +160,83 @@ console.log(planets);
 planets.pop();
 console.log(planets);
 `
+
+/* FUNCTIONS
+======================================================================================================== */
+export const Functions = `/* Function Basics
+========================================================== */
+// Function example
+function greet() {
+    console.log("Hello, World!");
+}
+greet(); // Call the function
+
+/* Function Parameters
+========================================================== */
+function custom_greeting(name) {
+    console.log("Hello, " + name);
+}
+custom_greeting("World"); // Call (w/ arguments)
+
+
+/* Multiple Parameters
+========================================================== */
+function sum(x, y) {
+    return x + y;
+}
+console.log(sum(20, 12));`; 
+
+/* ARITHMETIC OPERATORS
+======================================================================================================== */
+export const Arithmetic_Operators = `let x = 100, y = 10, z = 2;
+
+console.log(x + y); // Addition (Sum)
+console.log(x - y); // Subtraction (Difference)
+console.log(x * y); // Multiplication (Product)
+console.log(x / y); // Division (Quotient)
+console.log(x % y); // Modulus (Remainder after division)
+console.log(x ** z); // Exponent (Power of)`;
+
+/* PLUS AND MINUS OPERATORS
+======================================================================================================== */
+export const Plus_Minus_Operators = `let x = 12;
+
+console.log(++x); // Increment will happen before logging to console
+console.log(x);
+
+console.log(x++); // Increment will happen after logging to console
+console.log(x);`;
+
+/* ASSIGNMENT OPERATORS
+======================================================================================================== */
+export const Assignment_Operators = `/* Assignment operators 
+========================================================== */
+x += 10; // Addition (x = x + 10)
+console.log(x);
+
+x -= 10; // Subtraction (x = x - 10)
+console.log(x);
+
+x *= 10; // Multiplication (x = x * 10)
+console.log(x);
+
+x /= 10; // Division (x = x / 10)
+console.log(x);
+
+x %= 10; // Modulus (x = x % 10)
+console.log(x);`;
+
+/* COMPARISON OPERATORS
+======================================================================================================== */
+export const Comparison_Operators = `x = 10; 
+
+/* Comparison operators 
+========================================================== */
+console.log(x > 1); // Greater than
+console.log(x >= 1); // Greater than or equal to
+console.log(x < 1); // Less than
+console.log(x <= 1); // Less than or equal to
+console.log(x == 1); // Equal to
+console.log(x != 1); // Not equal (loose)
+console.log(x !== 1); // Not equal (strict)
+`;

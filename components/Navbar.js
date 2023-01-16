@@ -42,11 +42,6 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             <Link href="/">
-              <SiRust className="text-2xl text-orange-400 hover:text-orange-100" />
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link href="/">
               <SiPython className="text-2xl text-yellow-400" />
             </Link>
           </li>
@@ -85,9 +80,6 @@ const Navbar = () => {
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/topics/languages/js">JS</Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/">Go</Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/">Rust</Link>
