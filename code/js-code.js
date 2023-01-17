@@ -38,6 +38,9 @@ const planet = 'Earth;'
 // Number
 const orbit_in_days = 365;
 
+// Big Integer
+const moon_distance_ft = 1261000000n;
+
 // Boolean
 const is_habitable = true;
 
@@ -236,7 +239,12 @@ console.log(x > 1); // Greater than
 console.log(x >= 1); // Greater than or equal to
 console.log(x < 1); // Less than
 console.log(x <= 1); // Less than or equal to
-console.log(x == 1); // Equal to
+
+// Strict and lose equality
+console.log(x == 1); // Equal to (loose)
+console.log(x === 1); // Equal to (strict)
 console.log(x != 1); // Not equal (loose)
 console.log(x !== 1); // Not equal (strict)
 `;
+
+export const Ternary_Operators = ``;

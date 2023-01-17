@@ -10,6 +10,7 @@ import Dropdown from "../../../components/Dropdown";
 import Code from "../../../components/Code";
 import Clipboard from "../../../components/Clipboard";
 
+
 /* CODE IMPORTS
 ============================================================================ */
 import {
@@ -30,6 +31,7 @@ import {
 } from "../../../code/js-code";
 
 const JsPage = () => {
+
   return (
     <>
       <Header>
@@ -53,6 +55,7 @@ const JsPage = () => {
           </div>
         </div>
       </Header>
+      
 
       <div className="content-br"></div>
 
