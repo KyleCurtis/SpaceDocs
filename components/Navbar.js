@@ -76,6 +76,9 @@ const Navbar = () => {
               <ThemeToggler />
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
+              <Link href="#">Back to top</Link>
+            </li>
+            <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/topics/languages/cpp">C++</Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
