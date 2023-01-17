@@ -1,14 +1,19 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Typewriter from "typewriter-effect";
+import Navbar from "../components/Navbar";
 
 import Header from "../components/Header";
+import SideNav from "../components/SideNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
+      <SideNav></SideNav>
+
+      <Navbar />
       <Head>
         <title>Rocket Docs</title>
       </Head>

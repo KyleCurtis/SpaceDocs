@@ -22,14 +22,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-10 ease-in durration-300 bg-white dark:bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-black dark:border-[var(--cat-mocha-text)]">
-      <nav className="h-20 max-w-[92%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
+    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-black dark:border-[var(--cat-mocha-text)]">
+      <nav className="h-20 max-w-[100%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
         <Link href="/">
-          <h2 className="font-bold text-3xl text-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-text)]">
-            🚀 RocketDocs
+          <h2 className="font-bold text-3xl text-[var(--cat-mocha-text)]">
+            🚀RocketDocs
           </h2>
         </Link>
-        <ul className="hidden sm:flex">
+        {/* lg:flex nav topic buttons */}
+        <ul className="hidden lg:flex">
           <li className="p-4">
             <Link href="/topics/languages/cpp">
               <SiCplusplus className="text-2xl text-blue-400 hover:text-blue-300" />
@@ -60,15 +61,16 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div onClick={handleNav} className="block sm:hidden z-10">
+        {/* lg:hidden nav button */}
+        <div onClick={handleNav} className="block lg:hidden z-10">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
 
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[white] text-black dark:bg-[var(--cat-mocha-crust)] dark:text-white text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[white] text-black dark:bg-[var(--cat-mocha-crust)] dark:text-white text-center ease-in duration-300"
+              ? "lg:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[white] text-black dark:bg-[var(--cat-mocha-crust)] dark:text-white text-center"
+              : "lg:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[white] text-black dark:bg-[var(--cat-mocha-crust)] dark:text-white text-center"
           }
         >
           <ul>

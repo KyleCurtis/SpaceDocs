@@ -10,6 +10,13 @@ import Dropdown from "../../../components/Dropdown";
 import Code from "../../../components/Code";
 import Clipboard from "../../../components/Clipboard";
 
+import Navbar from "../../../components/Navbar";
+
+import SideNav from "../../../components/SideNav";
+
+import { SiJavascript } from "react-icons/si"
+import { BsGearFill } from "react-icons/bs"
+import { AiFillCode } from "react-icons/ai"
 
 /* CODE IMPORTS
 ============================================================================ */
@@ -31,9 +38,82 @@ import {
 } from "../../../code/js-code";
 
 const JsPage = () => {
-
   return (
     <>
+      <SideNav>
+        <ul className="side-nav-ul">
+        <li className="side-nav-header"><BsGearFill className="mb-[3px] inline-block text-[14px]"/> Important</li>
+          <li>🏠 Home</li>
+          <li>🤝 About</li>
+          <br />
+          <li className="side-nav-header"><AiFillCode className="mb-[3px] inline-block text-[14px]"/> The Basics</li>
+          <Link href="#hello-world">
+            <li><SiJavascript className="side-nav-js-logo"/> Hello, World!</li>
+          </Link>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Comments</li>
+          </Link>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Variables</li>
+          </Link>
+          <br />
+
+          <li className="side-nav-header"><AiFillCode className="mb-[3px] inline-block text-[14px]"/> Data Types</li>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Value Types</li>
+          </Link>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Checking the type</li>
+          </Link>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Type Conversions</li>
+          </Link>
+          <br />
+
+          <li className="side-nav-header"><AiFillCode className="mb-[3px] inline-block text-[14px]"/> Reference Types</li>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Objects</li>
+          </Link>
+          <Link href="#">
+            <li><SiJavascript className="side-nav-js-logo"/> Arrays</li>
+          </Link>
+          <br />
+
+          <li className="side-nav-header"><AiFillCode className="mb-[3px] inline-block text-[14px]"/> Other</li>
+
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <br />
+
+          <li className="side-nav-header"><AiFillCode className="mb-[3px] inline-block text-[14px]"/> Other</li>
+
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <Link href="#">
+            <li>test</li>
+          </Link>
+          <br />
+        </ul>
+      </SideNav>
+
+      <Navbar />
       <Header>
         <h1 className="text-[var(--cat-mocha-blue)]">JavaScript</h1>
         <div className="header-section">
@@ -55,7 +135,6 @@ const JsPage = () => {
           </div>
         </div>
       </Header>
-      
 
       <div className="content-br"></div>
 
@@ -109,7 +188,6 @@ const JsPage = () => {
         Apollo 11 1969 <br />
         Neil Armstrong Edwin Aldrin Michael Collins
       </Dropdown>
-
 
       {/* DATA TYPES SECTION
       ====================================================================================================== */}
@@ -194,9 +272,7 @@ const JsPage = () => {
       <h3>Arithmetic Operators</h3>
       <Clipboard code={Arithmetic_Operators}></Clipboard>
       <Code lang="javascript">{Arithmetic_Operators}</Code>
-      <Dropdown triggerWord={"Result"}>
-
-      </Dropdown>
+      <Dropdown triggerWord={"Result"}></Dropdown>
 
       {/* PLUS & MINUS OPERATORS SECTION
       ====================================================================================================== */}
@@ -204,9 +280,7 @@ const JsPage = () => {
       <h3>Plus and Minus Operators</h3>
       <Clipboard code={Plus_Minus_Operators}></Clipboard>
       <Code lang="javascript">{Plus_Minus_Operators}</Code>
-      <Dropdown triggerWord={"Result"}>
-
-      </Dropdown>
+      <Dropdown triggerWord={"Result"}></Dropdown>
 
       {/* ASSIGNMENT OPERATORS SECTION
       ====================================================================================================== */}
@@ -214,9 +288,7 @@ const JsPage = () => {
       <h3>Assignment Operators</h3>
       <Clipboard code={Assignment_Operators}></Clipboard>
       <Code lang="javascript">{Assignment_Operators}</Code>
-      <Dropdown triggerWord={"Result"}>
-
-      </Dropdown>
+      <Dropdown triggerWord={"Result"}></Dropdown>
 
       {/* COMPARISON OPERATORS SECTION
       ====================================================================================================== */}
@@ -224,9 +296,7 @@ const JsPage = () => {
       <h3>Comparison Operators</h3>
       <Clipboard code={Comparison_Operators}></Clipboard>
       <Code lang="javascript">{Comparison_Operators}</Code>
-      <Dropdown triggerWord={"Result"}>
-
-      </Dropdown>
+      <Dropdown triggerWord={"Result"}></Dropdown>
 
       <div className="content-br"></div>
       <div className="content-br"></div>

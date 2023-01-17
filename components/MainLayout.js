@@ -1,17 +1,20 @@
 import Header from "./Header";
 import TopButton from "./TopButton";
+//md:mx-[15%] lg:mx-[22%]
+import SideNav from "./SideNav";
 
 const MainLayout = ({ children }) => {
-    return (
-        <>
-    <TopButton></TopButton>
-        <div className="main bg-white dark:bg-black mx-[15px] md:mx-[15%] lg:mx-[22%]">
-            <div className='content bg-white dark:bg-[var(--cat-mocha-crust)]'>
-             { children }
-            </div>
+  return (
+    <div className="">
+      
+      <TopButton></TopButton>
+      <div className="main lg:ml-[270px] px-[14%] bg-white dark:bg-[var(--cat-mocha-crust)]">
+        <div className="content bg-white dark:bg-[var(--cat-mocha-crust)]">
+          {children}
         </div>
-        </>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default MainLayout;
