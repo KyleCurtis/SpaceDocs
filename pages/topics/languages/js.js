@@ -50,10 +50,10 @@ const JsPage = () => {
           <Link href="#hello-world">
             <li><SiJavascript className="side-nav-js-logo"/> Hello, World!</li>
           </Link>
-          <Link href="#">
+          <Link href="#comments">
             <li><SiJavascript className="side-nav-js-logo"/> Comments</li>
           </Link>
-          <Link href="#">
+          <Link href="#variables">
             <li><SiJavascript className="side-nav-js-logo"/> Variables</li>
           </Link>
           <br />
@@ -63,7 +63,7 @@ const JsPage = () => {
             <li><SiJavascript className="side-nav-js-logo"/> Value Types</li>
           </Link>
           <Link href="#">
-            <li><SiJavascript className="side-nav-js-logo"/> Checking the type</li>
+            <li><SiJavascript className="side-nav-js-logo"/> Type Checking (typeof)</li>
           </Link>
           <Link href="#">
             <li><SiJavascript className="side-nav-js-logo"/> Type Conversions</li>
