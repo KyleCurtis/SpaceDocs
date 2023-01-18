@@ -1,18 +1,25 @@
 /* HELLO WORLD
 ======================================================================================================== */
-export const HelloWorld = `const greeting = 'Hello, World!';
+export const HelloWorld = `// Hello, World!
+
+const greeting = 'Hello, World!';
 console.log(greeting);`;
 
 /* COMMENTS
 ======================================================================================================== */
-export const Comments = `// This is a sing-line comment
+export const Comments = `// Comments
 
-/* This is a multi-
-line comment*/`;
+// As you can see from the previous section, the double forward-slash declares a 
+// single-line comment, and can be stacked when needed.
+
+/* If you have multiple lines of comments, it's recommended to use the multi-
+line comment syntax like this. */`;
 
 /* VARIABLES
 ======================================================================================================== */
-export const Variables = `// let keyword (for mutable values)
+export const Variables = `// Variables 
+
+// let keyword (for mutable values)
 let lunar_mission; // Declare
 lunar_mission = "Apollo 11"; // Initialize
 

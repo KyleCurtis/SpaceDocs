@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import "../styles/globals.scss";
 
 import "../styles/components/Header.scss";
-import "../styles/components/Dropdown.scss";
 
 import { ThemeProvider } from "next-themes";
 

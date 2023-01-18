@@ -13,12 +13,12 @@ import Clipboard from "../../../components/Clipboard";
 import CodeBlock from "../../../components/CodeBlock";
 
 import Navbar from "../../../components/Navbar";
+import NavDropdown from "../../../components/NavDropdown";
 
 import SideNav from "../../../components/SideNav";
 
 import { SiJavascript } from "react-icons/si";
 import { BsGearFill } from "react-icons/bs";
-import { AiFillCode } from "react-icons/ai";
 
 /* CODE IMPORTS
 ============================================================================ */
@@ -43,109 +43,106 @@ const JsPage = () => {
   return (
     <>
       <SideNav>
-        <ul className="side-nav-ul">
-          <li className="side-nav-header">
-            <BsGearFill className="mb-[3px] inline-block text-[14px]" />{" "}
-            Important
-          </li>
-          <li>🏠 Home</li>
-          <li>🤝 About</li>
-          <br />
-          <li className="side-nav-header">
-            <AiFillCode className="mb-[3px] inline-block text-[14px]" /> The
-            Basics
-          </li>
-          <Link href="#hello-world">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Hello, World!
-            </li>
-          </Link>
-          <Link href="#comments">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Comments
-            </li>
-          </Link>
-          <Link href="#variables">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Variables
-            </li>
-          </Link>
-          <br />
+        <NavDropdown triggerWord={"Home"}>
+          <ul className="side-nav-ul">
+            <li>🏠 Home</li>
+            <li>🤝 About</li>
+          </ul>
+        </NavDropdown>
 
-          <li className="side-nav-header">
-            <AiFillCode className="mb-[3px] inline-block text-[14px]" /> Data
-            Types
-          </li>
-          <Link href="#">
+        <NavDropdown triggerWord={"The Basics"}>
+          <ul>
+            <Link href="#hello-world">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Hello, World!
+              </li>
+            </Link>
+            <Link href="#comments">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Comments
+              </li>
+            </Link>
+            <Link href="#variables">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Variables
+              </li>
+            </Link>
+          </ul>
+        </NavDropdown>
+
+        <NavDropdown triggerWord={"Data Types"}>
+          <ul>
+            <Link href="#data-types">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Value Types
+              </li>
+            </Link>
+            <Link href="#type-checking">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Type Checking
+                (typeof)
+              </li>
+            </Link>
+            <Link href="#type-conversions">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Type Conversions
+              </li>
+            </Link>
+          </ul>
+        </NavDropdown>
+
+        <NavDropdown triggerWord={"Reference Types"}>
+          <ul>
+            <Link href="#objects">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Objects
+              </li>
+            </Link>
+            <Link href="#arrays">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Arrays
+              </li>
+            </Link>
+          </ul>
+        </NavDropdown>
+
+        <NavDropdown triggerWord={"Other"}>
+          <ul>
+            <Link href="#functions">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Functions
+              </li>
+            </Link>
+          </ul>
+        </NavDropdown>
+
+        <NavDropdown triggerWord={"Operators"}>
+        <ul>
+          <Link href="#arithmetic-operators">
             <li>
-              <SiJavascript className="side-nav-js-logo" /> Value Types
+              <SiJavascript className="side-nav-js-logo" /> Arithmetic Operators
             </li>
           </Link>
-          <Link href="#">
+          <Link href="#plus-minus-operators">
             <li>
-              <SiJavascript className="side-nav-js-logo" /> Type Checking
-              (typeof)
+              <SiJavascript className="side-nav-js-logo" /> ++/-- Operators
             </li>
           </Link>
-          <Link href="#">
+          <Link href="#assignment-operators">
             <li>
-              <SiJavascript className="side-nav-js-logo" /> Type Conversions
+              <SiJavascript className="side-nav-js-logo" /> Assignment Operators
             </li>
           </Link>
-          <br />
-
-          <li className="side-nav-header">
-            <AiFillCode className="mb-[3px] inline-block text-[14px]" />{" "}
-            Reference Types
-          </li>
-          <Link href="#">
+          <Link href="#comparison-operators">
             <li>
-              <SiJavascript className="side-nav-js-logo" /> Objects
+              <SiJavascript className="side-nav-js-logo" /> Comparison Operators
             </li>
           </Link>
-          <Link href="#">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Arrays
-            </li>
-          </Link>
-          <br />
+          </ul>
+        </NavDropdown>
 
-          <li className="side-nav-header">
-            <AiFillCode className="mb-[3px] inline-block text-[14px]" /> Other
-          </li>
 
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <br />
 
-          <li className="side-nav-header">
-            <AiFillCode className="mb-[3px] inline-block text-[14px]" /> Other
-          </li>
-
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <Link href="#">
-            <li>test</li>
-          </Link>
-          <br />
-        </ul>
       </SideNav>
 
       <Navbar />
@@ -180,16 +177,6 @@ const JsPage = () => {
       <Dropdown triggerWord={"Terminology"}>test</Dropdown>
 
       <br />
-
-      <Dropdown triggerWord={"Table of Contents"}>
-        <Link href="#hello-world">Hello, World!</Link> <br />
-        <Link href="#comments">Comments</Link> <br />
-        <Link href="#variables">Variables</Link> <br />
-        <Link href="#data-types">Data Types</Link> <br />
-        <Link href="#type-checking">Type checking</Link> <br />
-        <Link href="#type-conversions">Type Conversions</Link> <br />
-        <Link href="#objects">Objects</Link> <br />
-      </Dropdown>
 
       <div id="hello-world" className="content-br"></div>
 
