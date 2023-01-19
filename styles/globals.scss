@@ -201,10 +201,11 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--cat-mocha-base);
+    color: var(--cat-mocha-text);
 }
 
 .side-nav ul li:hover {
-    background-color: var(--cat-mocha-base);
+    background-color: var(--cat-mocha-surface0);
 }
 
 .side-nav-js-logo {
