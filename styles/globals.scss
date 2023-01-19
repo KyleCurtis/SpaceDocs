@@ -189,13 +189,11 @@ h3 {
     font-family: 'Prompt', sans-serif;
     font-size: 13px;
     background-color: var(--cat-mocha-crust);
-    margin-bottom: 100px;
     
 }
 
 .side-nav ul {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 40px;
     padding-left: 5px;
 }
 
@@ -242,12 +240,14 @@ h3 {
     content: url(../public/arrow-down3.svg);
     position: absolute;
     right: 5px;
-    top: 8px;
+    top: 12px;
     display: block;
     padding-bottom: 0px;
     transition: transform 300ms; }
   .Collapsible__trigger.is-open:after {
-    transform: rotateZ(180deg); }
+    transform: rotateZ(180deg);
+    top: 5px;
+ }
   .Collapsible__trigger.is-disabled {
     opacity: 0.5;
     background-color: grey; }

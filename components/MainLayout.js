@@ -8,7 +8,7 @@ const MainLayout = ({ children }) => {
     <div className="">
       
       <TopButton></TopButton>
-      <div className="main lg:ml-[270px] px-[14%] bg-white dark:bg-[var(--cat-mocha-crust)]">
+      <div className="main px-[4%] lg:ml-[270px] lg:px-[15%] bg-white dark:bg-[var(--cat-mocha-crust)]">
         <div className="content bg-white dark:bg-[var(--cat-mocha-crust)]">
           {children}
         </div>

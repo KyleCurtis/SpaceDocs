@@ -9,16 +9,15 @@ import Header from "../../../components/Header";
 import Dropdown from "../../../components/Dropdown";
 import Code from "../../../components/Code";
 import Clipboard from "../../../components/Clipboard";
-
 import CodeBlock from "../../../components/CodeBlock";
-
 import Navbar from "../../../components/Navbar";
 import NavDropdown from "../../../components/NavDropdown";
-
 import SideNav from "../../../components/SideNav";
 
+/* ICON IMPORTS
+============================================================================ */
 import { SiJavascript } from "react-icons/si";
-import { BsGearFill } from "react-icons/bs";
+
 
 /* CODE IMPORTS
 ============================================================================ */
@@ -43,6 +42,8 @@ const JsPage = () => {
   return (
     <>
       <SideNav>
+        {/* (SIDENAV) HOME SECTION
+        ====================================================================================================== */}
         <NavDropdown triggerWord={"Home"}>
           <ul className="side-nav-ul">
             <li>🏠 Home</li>
@@ -50,7 +51,9 @@ const JsPage = () => {
           </ul>
         </NavDropdown>
 
-        <NavDropdown triggerWord={"The Basics"}>
+        {/* (SIDENAV) JAVASCRIPT SECTION
+        ====================================================================================================== */}
+        <NavDropdown triggerWord={"JavaScript Basics"}>
           <ul>
             <Link href="#hello-world">
               <li>
@@ -70,6 +73,8 @@ const JsPage = () => {
           </ul>
         </NavDropdown>
 
+        {/* (SIDENAV) DATA TYPES SECTION
+        ====================================================================================================== */}
         <NavDropdown triggerWord={"Data Types"}>
           <ul>
             <Link href="#data-types">
@@ -91,6 +96,8 @@ const JsPage = () => {
           </ul>
         </NavDropdown>
 
+        {/* (SIDENAV) REFERENCE TYPES SECTION
+        ====================================================================================================== */}
         <NavDropdown triggerWord={"Reference Types"}>
           <ul>
             <Link href="#objects">
@@ -106,6 +113,8 @@ const JsPage = () => {
           </ul>
         </NavDropdown>
 
+        {/* (SIDENAV) OTHER SECTION
+        ====================================================================================================== */}
         <NavDropdown triggerWord={"Other"}>
           <ul>
             <Link href="#functions">
@@ -117,32 +126,33 @@ const JsPage = () => {
         </NavDropdown>
 
         <NavDropdown triggerWord={"Operators"}>
-        <ul>
-          <Link href="#arithmetic-operators">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Arithmetic Operators
-            </li>
-          </Link>
-          <Link href="#plus-minus-operators">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> ++/-- Operators
-            </li>
-          </Link>
-          <Link href="#assignment-operators">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Assignment Operators
-            </li>
-          </Link>
-          <Link href="#comparison-operators">
-            <li>
-              <SiJavascript className="side-nav-js-logo" /> Comparison Operators
-            </li>
-          </Link>
+          <ul>
+            <Link href="#arithmetic-operators">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Arithmetic
+                Operators
+              </li>
+            </Link>
+            <Link href="#plus-minus-operators">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> ++/-- Operators
+              </li>
+            </Link>
+            <Link href="#assignment-operators">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Assignment
+                Operators
+              </li>
+            </Link>
+            <Link href="#comparison-operators">
+              <li>
+                <SiJavascript className="side-nav-js-logo" /> Comparison
+                Operators
+              </li>
+            </Link>
           </ul>
         </NavDropdown>
-
-
-
+        <div className="content-br"></div>
       </SideNav>
 
       <Navbar />

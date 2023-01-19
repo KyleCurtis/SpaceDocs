@@ -1,6 +1,10 @@
+/* NPM IMPORTS
+============================================================================ */
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
+/* CODE COMPONENT
+============================================================================ */
 const Code = ({ lang, children }) => {
   return (
     <div>
