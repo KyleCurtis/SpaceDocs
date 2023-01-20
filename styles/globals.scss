@@ -184,6 +184,7 @@ h3 {
 }
 
 .side-nav {
+    padding-top: 82px;
     height: 100%;
     overflow-y: scroll;
     font-family: 'Prompt', sans-serif;
@@ -238,16 +239,15 @@ h3 {
 }
 
 .Collapsible__trigger:after {
-    content: url(../public/arrow-down3.svg);
+    content: url(../public/arrow.svg);
     position: absolute;
     right: 5px;
-    top: 12px;
+    top: 7px;
     display: block;
-    padding-bottom: 0px;
     transition: transform 300ms; }
   .Collapsible__trigger.is-open:after {
     transform: rotateZ(180deg);
-    top: 5px;
+    top: 7px;
  }
   .Collapsible__trigger.is-disabled {
     opacity: 0.5;

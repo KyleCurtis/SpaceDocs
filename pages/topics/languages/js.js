@@ -44,7 +44,7 @@ const JsPage = () => {
       <SideNav>
         {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"🚀 Home"}>
+        <NavDropdown triggerWord={"Home"}>
           <ul className="side-nav-ul">
             <li>🏠 Home</li>
             <li>🤝 About</li>
@@ -53,7 +53,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) JAVASCRIPT SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"🚀 JavaScript Basics"}>
+        <NavDropdown triggerWord={"JavaScript Basics"}>
           <ul>
             <Link href="#hello-world">
               <li>
@@ -75,7 +75,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) DATA TYPES SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"🚀 Data Types"}>
+        <NavDropdown triggerWord={"Data Types"}>
           <ul>
             <Link href="#data-types">
               <li>
@@ -98,7 +98,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) REFERENCE TYPES SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"🚀 Reference Types"}>
+        <NavDropdown triggerWord={"Reference Types"}>
           <ul>
             <Link href="#objects">
               <li>
@@ -115,7 +115,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) OTHER SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"🚀 Other"}>
+        <NavDropdown triggerWord={"Other"}>
           <ul>
             <Link href="#functions">
               <li>
@@ -125,7 +125,7 @@ const JsPage = () => {
           </ul>
         </NavDropdown>
 
-        <NavDropdown triggerWord={"🚀 Operators"}>
+        <NavDropdown triggerWord={"Operators"}>
           <ul>
             <Link href="#arithmetic-operators">
               <li>

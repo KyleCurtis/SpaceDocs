@@ -22,11 +22,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-black dark:border-[var(--cat-mocha-text)]">
-      <nav className="h-20 max-w-[100%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
+    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-[var(--cat-mocha-surface0)] dark:border-[var(--cat-mocha-text)]">
+      <nav className="h-[80px] max-w-[100%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
         <Link href="/">
           <h2 className="font-bold text-3xl text-[var(--cat-mocha-text)]">
-            🚀RocketDocs
+            RocketDocs
           </h2>
         </Link>
         {/* lg:flex nav topic buttons */}
