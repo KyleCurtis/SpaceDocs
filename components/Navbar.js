@@ -25,8 +25,8 @@ const Navbar = () => {
     <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-[var(--cat-mocha-surface0)] dark:border-[var(--cat-mocha-text)]">
       <nav className="h-[80px] max-w-[100%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
         <Link href="/">
-          <h2 className="font-bold text-3xl text-[var(--cat-mocha-text)]">
-            RocketDocs
+          <h2 className="font-bold text-3xl text-[var(--cat-mocha-blue)]">
+            Rocket Docs
           </h2>
         </Link>
         {/* lg:flex nav topic buttons */}

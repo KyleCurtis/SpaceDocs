@@ -29,6 +29,9 @@
 /* font-family: 'Righteous', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/*      font-family: 'Audiowide', cursive;  */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 :root {
   --padding: 15%;
   --dark-bg:
@@ -161,7 +164,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Righteous', cursive;
+    font-family: 'Audiowide', cursive;
     color: var(--cat-mocha-peach);
     font-size: 32px;
     text-align: center;
@@ -227,6 +230,7 @@ h3 {
 }
 
 .Collapsible__trigger {
+    font-family: 'Space Mono', monospace;
     display: block;
     text-decoration: none;
     position: relative;

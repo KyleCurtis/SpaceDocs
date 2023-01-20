@@ -44,7 +44,7 @@ const JsPage = () => {
       <SideNav>
         {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"Home"}>
+        <NavDropdown triggerWord={"01. Home"}>
           <ul className="side-nav-ul">
             <li>🏠 Home</li>
             <li>🤝 About</li>
@@ -53,7 +53,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) JAVASCRIPT SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"JavaScript Basics"}>
+        <NavDropdown triggerWord={"02. JavaScript Basics"}>
           <ul>
             <Link href="#hello-world">
               <li>
@@ -75,7 +75,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) DATA TYPES SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"Data Types"}>
+        <NavDropdown triggerWord={"03. Data Types"}>
           <ul>
             <Link href="#data-types">
               <li>
@@ -98,7 +98,7 @@ const JsPage = () => {
 
         {/* (SIDENAV) REFERENCE TYPES SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"Reference Types"}>
+        <NavDropdown triggerWord={"04. Reference Types"}>
           <ul>
             <Link href="#objects">
               <li>
