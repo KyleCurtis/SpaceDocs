@@ -1,7 +1,4 @@
-import Header from "./Header";
-import TopButton from "./TopButton";
-//md:mx-[15%] lg:mx-[22%]
-import SideNav from "./SideNav";
+import TopButton from "../TopButton";
 
 const MainLayout = ({ children }) => {
   return (

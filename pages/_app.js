@@ -1,5 +1,4 @@
-import MainLayout from "../components/MainLayout";
-import Navbar from "../components/Navbar";
+import MainLayout from "../components/Layouts/MainLayout";
 
 import "../styles/globals.scss";
 

@@ -4,9 +4,9 @@ import Dropdown from "../../../components/Dropdown";
 import Typewriter from "typewriter-effect";
 
 import { HelloWorld, Comments } from "../../../code/cpp-code";
-import Code from "../../../components/Code";
+import Code from "../../../components/Code/Code";
 
-import Clipboard from "../../../components/Clipboard";
+import Clipboard from "../../../components/Code/Clipboard";
 
 
 

@@ -7,12 +7,12 @@ import Typewriter from "typewriter-effect";
 ============================================================================ */
 import Header from "../../../components/Header";
 import Dropdown from "../../../components/Dropdown";
-import Code from "../../../components/Code";
-import Clipboard from "../../../components/Clipboard";
-import CodeBlock from "../../../components/CodeBlock";
+import Code from "../../../components/Code/Code";
+import Clipboard from "../../../components/Code/Clipboard";
+import CodeBlock from "../../../components/Code/CodeBlock";
 import Navbar from "../../../components/Navbar";
-import NavDropdown from "../../../components/NavDropdown";
-import SideNav from "../../../components/SideNav";
+import NavDropdown from "../../../components/SideNav/NavDropdown";
+import SideNav from "../../../components/SideNav/SideNav";
 
 /* ICON IMPORTS
 ============================================================================ */

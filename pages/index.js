@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import Navbar from "../components/Navbar";
 
 import Header from "../components/Header";
-import SideNav from "../components/SideNav";
+import SideNav from "../components/SideNav/SideNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
