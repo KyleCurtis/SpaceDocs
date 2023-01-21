@@ -31,14 +31,14 @@ const Navbar = () => {
         </Link>
         {/* lg:flex nav topic buttons */}
         <ul className="hidden lg:flex">
-          <li className="p-4">
-            <Link href="/topics/languages/cpp">
-              <SiCplusplus className="text-2xl text-blue-400 hover:text-blue-300" />
+        <li className="p-4">
+            <Link href="/topics/languages/js">
+              <SiJavascript className="text-2xl text-yellow-400 hover:text-yellow-100" />
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/topics/languages/js">
-              <SiJavascript className="text-2xl text-yellow-400 hover:text-yellow-100" />
+            <Link href="/topics/languages/cpp">
+              <SiCplusplus className="text-2xl text-blue-400 hover:text-blue-300" />
             </Link>
           </li>
           <li className="p-4">

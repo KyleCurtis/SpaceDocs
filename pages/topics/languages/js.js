@@ -181,6 +181,7 @@ const JsPage = () => {
       <div className="content-br"></div>
 
       <h2>Resources</h2>
+      <br />
 
       {/* TERMINOLOGY SECTION
       ====================================================================================================== */}
@@ -188,10 +189,10 @@ const JsPage = () => {
 
       <br />
 
-      <div id="hello-world" className="content-br"></div>
+      <div className="content-br"></div>
 
-      <h2>The Basics</h2>
-      <br />
+      <h2>JavaScript Basics</h2>
+      <div id="hello-world" className="content-br"></div>
 
       {/* HELLO WORLD SECTION
       ====================================================================================================== */}
