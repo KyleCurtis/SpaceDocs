@@ -5,7 +5,7 @@ const Header = ({ children }) => {
     return (
         <div>
             <header className='bg-[var(--cat-mocha-base)] border-solid border-2 border-black shadow-2xl'>
-                <br />
+                <div className='content-br'></div>
                 <Image
                     src={Rocket}
                     alt="Rocket Launch Logo"

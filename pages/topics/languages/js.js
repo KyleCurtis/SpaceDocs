@@ -18,6 +18,16 @@ import SideNav from "../../../components/SideNav/SideNav";
 ============================================================================ */
 import { SiJavascript } from "react-icons/si";
 
+/* CHAKRA IMPORTS
+============================================================================ */
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from "@chakra-ui/react";
 
 /* CODE IMPORTS
 ============================================================================ */
@@ -42,116 +52,139 @@ const JsPage = () => {
   return (
     <>
       <SideNav>
-        {/* (SIDENAV) HOME SECTION
+        <br />
+        <br />
+        <Accordion allowMultiple>
+          {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"01. Home"}>
-          <ul className="side-nav-ul">
-            <li>🏠 Home</li>
-            <li>🤝 About</li>
-          </ul>
-        </NavDropdown>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left">
+                  00. Getting Started
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel p={0}>
+              <ul className="side-nav-ul">
+                <li>🏠 Home</li>
+                <li>🤝 About</li>
+              </ul>
+            </AccordionPanel>
+          </AccordionItem>
 
-        {/* (SIDENAV) JAVASCRIPT SECTION
+          {/* (SIDENAV) JAVASCRIPT BASICS SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"02. JavaScript Basics"}>
-          <ul>
-            <Link href="#hello-world">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Hello, World!
-              </li>
-            </Link>
-            <Link href="#comments">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Comments
-              </li>
-            </Link>
-            <Link href="#variables">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Variables
-              </li>
-            </Link>
-          </ul>
-        </NavDropdown>
+          <AccordionItem p={0}>
+            <h2>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left">
+                  01. JavaScript Basics
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel p={0}>
+              <ul>
+                <Link href="#hello-world">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Hello, World!
+                  </li>
+                </Link>
+                <Link href="#comments">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Comments
+                  </li>
+                </Link>
+                <Link href="#variables">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Variables
+                  </li>
+                </Link>
+              </ul>
+            </AccordionPanel>
+          </AccordionItem>
 
-        {/* (SIDENAV) DATA TYPES SECTION
+          {/* (SIDENAV) DATA TYPES SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"03. Data Types"}>
-          <ul>
-            <Link href="#data-types">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Value Types
-              </li>
-            </Link>
-            <Link href="#type-checking">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Type Checking
-                (typeof)
-              </li>
-            </Link>
-            <Link href="#type-conversions">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Type Conversions
-              </li>
-            </Link>
-          </ul>
-        </NavDropdown>
+          <AccordionItem p={0}>
+            <h2>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left">
+                  02. Data Types
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel p={0}>
+              <ul>
+                <Link href="#data-types">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Value Types
+                  </li>
+                </Link>
+                <Link href="#type-checking">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Type Checking
+                    (typeof)
+                  </li>
+                </Link>
+                <Link href="#type-conversions">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Type
+                    Conversions
+                  </li>
+                </Link>
+              </ul>
+            </AccordionPanel>
+          </AccordionItem>
 
-        {/* (SIDENAV) REFERENCE TYPES SECTION
+          {/* (SIDENAV) OBJECTS SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"04. Reference Types"}>
-          <ul>
-            <Link href="#objects">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Objects
-              </li>
-            </Link>
-            <Link href="#arrays">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Arrays
-              </li>
-            </Link>
-          </ul>
-        </NavDropdown>
+          <AccordionItem p={0}>
+            <h2>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left">
+                  03. Objects
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel p={0}>
+              <ul>
+                <Link href="#objects">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Objects
+                  </li>
+                </Link>
+              </ul>
+            </AccordionPanel>
+          </AccordionItem>
 
-        {/* (SIDENAV) OTHER SECTION
+          {/* (SIDENAV) ARRAYS SECTION
         ====================================================================================================== */}
-        <NavDropdown triggerWord={"Other"}>
-          <ul>
-            <Link href="#functions">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Functions
-              </li>
-            </Link>
-          </ul>
-        </NavDropdown>
+          <AccordionItem p={0}>
+            <h2>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left">
+                  04. Arrays
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel p={0}>
+              <ul>
+                <Link href="#arrays">
+                  <li>
+                    <SiJavascript className="side-nav-js-logo" /> Arrays
+                  </li>
+                </Link>
+              </ul>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
 
-        <NavDropdown triggerWord={"Operators"}>
-          <ul>
-            <Link href="#arithmetic-operators">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Arithmetic
-                Operators
-              </li>
-            </Link>
-            <Link href="#plus-minus-operators">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> ++/-- Operators
-              </li>
-            </Link>
-            <Link href="#assignment-operators">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Assignment
-                Operators
-              </li>
-            </Link>
-            <Link href="#comparison-operators">
-              <li>
-                <SiJavascript className="side-nav-js-logo" /> Comparison
-                Operators
-              </li>
-            </Link>
-          </ul>
-        </NavDropdown>
         <div className="content-br"></div>
       </SideNav>
 
@@ -183,9 +216,21 @@ const JsPage = () => {
       <h2>Resources</h2>
       <br />
 
-      {/* TERMINOLOGY SECTION
-      ====================================================================================================== */}
-      <Dropdown triggerWord={"Terminology"}>test</Dropdown>
+      <Accordion allowMultiple>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                Resources
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel p={0}>
+            Test
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
       <br />
 

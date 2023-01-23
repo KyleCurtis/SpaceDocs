@@ -6,17 +6,18 @@ import "../styles/components/Header.scss";
 
 import { ThemeProvider } from "next-themes";
 
+import { ChakraProvider } from "@chakra-ui/react";
+
 export default function App({ Component, pageProps }) {
-
-
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
-      <div>
-        <div className="content-br"></div>
-        <MainLayout>
-          <Component {...pageProps} />
-        </MainLayout>
-      </div>
-    </ThemeProvider>
+    <ChakraProvider>
+      <ThemeProvider enableSystem={true} attribute="class">
+        <div>
+          <MainLayout>
+            <Component {...pageProps} />
+          </MainLayout>
+        </div>
+      </ThemeProvider>
+    </ChakraProvider>
   );
 }

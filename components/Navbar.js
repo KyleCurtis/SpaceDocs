@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+import DrawerNav from "./Drawer";
+
 import {
   SiCplusplus,
   SiJavascript,
@@ -22,10 +24,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-[var(--cat-mocha-surface0)] dark:border-[var(--cat-mocha-text)]">
-      <nav className="h-[80px] max-w-[100%] m-auto flex justify-between items-center p-2 text-black dark:text-white">
+    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-[1px] border-[var(--cat-mocha-text)]">
+      <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-white">
         <Link href="/">
-          <h2 className="font-bold text-3xl text-[var(--cat-mocha-blue)]">
+          <h2 className="absolute pl-[35px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-blue)]">
             Rocket Docs
           </h2>
         </Link>
@@ -60,40 +62,7 @@ const Navbar = () => {
             <ThemeToggler />
           </li>
         </ul>
-
-        {/* lg:hidden nav button */}
-        <div onClick={handleNav} className="block lg:hidden z-10">
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-        </div>
-
-        <div
-          className={
-            nav
-              ? "lg:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[white] text-black dark:bg-[var(--cat-mocha-crust)] dark:text-white text-center"
-              : "lg:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[white] text-black dark:bg-[var(--cat-mocha-crust)] dark:text-white text-center"
-          }
-        >
-          <ul>
-            <li className="m-auto w-10 h-20">
-              <ThemeToggler />
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="#">Back to top</Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/topics/languages/cpp">C++</Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/topics/languages/js">JS</Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/">Rust</Link>
-            </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href="/">Python</Link>
-            </li>
-          </ul>
-        </div>
+        <DrawerNav className=''></DrawerNav>
       </nav>
     </div>
   );
