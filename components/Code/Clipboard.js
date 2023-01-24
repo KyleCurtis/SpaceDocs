@@ -25,7 +25,7 @@ const Clipboard = ({ code }) => {
           isClosable: true,
         })
       } 
-      className="absolute right-0 border-solid border-2 border-[var(--cat-mocha-surface1)] p-[10px]">
+      className="absolute right-0 border-solid border-2 border-[var(--cat-mocha-surface1)] p-[8px]">
         <FaClipboard className="text-[var(--cat-mocha-text)]" />
       </button>
     </CopyToClipboard>

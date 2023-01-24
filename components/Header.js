@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import Rocket from "../public/Space.png"
+import Rocket from "../public/rocket-book.png"
 
 const Header = ({ children }) => {
     return (
         <div>
             <header className='bg-[var(--cat-mocha-base)] border-solid border-2 border-black shadow-2xl'>
-                <div className='content-br'></div>
+                <br /><br /><br /><br />
                 <Image
                     src={Rocket}
                     alt="Rocket Launch Logo"

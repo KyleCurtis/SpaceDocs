@@ -7,10 +7,16 @@ import "../styles/components/Header.scss";
 import { ThemeProvider } from "next-themes";
 
 import { ChakraProvider } from "@chakra-ui/react";
+import { MathJaxContext } from "better-react-mathjax";
 
 export default function App({ Component, pageProps }) {
+    const config = {
+        loader: { load: ["input/asciimath"] }
+    };
+
   return (
     <ChakraProvider>
+        <MathJaxContext config={config}>
       <ThemeProvider enableSystem={true} attribute="class">
         <div>
           <MainLayout>
@@ -18,6 +24,7 @@ export default function App({ Component, pageProps }) {
           </MainLayout>
         </div>
       </ThemeProvider>
+      </MathJaxContext>
     </ChakraProvider>
   );
 }

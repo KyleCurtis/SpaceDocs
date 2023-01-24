@@ -190,7 +190,7 @@ const JsPage = () => {
 
       <Navbar />
       <Header>
-        <h1 className="text-[var(--cat-mocha-blue)]">JavaScript</h1>
+        <h2 className="main-topic text-[var(--cat-mocha-blue)]">JavaScript</h2>
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
             The programming language that powers:

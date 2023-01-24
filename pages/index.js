@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <Header>
-        <h1>Home</h1>
+        <h1 className="main-topic">Home</h1>
         <div className="header-info">
           Explore a new world by learning a new skill such as:
           <Typewriter
@@ -41,7 +41,7 @@ export default function Home() {
 
       <div className="content-br"></div>
 
-      <h1>Home</h1>
+      
 
       <div className="content-br"></div>
       <div className="content-br"></div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 import DrawerNav from "./Drawer";
@@ -12,22 +12,20 @@ import {
   SiGit,
   SiVim,
 } from "react-icons/si";
+
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
+import {TbMath} from "react-icons/tb";
 
 import ThemeToggler from "./ThemeToggle";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-
-  const handleNav = () => {
-    setNav(!nav);
-  };
 
   return (
     <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-[1px] border-[var(--cat-mocha-text)]">
       <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-white">
         <Link href="/">
-          <h2 className="absolute pl-[35px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-blue)]">
+          <h2 className="absolute pl-[15px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-blue)]">
             Rocket Docs
           </h2>
         </Link>
@@ -54,8 +52,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
+            <Link href="/topics/other/math">
+              <TbMath className="text-2xl text-purple-400" />
+            </Link>
+          </li>
+          <li className="p-4">
             <Link href="/">
-              <SiVim className="text-2xl text-green-400" />
+              <SiPytorch className="text-2xl text-red-400" />
             </Link>
           </li>
           <li className="p-4">
