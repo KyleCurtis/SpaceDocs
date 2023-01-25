@@ -78,7 +78,10 @@ export default function Home() {
       >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading size="md" className="text-white"> JavaScript</Heading>
+            <Heading size="md" className="text-white">
+              {" "}
+              JavaScript
+            </Heading>
           </CardHeader>
           <CardBody>
             <SiJavascript className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
@@ -96,7 +99,9 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-white" size="md">C++</Heading>
+            <Heading className="text-white" size="md">
+              C++
+            </Heading>
           </CardHeader>
           <CardBody>
             <SiCplusplus className="text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
@@ -114,7 +119,10 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-white" size="md"> Python</Heading>
+            <Heading className="text-white" size="md">
+              {" "}
+              Python
+            </Heading>
           </CardHeader>
           <CardBody>
             <SiPython className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
@@ -133,7 +141,10 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-white" size="md"> PyTorch</Heading>
+            <Heading className="text-white" size="md">
+              {" "}
+              PyTorch
+            </Heading>
           </CardHeader>
           <CardBody>
             <SiPytorch className="text-[var(--cat-mocha-red)] text-[100px] m-auto" />
@@ -151,7 +162,10 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-white" size="md"> Git(hub)</Heading>
+            <Heading className="text-white" size="md">
+              {" "}
+              Git(hub)
+            </Heading>
           </CardHeader>
           <CardBody>
             <SiGit className="text-[var(--cat-mocha-peach)] text-[100px] m-auto" />
@@ -169,7 +183,10 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-white" size="md"> Mathematics</Heading>
+            <Heading className="text-white" size="md">
+              {" "}
+              Mathematics
+            </Heading>
           </CardHeader>
           <CardBody>
             <TbMath className="text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
@@ -181,7 +198,7 @@ export default function Home() {
           </CardBody>
           <CardFooter>
             <Link href="/topics/other/math">
-            <Button>Learn</Button>
+              <Button>Learn</Button>
             </Link>
           </CardFooter>
         </Card>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import {RxHamburgerMenu} from "react-icons/rx"
+import { RxHamburgerMenu } from "react-icons/rx";
 
 import {
   Drawer,
@@ -41,7 +41,7 @@ const DrawerNav = ({ children }) => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>Choose a topic</DrawerHeader>
 
           <DrawerBody>{children}</DrawerBody>
 
