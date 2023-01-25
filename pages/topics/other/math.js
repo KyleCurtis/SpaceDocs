@@ -39,7 +39,7 @@ const MathPage = () => {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box className='text-[var(--cat-mocha-text)]' as="span" flex="1" textAlign="left">
                   00. Getting Started
                 </Box>
                 <AccordionIcon />
@@ -58,7 +58,7 @@ const MathPage = () => {
           <AccordionItem p={0}>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box className='text-[var(--cat-mocha-text)]' as="span" flex="1" textAlign="left">
                   01. Algebra 1 and 2
                 </Box>
                 <AccordionIcon />
@@ -117,7 +117,7 @@ const MathPage = () => {
         <AccordionItem>
           <h2>
             <AccordionButton>
-              <Box as="span" flex="1" textAlign="left">
+              <Box className='text-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-text)]' as="span" flex="1" textAlign="left">
                 Resources
               </Box>
               <AccordionIcon />
@@ -126,50 +126,51 @@ const MathPage = () => {
           <AccordionPanel p={0}>Test</AccordionPanel>
         </AccordionItem>
       </Accordion>
-
       <br />
-
       <div className="content-br"></div>
-
       <h2 className="main-topic">Equalities</h2>
-
-      <p className='text-white'>Mathematical Equation</p>
+      <p className="text-white">Mathematical Equation</p>
+      
       <MathBox>{"`2x+10-5=100`"}</MathBox>
-
-    <br />
-      <p className='text-white'>Monomial Expression</p>
-      <MathBox>{"`2x`"}</MathBox>
-
+      
       <br />
-      <p className='text-white'>Binomial Expression (Polynomial)</p>
-      <MathBox>{"`2x+10`"}</MathBox>
 
-      <br />
-      <p className='text-white'>Trinomial Expression (Polynomial)</p>
-      <MathBox>{"`2x+10-5`"}</MathBox>
-
+      <Accordion allowMultiple>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box className='text-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-text)]' as="span" flex="1" textAlign="left">
+                Notes
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel p={0}>Test</AccordionPanel>
+        </AccordionItem>
+      </Accordion>
       <div className="content-br"></div>
-
+      <p className="text-white">Monomial Expression</p>
+      <MathBox>{"`2x`"}</MathBox>
+      <div className="content-br"></div>
+      <p className="text-white">Binomial Expression (Polynomial)</p>
+      <MathBox>{"`2x+10`"}</MathBox>
+      <br />
+      <p className="text-white">Trinomial Expression (Polynomial)</p>
+      <MathBox>{"`2x+10-5`"}</MathBox>
+      <div className="content-br"></div>
       <h2 className="main-topic">Inequalities</h2>
-
       <MathBox>{"`>`"} = Greater than</MathBox> <br />
       <MathBox>{"`>=`"} = Greater than or equal to</MathBox> <br />
       <MathBox>{"`<`"} = Less than</MathBox> <br />
       <MathBox>{"`<=`"} = Less than or equal to</MathBox> <br />
-
       <div className="content-br"></div>
-
       <h2 className="main-topic">Like terms</h2>
-
-      <MathBox>{"`2x + 5x`"}</MathBox>
-
+      <MathBox>{"`2x + 5x`"}</MathBox> <br />
       <div className="content-br"></div>
       <div className="content-br"></div>
       <div className="content-br"></div>
       <div className="content-br"></div>
       <div className="content-br"></div>
-
-
       <MathBox>{"``"}</MathBox>
     </>
   );

@@ -60,7 +60,12 @@ const JsPage = () => {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box
+                  className="text-[var(--cat-mocha-text)]"
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                >
                   00. Getting Started
                 </Box>
                 <AccordionIcon />
@@ -79,7 +84,12 @@ const JsPage = () => {
           <AccordionItem p={0}>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box
+                  className="text-[var(--cat-mocha-text)]"
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                >
                   01. JavaScript Basics
                 </Box>
                 <AccordionIcon />
@@ -111,7 +121,12 @@ const JsPage = () => {
           <AccordionItem p={0}>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box
+                  className="text-[var(--cat-mocha-text)]"
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                >
                   02. Data Types
                 </Box>
                 <AccordionIcon />
@@ -145,7 +160,12 @@ const JsPage = () => {
           <AccordionItem p={0}>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box
+                  className="text-[var(--cat-mocha-text)]"
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                >
                   03. Objects
                 </Box>
                 <AccordionIcon />
@@ -167,7 +187,12 @@ const JsPage = () => {
           <AccordionItem p={0}>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box
+                  className="text-[var(--cat-mocha-text)]"
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                >
                   04. Arrays
                 </Box>
                 <AccordionIcon />
@@ -192,7 +217,7 @@ const JsPage = () => {
       <Header>
         <h2 className="main-topic text-[var(--cat-mocha-blue)]">JavaScript</h2>
         <div className="header-section">
-          <div className="header-info text-[var(--cat-mocha-text)] font-bold">
+          <div className="header-info text-black dark:text-[var(--cat-mocha-text)] font-bold">
             The programming language that powers:
             <Typewriter
               options={{
@@ -216,21 +241,7 @@ const JsPage = () => {
       <h2>Resources</h2>
       <br />
 
-      <Accordion allowMultiple>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box as="span" flex="1" textAlign="left">
-                Resources
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel p={0}>
-            Test
-          </AccordionPanel>
-        </AccordionItem>
-      </Accordion>
+      <Dropdown buttonTitle={"Resources"} contentSection={"Test"}></Dropdown>
 
       <br />
 
@@ -246,7 +257,7 @@ const JsPage = () => {
         <Clipboard code={HelloWorld}></Clipboard>
         <Code lang="javascript">{HelloWorld}</Code>
       </CodeBlock>
-      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
+      <Dropdown buttonTitle={"Result"} contentSection={"Hello, World!"}></Dropdown>
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
@@ -257,7 +268,7 @@ const JsPage = () => {
         <Clipboard code={HelloWorld}></Clipboard>
         <Code lang="javascript">{Comments}</Code>
       </CodeBlock>
-      <Dropdown triggerWord={"Result"}></Dropdown>
+      <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
 
       {/* VARIABLES SECTION
       ====================================================================================================== */}
@@ -268,10 +279,15 @@ const JsPage = () => {
         <Clipboard code={Variables}></Clipboard>
         <Code lang="javascript">{Variables}</Code>
       </CodeBlock>
-      <Dropdown triggerWord={"Result"}>
-        Apollo 11 1969 <br />
-        Neil Armstrong Edwin Aldrin Michael Collins
-      </Dropdown>
+      <Dropdown
+        buttonTitle={"Result"}
+        contentSection={
+          <div>
+            Apollo 11 1969 <br />
+            Neil Armstrong Edwin Aldrin Michael Collins
+          </div>
+        }
+      ></Dropdown>
 
       {/* DATA TYPES SECTION
       ====================================================================================================== */}
@@ -285,7 +301,7 @@ const JsPage = () => {
         <Clipboard code={Types}></Clipboard>
         <Code lang="javascript">{Types}</Code>
       </CodeBlock>
-      <Dropdown triggerWord={"Result"}></Dropdown>
+      <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
 
       {/* TYPEOF SECTION
       ====================================================================================================== */}
@@ -296,13 +312,19 @@ const JsPage = () => {
         <Clipboard code={TypeOf}></Clipboard>
         <Code lang="javascript">{TypeOf}</Code>
       </CodeBlock>
-      <Dropdown triggerWord={"Result"}>
-        string <br />
-        number <br />
-        boolean <br />
-        undefined <br />
-        object
-      </Dropdown>
+      <Dropdown
+        buttonTitle={"Result"}
+        contentSection={
+          <div>
+            string <br />
+            number <br />
+            boolean <br />
+            undefined <br />
+            object <br />
+            number <br />
+          </div>
+        }
+      ></Dropdown>
 
       {/* TYPE CONVERSION SECTION
       ====================================================================================================== */}

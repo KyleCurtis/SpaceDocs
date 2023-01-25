@@ -114,6 +114,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+body * {
+    @apply transition-colors duration-200;
+}
 
 /* TRY TO GET GRADIENT TO BE FULL HEIGHT ON ALL PAGES*/
 .content {
@@ -143,7 +146,7 @@ h1 {
 
 h2 {
     font-family: 'Bakbak One', cursive;
-    color: var(--cat-mocha-peach);
+    color: var(--cat-mocha-crust);
     font-size: 32px ;
     text-align: center;
 }
@@ -181,7 +184,6 @@ code {
     overflow-y: scroll;
     font-family: 'Prompt', sans-serif;
     font-size: 13px;
-    background-color: var(--cat-mocha-crust);
     
 }
 

@@ -18,6 +18,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import {TbMath} from "react-icons/tb";
 
 import ThemeToggler from "./ThemeToggle";
+import { IoMdRocket } from "react-icons/io";
 
 const Navbar = () => {
 
@@ -25,8 +26,8 @@ const Navbar = () => {
     <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-[1px] border-[var(--cat-mocha-text)]">
       <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-white">
         <Link href="/">
-          <h2 className="absolute pl-[15px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-blue)]">
-            Rocket Docs
+          <h2 className="nav-title absolute pl-[15px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-peach)]">
+           {<IoMdRocket className="text-[var(--cat-mocha-blue)] inline pb-1"/>} Rocket Docs
           </h2>
         </Link>
         {/* lg:flex nav topic buttons */}
