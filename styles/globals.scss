@@ -179,7 +179,7 @@ code {
 }
 
 .side-nav {
-    padding-top: 82px;
+    padding-top: 120px;
     height: 100%;
     overflow-y: scroll;
     font-family: 'Prompt', sans-serif;
@@ -194,8 +194,7 @@ code {
 .side-nav ul li {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: var(--cat-mocha-base);
-    color: var(--cat-mocha-text);
+    padding-left: 10px;
 }
 
 .side-nav ul li:hover {

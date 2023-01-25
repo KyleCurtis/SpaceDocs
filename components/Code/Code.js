@@ -13,7 +13,7 @@ const Code = ({ lang, children }) => {
           language={lang}
           style={atomOneDark}
           showLineNumbers={true}
-          className="pr-[199px]"
+          className="pr-[199px] !bg-[var(--cat-mocha-base)]"
         >
           {children}
         </SyntaxHighlighter>

@@ -26,7 +26,7 @@ const Clipboard = ({ code }) => {
         })
       } 
       className="absolute right-0 border-solid border-2 border-[var(--cat-mocha-surface1)] p-[8px]">
-        <FaClipboard className="text-[var(--cat-mocha-text)]" />
+        <FaClipboard className="text-[var(--cat-mocha-blue)]" />
       </button>
     </CopyToClipboard>
   );

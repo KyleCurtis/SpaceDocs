@@ -57,46 +57,13 @@ const JsPage = () => {
         <Accordion allowMultiple>
           {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box
-                  className="text-[var(--cat-mocha-text)]"
-                  as="span"
-                  flex="1"
-                  textAlign="left"
-                >
-                  00. Getting Started
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel p={0}>
-              <ul className="side-nav-ul">
-                <li>🏠 Home</li>
-                <li>🤝 About</li>
-              </ul>
-            </AccordionPanel>
-          </AccordionItem>
+         <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
 
           {/* (SIDENAV) JAVASCRIPT BASICS SECTION
         ====================================================================================================== */}
-          <AccordionItem p={0}>
-            <h2>
-              <AccordionButton>
-                <Box
-                  className="text-[var(--cat-mocha-text)]"
-                  as="span"
-                  flex="1"
-                  textAlign="left"
-                >
-                  01. JavaScript Basics
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel p={0}>
-              <ul>
+          <NavDropdown buttonTitle={"01. JavaScript Basics"} contentSection={
+            <div>
+                <ul>
                 <Link href="#hello-world">
                   <li>
                     <SiJavascript className="side-nav-js-logo" /> Hello, World!
@@ -113,27 +80,15 @@ const JsPage = () => {
                   </li>
                 </Link>
               </ul>
-            </AccordionPanel>
-          </AccordionItem>
+            </div>
+          }
+          ></NavDropdown>
 
           {/* (SIDENAV) DATA TYPES SECTION
         ====================================================================================================== */}
-          <AccordionItem p={0}>
-            <h2>
-              <AccordionButton>
-                <Box
-                  className="text-[var(--cat-mocha-text)]"
-                  as="span"
-                  flex="1"
-                  textAlign="left"
-                >
-                  02. Data Types
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel p={0}>
-              <ul>
+        <NavDropdown buttonTitle={"02.Value Types"} contentSection={
+            <div>
+                <ul>
                 <Link href="#data-types">
                   <li>
                     <SiJavascript className="side-nav-js-logo" /> Value Types
@@ -152,8 +107,8 @@ const JsPage = () => {
                   </li>
                 </Link>
               </ul>
-            </AccordionPanel>
-          </AccordionItem>
+            </div>
+        }></NavDropdown>
 
           {/* (SIDENAV) OBJECTS SECTION
         ====================================================================================================== */}
@@ -217,7 +172,7 @@ const JsPage = () => {
       <Header>
         <h2 className="main-topic text-[var(--cat-mocha-blue)]">JavaScript</h2>
         <div className="header-section">
-          <div className="header-info text-black dark:text-[var(--cat-mocha-text)] font-bold">
+          <div className="header-info text-[var(--cat-mocha-text)] font-bold">
             The programming language that powers:
             <Typewriter
               options={{
