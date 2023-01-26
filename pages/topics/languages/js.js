@@ -54,7 +54,7 @@ const JsPage = () => {
     <MainLayout title={"🚀 Rocket Docs: JS Page"}>
       <SideNav
         window={
-            <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
+          <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
             <SiJavascript className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-yellow)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[62px] flex items-center" />
           </div>
         }
@@ -64,7 +64,10 @@ const JsPage = () => {
         <Accordion allowMultiple>
           {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-          <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
+          <NavDropdown
+            buttonTitle={"00. Getting Started"}
+            contentSection={"Coming Soon..."}
+          ></NavDropdown>
 
           {/* (SIDENAV) JAVASCRIPT BASICS SECTION
         ====================================================================================================== */}
@@ -125,57 +128,37 @@ const JsPage = () => {
 
           {/* (SIDENAV) OBJECTS SECTION
         ====================================================================================================== */}
-          <AccordionItem p={0}>
-            <h2>
-              <AccordionButton>
-                <Box
-                  className="text-[var(--cat-mocha-text)]"
-                  as="span"
-                  flex="1"
-                  textAlign="left"
-                >
-                  03. Objects
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel p={0}>
-              <ul>
-                <Link href="#objects">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Objects
-                  </li>
-                </Link>
-              </ul>
-            </AccordionPanel>
-          </AccordionItem>
+          <NavDropdown
+            buttonTitle={"03. Objects"}
+            contentSection={
+              <div>
+                <ul>
+                  <Link href="#objects">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Objects
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            }
+          ></NavDropdown>
 
           {/* (SIDENAV) ARRAYS SECTION
         ====================================================================================================== */}
-          <AccordionItem p={0}>
-            <h2>
-              <AccordionButton>
-                <Box
-                  className="text-[var(--cat-mocha-text)]"
-                  as="span"
-                  flex="1"
-                  textAlign="left"
-                >
-                  04. Arrays
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel p={0}>
-              <ul>
-                <Link href="#arrays">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Arrays
-                  </li>
-                </Link>
-              </ul>
-            </AccordionPanel>
-          </AccordionItem>
+          <NavDropdown
+            buttonTitle={"04. Arrays"}
+            contentSection={
+              <div>
+                <ul>
+                  <Link href="#arrays">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Arrays
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            }
+          ></NavDropdown>
         </Accordion>
 
         <div className="content-br"></div>
@@ -204,16 +187,51 @@ const JsPage = () => {
         </div>
       </Header>
 
-      <div className="content-br"></div>
+      <br />
+      <br />
 
       <h2>Resources</h2>
       <br />
 
-      <Dropdown buttonTitle={"Resources"} contentSection={"Test"}></Dropdown>
+      <Dropdown
+        buttonTitle={"Requirements"}
+        contentSection={
+          <div>
+            <ul>
+              <li>
+                -{" "}
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://nodejs.org/"
+                >
+                  NodeJS
+                </Link>
+                : 19.3.0+ (NVM recommended)
+              </li>
+              <br />
+              <li>
+                -{" "}
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://code.visualstudio.com/"
+                >
+                  Visual Studio Code
+                </Link>{" "}
+                (Or preferred editor)
+              </li>
+            </ul>
+          </div>
+        }
+      ></Dropdown>
 
       <br />
 
-      <div className="content-br"></div>
+      <Dropdown
+        buttonTitle={"Resources"}
+        contentSection={"Coming Soon..."}
+      ></Dropdown>
 
       <h2>JavaScript Basics</h2>
       <div id="hello-world" className="content-br"></div>
