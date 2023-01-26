@@ -188,8 +188,8 @@ export default function Home() {
               <Button
                 _hover={"none"}
                 _active={{
-                    transform: "scale(0.95)",
-                  }}
+                  transform: "scale(0.95)",
+                }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
                 Learn
@@ -218,8 +218,8 @@ export default function Home() {
               <Button
                 _hover={"none"}
                 _active={{
-                    transform: "scale(0.95)",
-                  }}
+                  transform: "scale(0.95)",
+                }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
                 Learn
@@ -247,8 +247,8 @@ export default function Home() {
               <Button
                 _hover={"none"}
                 _active={{
-                    transform: "scale(0.95)",
-                  }}
+                  transform: "scale(0.95)",
+                }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
                 Learn
@@ -276,8 +276,8 @@ export default function Home() {
               <Button
                 _hover={"none"}
                 _active={{
-                    transform: "scale(0.95)",
-                  }}
+                  transform: "scale(0.95)",
+                }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
                 Learn
@@ -305,8 +305,8 @@ export default function Home() {
               <Button
                 _hover={"none"}
                 _active={{
-                    transform: "scale(0.95)",
-                  }}
+                  transform: "scale(0.95)",
+                }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
                 Learn
@@ -328,24 +328,75 @@ export default function Home() {
         <CardBody className="bg-[var(--cat-mocha-base)]">
           <Stack divider={<StackDivider />} spacing="4">
             <Box>
-              <Heading size="xs" textTransform="uppercase" className="text-[var(--cat-mocha-peach)]">
+              <Heading
+                size="xs"
+                textTransform="uppercase"
+                className="text-[var(--cat-mocha-peach)]"
+              >
                 Built with
               </Heading>
               <Text pt="2" fontSize="sm" align={"center"}>
-                NextJS, TailwindCSS, SCSS, ChakraUI
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://nextjs.org/"
+                >
+                  NextJS
+                </Link>{" "}
+                /
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://tailwindcss.com/"
+                >
+                  {" "}
+                  TailwindCSS
+                </Link>{" "}
+                /{" "}
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://tailwindcss.com/"
+                >
+                  SCSS{" "}
+                </Link>
+                /{" "}
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://chakra-ui.com/"
+                >
+                  ChakraUI{" "}
+                </Link>
               </Text>
             </Box>
             <Box>
-              <Heading size="xs" textTransform="uppercase" className="text-[var(--cat-mocha-peach)]">
+              <Heading
+                size="xs"
+                textTransform="uppercase"
+                className="text-[var(--cat-mocha-peach)]"
+              >
                 Theming & Colors
               </Heading>
               <Text pt="2" fontSize="sm" align={"center"}>
-                Site Theme: Catppuccin Mocha <br />
+                Site Colors:{" "}
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://github.com/catppuccin/catppuccin"
+                >
+                  Catppuccin Mocha
+                </Link>{" "}
+                <br />
                 Code Theme: Atom One Dark (Modified)
               </Text>
             </Box>
             <Box>
-              <Heading size="xs" textTransform="uppercase" className="text-[var(--cat-mocha-peach)]">
+              <Heading
+                size="xs"
+                textTransform="uppercase"
+                className="text-[var(--cat-mocha-peach)]"
+              >
                 Other
               </Heading>
               <Text pt="2" fontSize="sm" align={"center"}></Text>
