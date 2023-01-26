@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
+import MainLayout from "../../../components/Layouts/MainLayout";
 import Header from "../../../components/Header";
 import Dropdown from "../../../components/Dropdown";
 import Code from "../../../components/Code/Code";
@@ -50,65 +51,77 @@ import {
 
 const JsPage = () => {
   return (
-    <>
-      <SideNav>
+    <MainLayout title={"🚀 Rocket Docs: JS Page"}>
+      <SideNav
+        window={
+            <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
+            <SiJavascript className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-yellow)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[62px] flex items-center" />
+          </div>
+        }
+      >
         <br />
         <br />
         <Accordion allowMultiple>
           {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-         <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
+          <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
 
           {/* (SIDENAV) JAVASCRIPT BASICS SECTION
         ====================================================================================================== */}
-          <NavDropdown buttonTitle={"01. JavaScript Basics"} contentSection={
-            <div>
+          <NavDropdown
+            buttonTitle={"01. JavaScript Basics"}
+            contentSection={
+              <div>
                 <ul>
-                <Link href="#hello-world">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Hello, World!
-                  </li>
-                </Link>
-                <Link href="#comments">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Comments
-                  </li>
-                </Link>
-                <Link href="#variables">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Variables
-                  </li>
-                </Link>
-              </ul>
-            </div>
-          }
+                  <Link href="#hello-world">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Hello,
+                      World!
+                    </li>
+                  </Link>
+                  <Link href="#comments">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Comments
+                    </li>
+                  </Link>
+                  <Link href="#variables">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Variables
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            }
           ></NavDropdown>
 
           {/* (SIDENAV) DATA TYPES SECTION
         ====================================================================================================== */}
-        <NavDropdown buttonTitle={"02.Value Types"} contentSection={
-            <div>
+          <NavDropdown
+            buttonTitle={"02.Value Types"}
+            contentSection={
+              <div>
                 <ul>
-                <Link href="#data-types">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Value Types
-                  </li>
-                </Link>
-                <Link href="#type-checking">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Type Checking
-                    (typeof)
-                  </li>
-                </Link>
-                <Link href="#type-conversions">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Type
-                    Conversions
-                  </li>
-                </Link>
-              </ul>
-            </div>
-        }></NavDropdown>
+                  <Link href="#data-types">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Value Types
+                    </li>
+                  </Link>
+                  <Link href="#type-checking">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Type
+                      Checking (typeof)
+                    </li>
+                  </Link>
+                  <Link href="#type-conversions">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Type
+                      Conversions
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            }
+          ></NavDropdown>
 
           {/* (SIDENAV) OBJECTS SECTION
         ====================================================================================================== */}
@@ -212,7 +225,10 @@ const JsPage = () => {
         <Clipboard code={HelloWorld}></Clipboard>
         <Code lang="javascript">{HelloWorld}</Code>
       </CodeBlock>
-      <Dropdown buttonTitle={"Result"} contentSection={"Hello, World!"}></Dropdown>
+      <Dropdown
+        buttonTitle={"Result"}
+        contentSection={"Hello, World!"}
+      ></Dropdown>
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
@@ -389,7 +405,7 @@ const JsPage = () => {
       <div className="content-br"></div>
       <div className="content-br"></div>
       <div className="content-br"></div>
-    </>
+    </MainLayout>
   );
 };
 

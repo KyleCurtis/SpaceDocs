@@ -10,20 +10,20 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { MathJaxContext } from "better-react-mathjax";
 
 export default function App({ Component, pageProps }) {
-    const config = {
-        loader: { load: ["input/asciimath"] }
-    };
+  const config = {
+    loader: { load: ["input/asciimath"] },
+  };
 
   return (
     <ChakraProvider>
-        <MathJaxContext config={config}>
-      <ThemeProvider enableSystem={true} attribute="class">
-        <div>
-          <MainLayout>
-            <Component {...pageProps} />
-          </MainLayout>
-        </div>
-      </ThemeProvider>
+      <MathJaxContext config={config}>
+        <ThemeProvider enableSystem={true} attribute="class">
+          <div>
+
+              <Component {...pageProps} />
+
+          </div>
+        </ThemeProvider>
       </MathJaxContext>
     </ChakraProvider>
   );

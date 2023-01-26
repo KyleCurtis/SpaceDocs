@@ -2,6 +2,7 @@
 ============================================================================ */
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
+import Image from "next/image";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
@@ -17,25 +18,39 @@ import SideNav from "../../../components/SideNav/SideNav";
 
 /* ICON IMPORTS
 ============================================================================ */
-import { SiCplusplus, SiJavascript } from "react-icons/si";
+import { SiGo, SiJava, SiJavascript, SiPython } from "react-icons/si";
 
-import { Accordion } from "@chakra-ui/react";
+/* CHAKRA IMPORTS
+============================================================================ */
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from "@chakra-ui/react";
 
 /* CODE IMPORTS
 ============================================================================ */
-import {
-    HelloWorld,
-    Comments,
-  } from "../../../code/cpp-code";
+import { HelloWorld } from "../../../code/cpp-code";
 
-const CppPage = () => {
+const GoPage = () => {
   return (
-    <MainLayout title={"🚀 Rocket Docs: C++ Page"}>
-    <SideNav window={
-        <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-        <SiCplusplus className="!m-auto text-[var(--cat-mocha-core)] bg-white dark:bg-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-text)] text-[80px] flex items-center" />
-      </div>
-    }>
+    <MainLayout title={"🚀 Rocket Docs: Go Page"}>
+      <SideNav
+        window={
+          <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
+            <Image
+              alt="test"
+              width={75}
+              height={75}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+              className="m-auto"
+            />
+          </div>
+        }
+      >
         <br />
         <br />
         <Accordion allowMultiple>
@@ -46,7 +61,7 @@ const CppPage = () => {
           {/* (SIDENAV) JAVASCRIPT BASICS SECTION
         ====================================================================================================== */}
           <NavDropdown
-            buttonTitle={"01. C++ Basics"}
+            buttonTitle={"01. Go Basics"}
             contentSection={
               <div>
                 <ul>
@@ -70,28 +85,25 @@ const CppPage = () => {
               </div>
             }
           ></NavDropdown>
-          </Accordion>
+        </Accordion>
+
         <div className="content-br"></div>
       </SideNav>
 
       <Navbar />
-
       <Header>
-        <h1 className="text-[var(--cat-mocha-blue)]">C++</h1>
+        <h2 className="main-topic text-[var(--cat-mocha-blue)]">Go</h2>
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
-            The systems programming language that powers:
+            The programming language that powers:
             <Typewriter
               options={{
                 strings: [
-                  "Operating Systems",
+                  "Interactive Websites",
                   "Desktop Applications",
-                  "Web-browsers",
-                  "Game Engines",
-                  "Robots",
-                  "Machine Learning",
-                  "AI",
-                  "Rockets",
+                  "Mobile Applications",
+                  "Web Servers",
+                  "Video Games",
                 ],
                 autoStart: true,
                 loop: true,
@@ -102,52 +114,8 @@ const CppPage = () => {
       </Header>
 
       <div className="content-br"></div>
-
-      <h2>Resources</h2>
-
-      {/* TERMINOLOGY SECTION
-      ====================================================================================================== */}
-      <Dropdown triggerWord={"Terminology"}>test</Dropdown>
-
-      <br />
-
-      <Dropdown triggerWord={"Useful links"}>test</Dropdown>
-
-      <div className="content-br"></div>
-
-      <h2>The Basics</h2>
-
-      <br />
-      <br />
-
-      {/* HELLO WORLD SECTION
-      ====================================================================================================== */}
-      <h3>Hello, World!</h3>
-      <Clipboard code={HelloWorld}></Clipboard>
-      <Code lang="cpp">{HelloWorld}</Code>
-      <Dropdown triggerWord={"Result"}>Hello, World!</Dropdown>
-
-      <div className="content-br"></div>
-
-      {/* COMMENTS SECTION
-      ====================================================================================================== */}
-      <h3>Comments</h3>
-      <Clipboard code={Comments}></Clipboard>
-      <Code lang="cpp">{Comments}</Code>
-      <Dropdown triggerWord={"Result"}></Dropdown>
-
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
-      <div className="content-br"></div>
     </MainLayout>
   );
 };
 
-export default CppPage;
+export default GoPage;

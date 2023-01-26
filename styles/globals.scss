@@ -114,11 +114,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* This is for theme transitions but chrome doesn't want to be cool like firefox so it's
+disabled until I can figure out why.
 body * {
     @apply transition-colors duration-200;
-}
+}*/
 
-/* TRY TO GET GRADIENT TO BE FULL HEIGHT ON ALL PAGES*/
 .content {
   min-height: 100%;
 

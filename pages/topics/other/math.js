@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
+import MainLayout from "../../../components/Layouts/MainLayout";
 import Header from "../../../components/Header";
 import Dropdown from "../../../components/Dropdown";
 import Navbar from "../../../components/Navbar";
@@ -29,7 +30,7 @@ import {
 
 const MathPage = () => {
   return (
-    <>
+    <MainLayout title={"🚀 Rocket Docs: Math Page"}>
       <SideNav>
         <br />
         <br />
@@ -129,7 +130,7 @@ const MathPage = () => {
       <br />
       <div className="content-br"></div>
       <h2 className="main-topic">Equalities</h2>
-      <p className="text-white">Mathematical Equation</p>
+      <p className="text-[var(--cat-mocha-text)]">Mathematical Equation</p>
       
       <MathBox>{"`2x+10-5=100`"}</MathBox>
       
@@ -149,13 +150,13 @@ const MathPage = () => {
         </AccordionItem>
       </Accordion>
       <div className="content-br"></div>
-      <p className="text-white">Monomial Expression</p>
+      <p className="text-[var(--cat-mocha-text)]">Monomial Expression</p>
       <MathBox>{"`2x`"}</MathBox>
       <div className="content-br"></div>
-      <p className="text-white">Binomial Expression (Polynomial)</p>
+      <p className="text-[var(--cat-mocha-text)]">Binomial Expression (Polynomial)</p>
       <MathBox>{"`2x+10`"}</MathBox>
       <br />
-      <p className="text-white">Trinomial Expression (Polynomial)</p>
+      <p className="text-[var(--cat-mocha-text)]">Trinomial Expression (Polynomial)</p>
       <MathBox>{"`2x+10-5`"}</MathBox>
       <div className="content-br"></div>
       <h2 className="main-topic">Inequalities</h2>
@@ -172,7 +173,7 @@ const MathPage = () => {
       <div className="content-br"></div>
       <div className="content-br"></div>
       <MathBox>{"``"}</MathBox>
-    </>
+    </MainLayout>
   );
 };
 

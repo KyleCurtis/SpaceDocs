@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import DrawerNav from "./Drawer";
 
@@ -22,6 +23,8 @@ import {
   SiPytorch,
   SiGit,
   SiVim,
+  SiJava,
+  SiGo,
 } from "react-icons/si";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -33,7 +36,7 @@ import ThemeToggler from "./ThemeToggle";
 const Navbar = () => {
   return (
     <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-[1px] border-[var(--cat-mocha-text)]">
-      <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-white">
+      <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
         <Link href="/">
           <h2 className="nav-title absolute pl-[15px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-blue)]">
             Rocket Docs
@@ -48,11 +51,17 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             <Link href="/topics/languages/cpp">
-              <SiCplusplus className="text-2xl text-blue-400 hover:text-blue-300" />
+                <SiCplusplus className="text-2xl text-blue-400"/>
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/">
+            <Link href="/topics/languages/go">
+            <Image alt="test" width={27}
+      height={27} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link href="/topics/languages/py">
               <SiPython className="text-2xl text-yellow-400" />
             </Link>
           </li>
@@ -82,7 +91,7 @@ const Navbar = () => {
           >
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
-                <Heading size="md" className="text-white">
+                <Heading size="md" className="text-[var(--cat-mocha-text)]">
                   {" "}
                   JavaScript
                 </Heading>
@@ -90,7 +99,7 @@ const Navbar = () => {
               <CardBody>
                 <SiJavascript className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
                 <br />
-                <Text className="text-white">
+                <Text className="text-[var(--cat-mocha-text)]">
                   Learn the programming language that powers interactive
                   websites, video games, desktop applications, and more!
                 </Text>
@@ -103,14 +112,14 @@ const Navbar = () => {
             </Card>
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
-                <Heading className="text-white" size="md">
+                <Heading className="text-[var(--cat-mocha-text)]" size="md">
                   C++
                 </Heading>
               </CardHeader>
               <CardBody>
                 <SiCplusplus className="text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
                 <br />
-                <Text className="text-white">
+                <Text className="text-[var(--cat-mocha-text)]">
                   Learn the programming language that powers operating systems,
                   robotics, video games, desktop applications and more!
                 </Text>
@@ -123,7 +132,7 @@ const Navbar = () => {
             </Card>
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
-                <Heading className="text-white" size="md">
+                <Heading className="text-[var(--cat-mocha-text)]" size="md">
                   {" "}
                   Python
                 </Heading>
@@ -131,7 +140,7 @@ const Navbar = () => {
               <CardBody>
                 <SiPython className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
                 <br />
-                <Text className="text-white">
+                <Text className="text-[var(--cat-mocha-text)]">
                   Learn the programming language that powers Artificial
                   Intelligence, Machine Learning, Websites, automation,
                   mathematics, and more!
@@ -145,7 +154,7 @@ const Navbar = () => {
             </Card>
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
-                <Heading className="text-white" size="md">
+                <Heading className="text-[var(--cat-mocha-text)]" size="md">
                   {" "}
                   PyTorch
                 </Heading>
@@ -153,7 +162,7 @@ const Navbar = () => {
               <CardBody>
                 <SiPytorch className="text-[var(--cat-mocha-red)] text-[100px] m-auto" />
                 <br />
-                <Text className="text-white">
+                <Text className="text-[var(--cat-mocha-text)]">
                   Learn the machine learning framework that companies like
                   OpenAI use to develop their tools!
                 </Text>
@@ -166,7 +175,7 @@ const Navbar = () => {
             </Card>
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
-                <Heading className="text-white" size="md">
+                <Heading className="text-[var(--cat-mocha-text)]" size="md">
                   {" "}
                   Git(hub)
                 </Heading>
@@ -174,7 +183,7 @@ const Navbar = () => {
               <CardBody>
                 <SiGit className="text-[var(--cat-mocha-peach)] text-[100px] m-auto" />
                 <br />
-                <Text className="text-white">
+                <Text className="text-[var(--cat-mocha-text)]">
                   Learn the version control tool that collaborators use to work
                   together around the world!
                 </Text>
@@ -187,7 +196,7 @@ const Navbar = () => {
             </Card>
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
-                <Heading className="text-white" size="md">
+                <Heading className="text-[var(--cat-mocha-text)]" size="md">
                   {" "}
                   Mathematics
                 </Heading>
@@ -195,7 +204,7 @@ const Navbar = () => {
               <CardBody>
                 <TbMath className="text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
                 <br />
-                <Text className="text-white">
+                <Text className="text-[var(--cat-mocha-text)]">
                   Learn the version control tool that collaborators use to work
                   together around the world!
                 </Text>
