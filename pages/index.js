@@ -335,7 +335,7 @@ export default function Home() {
               >
                 Built with
               </Heading>
-              <Text pt="2" fontSize="sm" align={"center"}>
+              <Text pt="2" fontSize="md" align={"center"}>
                 <Link
                   className="text-blue-500"
                   target="_blank"
@@ -356,7 +356,7 @@ export default function Home() {
                 <Link
                   className="text-blue-500"
                   target="_blank"
-                  href="https://tailwindcss.com/"
+                  href="https://sass-lang.com/"
                 >
                   SCSS{" "}
                 </Link>
@@ -368,6 +368,8 @@ export default function Home() {
                 >
                   ChakraUI{" "}
                 </Link>
+                /
+                ❤️
               </Text>
             </Box>
             <Box>
@@ -378,28 +380,18 @@ export default function Home() {
               >
                 Theming & Colors
               </Heading>
-              <Text pt="2" fontSize="sm" align={"center"}>
+              <Text pt="2" fontSize="md" align={"center"}>
                 Site Colors:{" "}
                 <Link
                   className="text-blue-500"
                   target="_blank"
                   href="https://github.com/catppuccin/catppuccin"
                 >
-                  Catppuccin Mocha
-                </Link>{" "}
+                  <Text className="inline" pt="2" fontSize="md">Catppuccin Mocha</Text>
+                </Link>
                 <br />
                 Code Theme: Atom One Dark (Modified)
               </Text>
-            </Box>
-            <Box>
-              <Heading
-                size="xs"
-                textTransform="uppercase"
-                className="text-[var(--cat-mocha-peach)]"
-              >
-                Other
-              </Heading>
-              <Text pt="2" fontSize="sm" align={"center"}></Text>
             </Box>
           </Stack>
         </CardBody>
