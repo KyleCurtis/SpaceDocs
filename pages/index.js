@@ -318,85 +318,72 @@ export default function Home() {
 
       <div className="content-br"></div>
 
-      <Card className="!text-[var(--cat-mocha-text)]">
-        <CardHeader className="bg-[var(--cat-mocha-surface1)]">
-          <Heading size="md" className="text-[var(--cat-mocha-text)]">
+      <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
+        <div className="">
+          <p className="card-header text-center text-white p-5">
             Rocket Docs Info
-          </Heading>
-        </CardHeader>
-
-        <CardBody className="bg-[var(--cat-mocha-base)]">
-          <Stack divider={<StackDivider />} spacing="4">
-            <Box>
-              <Heading
-                size="xs"
-                textTransform="uppercase"
-                className="text-[var(--cat-mocha-peach)]"
-              >
-                Built with
-              </Heading>
-              <Text pt="2" fontSize="md" align={"center"}>
-                <Link
-                  className="text-blue-500"
-                  target="_blank"
-                  href="https://nextjs.org/"
-                >
-                  NextJS
-                </Link>{" "}
-                /
-                <Link
-                  className="text-blue-500"
-                  target="_blank"
-                  href="https://tailwindcss.com/"
-                >
-                  {" "}
-                  TailwindCSS
-                </Link>{" "}
-                /{" "}
-                <Link
-                  className="text-blue-500"
-                  target="_blank"
-                  href="https://sass-lang.com/"
-                >
-                  SCSS{" "}
-                </Link>
-                /{" "}
-                <Link
-                  className="text-blue-500"
-                  target="_blank"
-                  href="https://chakra-ui.com/"
-                >
-                  ChakraUI{" "}
-                </Link>
-                /
-                ❤️
-              </Text>
-            </Box>
-            <Box>
-              <Heading
-                size="xs"
-                textTransform="uppercase"
-                className="text-[var(--cat-mocha-peach)]"
-              >
-                Theming & Colors
-              </Heading>
-              <Text pt="2" fontSize="md" align={"center"}>
-                Site Colors:{" "}
-                <Link
-                  className="text-blue-500"
-                  target="_blank"
+          </p>
+        </div>
+        <div className="text-white text-center bg-[var(--cat-mocha-base)]">
+          <p className="card-section-header text-center p-3 text-white">
+            Built With
+          </p>
+          <a
+            href="https://nextjs.org/"
+            className="text-blue-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            NextJS
+          </a>{" "}
+          /
+          <a
+            href="https://tailwindcss.com/"
+            className="text-blue-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            TailwindCSS
+          </a>{" "}
+          /{" "}
+          <a
+            href="https://sass-lang.com/"
+            className="text-blue-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            SCSS{" "}
+          </a>
+          /{" "}
+          <a
+            href="https://chakra-ui.com/"
+            className="text-blue-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ChakraUI{" "}
+          </a>
+          / ❤️
+        <br /><br />
+        Site Colors:{" "}
+                <a
                   href="https://github.com/catppuccin/catppuccin"
+                  className="text-blue-500"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <Text className="inline" pt="2" fontSize="md">Catppuccin Mocha</Text>
-                </Link>
+                  <p>Catppuccin Mocha</p>
+                </a>
                 <br />
-                Code Theme: Atom One Dark (Modified)
-              </Text>
-            </Box>
-          </Stack>
-        </CardBody>
-      </Card>
+                Code Theme: <br />
+                Atom One Dark (Modified)
+                <br /> <br/>
+                </div>
+      </div>
 
+      <br />
+      <br />
       <div className="content-br"></div>
     </MainLayout>
   );

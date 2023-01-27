@@ -32,50 +32,52 @@ import {
 
 /* CODE IMPORTS
 ============================================================================ */
-import {
-  HelloWorld
-} from "../../../code/cpp-code";
+import { HelloWorld } from "../../../code/cpp-code";
 
 const PyPage = () => {
-    return (
-        <MainLayout title={"🚀 Rocket Docs: Python Page"}>
-            <SideNav window={
-                <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-                <SiPython className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-yellow)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[70px] flex items-center" />
-              </div>
-            }>
+  return (
+    <MainLayout title={"🚀 Rocket Docs: Python Page"}>
+      <SideNav
+        window={
+          <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
+            <SiPython className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-yellow)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[70px] flex items-center" />
+          </div>
+        }
+      >
         <br />
         <br />
         <Accordion allowMultiple>
           {/* (SIDENAV) HOME SECTION
         ====================================================================================================== */}
-         <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
+          <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
 
           {/* (SIDENAV) JAVASCRIPT BASICS SECTION
         ====================================================================================================== */}
-          <NavDropdown buttonTitle={"01. Python Basics"} contentSection={
-            <div>
+          <NavDropdown
+            buttonTitle={"01. Python Basics"}
+            contentSection={
+              <div>
                 <ul>
-                <Link href="#hello-world">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Hello, World!
-                  </li>
-                </Link>
-                <Link href="#comments">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Comments
-                  </li>
-                </Link>
-                <Link href="#variables">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> Variables
-                  </li>
-                </Link>
-              </ul>
-            </div>
-          }
-          >
-          </NavDropdown>
+                  <Link href="#hello-world">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Hello,
+                      World!
+                    </li>
+                  </Link>
+                  <Link href="#comments">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Comments
+                    </li>
+                  </Link>
+                  <Link href="#variables">
+                    <li>
+                      <SiJavascript className="side-nav-js-logo" /> Variables
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            }
+          ></NavDropdown>
         </Accordion>
 
         <div className="content-br"></div>
@@ -105,8 +107,8 @@ const PyPage = () => {
       </Header>
 
       <div className="content-br"></div>
-        </MainLayout>
-    )
-}
+    </MainLayout>
+  );
+};
 
 export default PyPage;
