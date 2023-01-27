@@ -32,7 +32,7 @@ import {
 
 /* CODE IMPORTS
 ============================================================================ */
-import { HelloWorld } from "../../../code/cpp-code";
+import { HelloWorld } from "../../../code/py-code";
 
 const PyPage = () => {
   return (
@@ -60,18 +60,8 @@ const PyPage = () => {
                 <ul>
                   <Link href="#hello-world">
                     <li>
-                      <SiJavascript className="side-nav-js-logo" /> Hello,
+                      <SiPython className="side-nav-js-logo" /> Hello,
                       World!
-                    </li>
-                  </Link>
-                  <Link href="#comments">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Comments
-                    </li>
-                  </Link>
-                  <Link href="#variables">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Variables
                     </li>
                   </Link>
                 </ul>
@@ -106,6 +96,73 @@ const PyPage = () => {
         </div>
       </Header>
 
+      <br />
+      <br />
+
+      <h2>Resources</h2>
+      <br />
+
+      <Dropdown
+        buttonTitle={"Requirements"}
+        contentSection={
+          <div>
+            <ul>
+            <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://www.python.org/downloads/"
+                >
+              <li>Python (latest version)</li>
+              </Link>
+              <br />
+              <li>
+                -{" "}
+                <Link
+                  className="text-blue-500"
+                  target="_blank"
+                  href="https://code.visualstudio.com/"
+                >
+                  Visual Studio Code
+                </Link>{" "}
+                (Or preferred editor)
+              </li>
+            </ul>
+          </div>
+        }
+      ></Dropdown>
+
+      <br />
+
+      <Dropdown
+        buttonTitle={"Resources"}
+        contentSection={"Coming Soon..."}
+      ></Dropdown>
+
+      <div className="content-br" id="hello-world"></div>
+
+      {/* HELLO WORLD SECTION
+      ====================================================================================================== */}
+      <h3>Hello, World!</h3>
+      <CodeBlock>
+        <Clipboard code={HelloWorld}></Clipboard>
+        <Code lang="cpp">{HelloWorld}</Code>
+      </CodeBlock>
+      <Dropdown
+        buttonTitle={"Result"}
+        contentSection={"Hello, World!"}
+      ></Dropdown>
+
+      <div className="content-br"></div>
+
+
+      <div className="content-br"></div>
+      <div className="content-br"></div>
+      <div className="content-br"></div>
+      <div className="content-br"></div>
+      <div className="content-br"></div>
+      <div className="content-br"></div>
+      <div className="content-br"></div>
+      <div className="content-br"></div>
       <div className="content-br"></div>
     </MainLayout>
   );

@@ -19,7 +19,7 @@ const Clipboard = ({ code }) => {
         toast({
           title: 'Code Copied.',
           position: 'bottom-right',
-          description: "The code has been copied to your clipboard!.",
+          description: "The code has been copied to your clipboard!",
           status: 'success',
           duration: 2500,
           isClosable: true,
