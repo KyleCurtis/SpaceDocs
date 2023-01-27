@@ -150,6 +150,8 @@ export default function Home() {
           <CardBody>
             <SiJavascript className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
             <br />
+            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
+            <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers interactive websites,
               video games, desktop applications, and more!
@@ -177,6 +179,8 @@ export default function Home() {
           </CardHeader>
           <CardBody>
             <SiCplusplus className="text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
+            <br />
+            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
             <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers operating systems,
@@ -207,6 +211,8 @@ export default function Home() {
           <CardBody>
             <SiPython className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
             <br />
+            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
+            <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers Artificial
               Intelligence, Machine Learning, Websites, automation, mathematics,
@@ -231,69 +237,13 @@ export default function Home() {
           <CardHeader>
             <Heading className="text-[var(--cat-mocha-text)]" size="md">
               {" "}
-              PyTorch
-            </Heading>
-          </CardHeader>
-          <CardBody>
-            <SiPytorch className="text-[var(--cat-mocha-red)] text-[100px] m-auto" />
-            <br />
-            <Text className="text-[var(--cat-mocha-text)]">
-              Learn the machine learning framework that companies like OpenAI
-              use to develop their tools!
-            </Text>
-          </CardBody>
-          <CardFooter>
-            <Link href="/topics/other/pytorch">
-              <Button
-                _hover={"none"}
-                _active={{
-                  transform: "scale(0.95)",
-                }}
-                className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
-              >
-                Learn
-              </Button>
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="!bg-[var(--cat-mocha-base)]">
-          <CardHeader>
-            <Heading className="text-[var(--cat-mocha-text)]" size="md">
-              {" "}
-              Git(hub)
-            </Heading>
-          </CardHeader>
-          <CardBody>
-            <SiGit className="text-[var(--cat-mocha-peach)] text-[100px] m-auto" />
-            <br />
-            <Text className="text-[var(--cat-mocha-text)]">
-              Learn the version control tool that collaborators use to work
-              together around the world!
-            </Text>
-          </CardBody>
-          <CardFooter>
-            <Link href="/topics/other/git">
-              <Button
-                _hover={"none"}
-                _active={{
-                  transform: "scale(0.95)",
-                }}
-                className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
-              >
-                Learn
-              </Button>
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="!bg-[var(--cat-mocha-base)]">
-          <CardHeader>
-            <Heading className="text-[var(--cat-mocha-text)]" size="md">
-              {" "}
               Mathematics
             </Heading>
           </CardHeader>
           <CardBody>
             <TbMath className="text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
+            <br />
+            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
             <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the version control tool that collaborators use to work

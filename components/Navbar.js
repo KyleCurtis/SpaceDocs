@@ -18,16 +18,8 @@ import {
 import {
   SiCplusplus,
   SiJavascript,
-  SiRust,
   SiPython,
-  SiPytorch,
-  SiGit,
-  SiVim,
-  SiJava,
-  SiGo,
 } from "react-icons/si";
-
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import { TbMath } from "react-icons/tb";
 
@@ -36,6 +28,8 @@ import ThemeToggler from "./ThemeToggle";
 const Navbar = () => {
   return (
     <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-[1px] border-[var(--cat-mocha-text)]">
+      {/* NAVBAR COMPONENT
+      ========================================================================================= */}
       <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
         <Link href="/">
           <h2 className="nav-title absolute pl-[15px] left-0 top-5 font-bold text-3xl text-[var(--cat-mocha-blue)]">
@@ -51,13 +45,17 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             <Link href="/topics/languages/cpp">
-                <SiCplusplus className="text-2xl text-blue-400"/>
+              <SiCplusplus className="text-2xl text-blue-400" />
             </Link>
           </li>
           <li className="p-4">
             <Link href="/topics/languages/go">
-            <Image alt="test" width={27}
-      height={27} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+              <Image
+                alt="test"
+                width={27}
+                height={27}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+              />
             </Link>
           </li>
           <li className="p-4">
@@ -66,24 +64,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/">
-              <SiGit className="text-2xl text-orange-400" />
-            </Link>
-          </li>
-          <li className="p-4">
             <Link href="/topics/other/math">
               <TbMath className="text-2xl text-purple-400" />
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link href="/">
-              <SiPytorch className="text-2xl text-red-400" />
             </Link>
           </li>
           <li className="p-4">
             <ThemeToggler />
           </li>
         </ul>
+
+        {/* DRAWER COMPONENT
+        ========================================================================================= */}
         <DrawerNav className="">
           <SimpleGrid
             spacing={4}
@@ -152,48 +143,7 @@ const Navbar = () => {
                 </Link>
               </CardFooter>
             </Card>
-            <Card className="!bg-[var(--cat-mocha-base)]">
-              <CardHeader>
-                <Heading className="text-[var(--cat-mocha-text)]" size="md">
-                  {" "}
-                  PyTorch
-                </Heading>
-              </CardHeader>
-              <CardBody>
-                <SiPytorch className="text-[var(--cat-mocha-red)] text-[100px] m-auto" />
-                <br />
-                <Text className="text-[var(--cat-mocha-text)]">
-                  Learn the machine learning framework that companies like
-                  OpenAI use to develop their tools!
-                </Text>
-              </CardBody>
-              <CardFooter>
-                <Link href="/topics/other/pytorch">
-                  <Button>Learn</Button>
-                </Link>
-              </CardFooter>
-            </Card>
-            <Card className="!bg-[var(--cat-mocha-base)]">
-              <CardHeader>
-                <Heading className="text-[var(--cat-mocha-text)]" size="md">
-                  {" "}
-                  Git(hub)
-                </Heading>
-              </CardHeader>
-              <CardBody>
-                <SiGit className="text-[var(--cat-mocha-peach)] text-[100px] m-auto" />
-                <br />
-                <Text className="text-[var(--cat-mocha-text)]">
-                  Learn the version control tool that collaborators use to work
-                  together around the world!
-                </Text>
-              </CardBody>
-              <CardFooter>
-                <Link href="/topics/other/git">
-                  <Button>Learn</Button>
-                </Link>
-              </CardFooter>
-            </Card>
+
             <Card className="!bg-[var(--cat-mocha-base)]">
               <CardHeader>
                 <Heading className="text-[var(--cat-mocha-text)]" size="md">
