@@ -1,7 +1,6 @@
 /* NPM IMPORTS
 ============================================================================ */
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
@@ -79,19 +78,6 @@ const PyPage = () => {
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
             The programming language that powers:
-            <Typewriter
-              options={{
-                strings: [
-                  "Interactive Websites",
-                  "Desktop Applications",
-                  "Mobile Applications",
-                  "Web Servers",
-                  "Video Games",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            ></Typewriter>
           </div>
         </div>
       </Header>

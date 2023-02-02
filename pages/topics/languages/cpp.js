@@ -1,7 +1,6 @@
 /* NPM IMPORTS
 ============================================================================ */
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
@@ -70,22 +69,6 @@ const CppPage = () => {
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
             The systems programming language that powers:
-            <Typewriter
-              options={{
-                strings: [
-                  "Operating Systems",
-                  "Desktop Applications",
-                  "Web-browsers",
-                  "Game Engines",
-                  "Robots",
-                  "Machine Learning",
-                  "AI",
-                  "Rockets",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            ></Typewriter>
           </div>
         </div>
       </Header>

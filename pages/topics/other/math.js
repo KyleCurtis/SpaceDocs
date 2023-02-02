@@ -1,7 +1,6 @@
 /* NPM IMPORTS
 ============================================================================ */
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
@@ -95,19 +94,6 @@ const MathPage = () => {
         <div className="header-section">
           <div className="header-info text-[var(--cat-mocha-text)] font-bold">
             The universal language that powers:
-            <Typewriter
-              options={{
-                strings: [
-                  "Computers",
-                  "Machine Learning",
-                  "Artificial Intelligence",
-                  "Finance",
-                  "Statistics",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            ></Typewriter>
           </div>
         </div>
       </Header>

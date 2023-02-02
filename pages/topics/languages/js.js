@@ -1,7 +1,6 @@
 /* NPM IMPORTS
 ============================================================================ */
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
