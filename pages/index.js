@@ -1,6 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-import Typewriter from "typewriter-effect";
 import Navbar from "../components/Navbar";
 
 import Header from "../components/Header";
@@ -42,8 +40,6 @@ import Link from "next/link";
 import { TbMathSymbols } from "react-icons/tb";
 import MainLayout from "../components/Layouts/MainLayout";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <MainLayout title={"🚀 Rocket Docs: Home Page"}>
@@ -62,34 +58,20 @@ export default function Home() {
           contentSection={
             <div>
               <ul>
-                <Link href="/topics/languages/js">
-                  <li>
-                    <SiJavascript className="side-nav-js-logo" /> JavaScript
-                  </li>
-                </Link>
                 <Link href="/topics/languages/cpp">
-                  <li>
-                    <SiCplusplus className="inline text-[var(--cat-mocha-blue)]" />{" "}
-                    C++
-                  </li>
+                  <li>C++ (20)</li>
                 </Link>
                 <Link href="#variables">
-                  <li>
-                    <Image
-                      alt="test"
-                      width={15}
-                      height={15}
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-                      className="inline"
-                    />{" "}
-                    Go
-                  </li>
+                  <li>Go (1.x)</li>
+                </Link>
+                <Link href="/topics/languages/js">
+                  <li>JavaScript (ES6)</li>
                 </Link>
                 <Link href="/topics/languages/py">
-                  <li>
-                    <SiPython className="inline text-[var(--cat-mocha-yellow)]" />{" "}
-                    Python
-                  </li>
+                  <li>Python (3.x)</li>
+                </Link>
+                <Link href="/topics/languages/py">
+                  <li>Rust (1.x)</li>
                 </Link>
               </ul>
             </div>
@@ -113,26 +95,10 @@ export default function Home() {
 
       <Navbar />
 
-      <Header>
-        <h1 className="main-topic">Home</h1>
-        <div className="header-info">
-          Explore a new world by learning a new skill such as:
-          <Typewriter
-            options={{
-              strings: [
-                "Algebra",
-                "C++",
-                "JavaScript",
-                "Rust",
-                "Python",
-                "PyTorch",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          ></Typewriter>
-        </div>
-      </Header>
+      <Header
+        main_topic={"Home Page"}
+        topic_summary={"Explore a new world by learning a new technology!"}
+      />
 
       <div className="content-br"></div>
 
@@ -150,7 +116,9 @@ export default function Home() {
           <CardBody>
             <SiJavascript className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
             <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
+            <p className="text-center text-[var(--cat-mocha-red)]">
+              ⚠️ WORK IN PROGRESS ⚠️
+            </p>
             <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers interactive websites,
@@ -166,7 +134,7 @@ export default function Home() {
                 }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
-                Learn
+                Explore
               </Button>
             </Link>
           </CardFooter>
@@ -180,7 +148,9 @@ export default function Home() {
           <CardBody>
             <SiCplusplus className="text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
             <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
+            <p className="text-center text-[var(--cat-mocha-red)]">
+              ⚠️ WORK IN PROGRESS ⚠️
+            </p>
             <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers operating systems,
@@ -196,7 +166,7 @@ export default function Home() {
                 }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
-                Learn
+                Explore
               </Button>
             </Link>
           </CardFooter>
@@ -211,7 +181,9 @@ export default function Home() {
           <CardBody>
             <SiPython className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
             <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
+            <p className="text-center text-[var(--cat-mocha-red)]">
+              ⚠️ WORK IN PROGRESS ⚠️
+            </p>
             <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers Artificial
@@ -228,7 +200,47 @@ export default function Home() {
                 }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
-                Learn
+                Explore
+              </Button>
+            </Link>
+          </CardFooter>
+        </Card>
+        <Card className="!bg-[var(--cat-mocha-base)]">
+          <CardHeader>
+            <Heading className="text-[var(--cat-mocha-text)]" size="md">
+              {" "}
+              Go
+            </Heading>
+          </CardHeader>
+          <CardBody>
+            <Image
+              alt="test"
+              width={100}
+              height={100}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+              className="m-auto"
+            />
+            <br />
+            <p className="text-center text-[var(--cat-mocha-red)]">
+              ⚠️ WORK IN PROGRESS ⚠️
+            </p>
+            <br />
+            <Text className="text-[var(--cat-mocha-text)]">
+              Learn the programming language that powers Artificial
+              Intelligence, Machine Learning, Websites, automation, mathematics,
+              and more!
+            </Text>
+          </CardBody>
+          <CardFooter>
+            <Link href="/topics/languages/py">
+              <Button
+                _hover={"none"}
+                _active={{
+                  transform: "scale(0.95)",
+                }}
+                className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
+              >
+                Explore
               </Button>
             </Link>
           </CardFooter>
@@ -243,7 +255,9 @@ export default function Home() {
           <CardBody>
             <TbMath className="text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
             <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">⚠️ WORK IN PROGRESS ⚠️</p>
+            <p className="text-center text-[var(--cat-mocha-red)]">
+              ⚠️ WORK IN PROGRESS ⚠️
+            </p>
             <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the version control tool that collaborators use to work
@@ -259,12 +273,40 @@ export default function Home() {
                 }}
                 className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
               >
-                Learn
+                Explore
               </Button>
             </Link>
           </CardFooter>
         </Card>
       </SimpleGrid>
+
+      <div className="content-br"></div>
+
+
+      <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
+        <div>
+          <p className="card-header font-bold text-center text-white p-5">
+            FAQ
+          </p>
+        </div>
+        <div className="text-[var(--cat-mocha-text)] text-center bg-[var(--cat-mocha-base)]">
+          <p className="text-center font-bold p-3 text-[var(--cat-mocha-blue)]">
+            Q: Test?
+          </p>
+          <p className="max-w-[600px] px-[50px] m-auto">
+            A: Test
+          </p>
+          <br /><br />
+          <p className="text-center font-bold p-3 text-[var(--cat-mocha-blue)]">
+            Q: Test?
+          </p>
+          <p className="max-w-[600px] px-[50px] m-auto">
+            A: Test
+          </p>
+          <br /><br />
+          
+        </div>
+      </div>
 
       <div className="content-br"></div>
 
@@ -315,21 +357,22 @@ export default function Home() {
             ChakraUI{" "}
           </a>
           / ❤️
-        <br /><br />
-        Site Colors:{" "}
-                <a
-                  href="https://github.com/catppuccin/catppuccin"
-                  className="text-blue-500"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p>Catppuccin Mocha</p>
-                </a>
-                <br />
-                Code Theme: <br />
-                Atom One Dark (Modified)
-                <br /> <br/>
-                </div>
+          <br />
+          <br />
+          Site Colors:{" "}
+          <a
+            href="https://github.com/catppuccin/catppuccin"
+            className="text-blue-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <p>Catppuccin Mocha</p>
+          </a>
+          <br />
+          Code Theme: <br />
+          Atom One Dark (Modified)
+          <br /> <br />
+        </div>
       </div>
 
       <br />

@@ -12,17 +12,17 @@ import {
 const NavDropdown = ({ buttonTitle, contentSection }) => {
   return (
     <div>
-      <Accordion allowMultiple border={"none"}>
+      <Accordion allowMultiple border={"none"} borderTopColor="transparent" borderBottomColor="var(--cat-mocha-text)">
         <AccordionItem>
           <h2>
             <AccordionButton p={"2"}>
-              <Box className="text-[var(--cat-mocha-text)]" as="span" flex="1" textAlign="left">
+              <Box className="dropdown-title text-[var(--cat-mocha-text)]" as="span" flex="1" textAlign="left">
                 {buttonTitle}
               </Box>
               <AccordionIcon className="!text-[var(--cat-mocha-text)]"/>
             </AccordionButton>
           </h2>
-          <AccordionPanel p={"0"} className="text-[var(--cat-mocha-text)] bg-[var(--cat-mocha-crust)]">
+          <AccordionPanel p={"0"} className="dropdown-content text-[var(--cat-mocha-text)] bg-[var(--cat-mocha-crust)]">
             {contentSection}
           </AccordionPanel>
         </AccordionItem>

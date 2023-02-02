@@ -12,7 +12,7 @@ import {
 const Dropdown = ({ buttonTitle, contentSection }) => {
   return (
     <div>
-      <Accordion allowMultiple className='border-[var(--cat-mocha-crust)] dark:border-[var(--cat-mocha-text)] border-t-1 border-b-1'>
+      <Accordion allowMultiple borderColor="var(--cat-mocha-text)" className=''>
         <AccordionItem>
           <h2>
             <AccordionButton>

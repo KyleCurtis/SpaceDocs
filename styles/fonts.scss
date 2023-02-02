@@ -1,0 +1,41 @@
+/*
+FONT CONFIGURATIONS STYLES 
+=============================================================================
+Google Font Imports (and font variable names): 
+
+'../components/Fonts.js'
+=============================================================================
+*/ 
+
+.main {
+    font-family: var(--font-exo);
+}
+
+.main-topic {
+    font-family: var(--font-exo);
+    font-size: 32px;
+}
+
+.nav-title {
+    font-family: var(--font-exo);
+    font-size: 30px;
+}
+
+.topic-summary {
+    font-family: var(--font-exo);
+}
+
+.dropdown-title {
+    font-family: var(--font-exo) !important;
+    font-size: 14px;
+}
+
+.dropdown-content {
+    font-family: var(--font-exo) !important;
+    font-size: 14px;
+}
+
+code {
+    font-family: var(--font-source-code) !important;
+    font-size: 15px !important;
+}

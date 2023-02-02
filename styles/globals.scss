@@ -2,54 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font-family: 'Kanit', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* font-family: 'Poppins', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
-
-/*font-family: 'Space Mono', monospace;*/
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
-/*font-family: 'Martian Mono', monospace;*/
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700&display=swap');
-
-/*font-family: 'JetBrains Mono', monospace;*/
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* font-family: 'Anton', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-/* font-family: 'Source Code Pro', monospace; */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* font-family: 'Prompt', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* font-family: 'Righteous', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-/*      font-family: 'Audiowide', cursive;  */
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
-
-/*font-family: 'Bungee', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-
-
-/*font-family: 'Itim', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
-
-/*font-family: 'Londrina Solid', cursive;*/ 
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
-
-/*    font-family: 'Bakbak One', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
-
-/* font-family: 'Fira Code', monospace; */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
-
 :root {
   --padding: 15%;
   --dark-bg:
@@ -95,7 +47,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 *,
@@ -121,6 +72,7 @@ body * {
 }*/
 
 .content {
+   
   min-height: 100%;
 
 }
@@ -141,38 +93,22 @@ body * {
 
 h1 {
   padding-top: 20px;
-  font-size: 40px;
-  font-family: 'Bakbak One', cursive;
 }
 
 h2 {
-    font-family: 'Bakbak One', cursive;
     color: var(--cat-mocha-crust);
-    font-size: 32px ;
     text-align: center;
 }
 
 .main-topic {
-    font-family: 'Bakbak One', cursive;
-    color: var(--cat-mocha-peach);
-    font-size: 32px ;
     text-align: center; 
     padding-top: 32px;
 }
 
 h3 {
   color: var(--cat-mocha-peach);
-  font-family: 'Righteous', cursive;
   padding-bottom:10px;
   font-size: 20px;
-}
-
-.code-block {
-    font-size: 15px;
-}
-
-code {
-    font-family: 'Space Mono', monospace !important;
 }
 
 .term {
@@ -183,13 +119,8 @@ code {
     padding-top: 120px;
     height: 100%;
     overflow-y: scroll;
-    font-family: 'Prompt', sans-serif;
     font-size: 13px;
     
-}
-
-.side-nav ul {
-    font-family: 'Poppins', sans-serif;
 }
 
 .side-nav ul li {
@@ -227,7 +158,6 @@ code {
 }
 
 .Collapsible__trigger {
-    font-family: 'Prompt', sans-serif;
     display: block;
     text-decoration: none;
     position: relative;

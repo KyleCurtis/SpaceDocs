@@ -1,30 +1,45 @@
-import MainLayout from "../components/Layouts/MainLayout";
-
-import "../styles/globals.scss";
-
-import "../styles/components/Header.scss";
-
+{/* NPM IMPORTS
+================================================================================================= */}
 import { ThemeProvider } from "next-themes";
-
 import { ChakraProvider } from "@chakra-ui/react";
 import { MathJaxContext } from "better-react-mathjax";
 
-export default function App({ Component, pageProps }) {
-  const config = {
+{/* STYLE IMPORTS
+================================================================================================= */}
+import "../styles/globals.scss";
+import "../styles/components/Header.scss";
+import "../styles/fonts.scss";
+
+{/* FONT IMPORTS
+================================================================================================= */}
+import { exo2, source_code } from "../components/Fonts";
+
+
+{/* APP
+================================================================================================= */}
+const App = ({ Component, pageProps }) => {
+  
+  {/* MATHJAX CONFIGURATION */}
+    const config = {
     loader: { load: ["input/asciimath"] },
   };
 
   return (
-    <ChakraProvider>
-      <MathJaxContext config={config}>
+    <div
+    /* FONT VARIABLES (REQUIRED FOR SCSS USE) */
+      className={`${exo2.variable} ${source_code.variable}`}
+    >
+      <ChakraProvider>
         <ThemeProvider enableSystem={true} attribute="class">
-          <div>
-
+          <MathJaxContext config={config}>
+            <div>
               <Component {...pageProps} />
-
-          </div>
+            </div>
+          </MathJaxContext>
         </ThemeProvider>
-      </MathJaxContext>
-    </ChakraProvider>
+      </ChakraProvider>
+    </div>
   );
 }
+
+export default App;
