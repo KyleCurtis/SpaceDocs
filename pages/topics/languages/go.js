@@ -33,7 +33,6 @@ import {
 /* CODE IMPORTS
 ============================================================================ */
 import { HelloWorld } from "../../../code/go-code";
-import CustomDropdown from "../../../components/CustomDropdown";
 
 const GoPage = () => {
   return (
@@ -75,13 +74,6 @@ const GoPage = () => {
             }
           ></NavDropdown>
         </Accordion>
-
-        <CustomDropdown>
-            <br />
-            test
-            <br />
-            testing
-        </CustomDropdown>
 
         <div className="content-br"></div>
       </SideNav>
