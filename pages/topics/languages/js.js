@@ -164,14 +164,10 @@ const JsPage = () => {
       </SideNav>
 
       <Navbar />
-      <Header>
-        <h2 className="main-topic font-primary text-[var(--cat-mocha-blue)]">JavaScript</h2>
-        <div className="header-section">
-          <div className="header-info text-[var(--cat-mocha-text)] font-bold">
-            The programming language that powers:
-          </div>
-        </div>
-      </Header>
+      <Header
+        main_topic={"JavaScript Page"}
+        topic_summary={"Explore the programming language that powers interactive websites, video games, and more!"}
+      />
 
       <br />
       <br />

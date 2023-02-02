@@ -104,7 +104,7 @@ export default function Home() {
 
       <SimpleGrid
         spacing={8}
-        templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+        templateColumns="repeat(auto-fill, minmax(250px, 1fr))"
       >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>

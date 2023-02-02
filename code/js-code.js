@@ -27,7 +27,7 @@ lunar_mission = "Apollo 11"; // Initialize
 let mission_commander = "Neil Armstrong";
 
 // Declaring multiple variables on same line
-let lunar_mod_pilot = "Edwin Aldrin", commander_mod_pilot = "Michael Collins";
+let lunar_pilot = "Edwin Aldrin", commander_pilot = "Michael Collins";
 
 // const keyword (for immutable values)
 const year = 1969;
