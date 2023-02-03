@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Visit: https://rocket-docs.netlify.app/
+Visit: https://www.spacedocs.info
 
 or run the project locally by executing the following command in the project directory:
 
