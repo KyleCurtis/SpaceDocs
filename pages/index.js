@@ -42,7 +42,13 @@ import MainLayout from "../components/Layouts/MainLayout";
 
 export default function Home() {
   return (
-    <MainLayout title={"🚀 Rocket Docs: Home Page"}>
+    <MainLayout title={"SpaceDocs: Home Page"}>
+      <Head>
+        <meta
+          name="description"
+          content="A space-themed minimal documentation site for learning various technologies."
+        />
+      </Head>
       <SideNav
         window={
           <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
@@ -96,7 +102,7 @@ export default function Home() {
       <Navbar />
 
       <Header
-        main_topic={"Home Page"}
+        main_topic={"SpaceDocs.info"}
         topic_summary={"Explore a new world by learning a new technology!"}
       />
 
@@ -282,7 +288,6 @@ export default function Home() {
 
       <div className="content-br"></div>
 
-
       <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
         <div>
           <p className="card-header font-bold text-center text-white p-5">
@@ -293,18 +298,15 @@ export default function Home() {
           <p className="text-center font-bold p-3 text-[var(--cat-mocha-blue)]">
             Q: Test?
           </p>
-          <p className="max-w-[600px] px-[50px] m-auto">
-            A: Test
-          </p>
-          <br /><br />
+          <p className="max-w-[600px] px-[50px] m-auto">A: Test</p>
+          <br />
+          <br />
           <p className="text-center font-bold p-3 text-[var(--cat-mocha-blue)]">
             Q: Test?
           </p>
-          <p className="max-w-[600px] px-[50px] m-auto">
-            A: Test
-          </p>
-          <br /><br />
-          
+          <p className="max-w-[600px] px-[50px] m-auto">A: Test</p>
+          <br />
+          <br />
         </div>
       </div>
 

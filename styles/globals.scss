@@ -156,30 +156,3 @@ h3 {
     font-size: 15px;
     padding: 20px;
 }
-
-.Collapsible__trigger {
-    display: block;
-    text-decoration: none;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    color: var(--cat-mocha-green);
-    background-color: var(--cat-mocha-mantle);
-    border-bottom: 2px solid var(--cat-mocha-surface0);
-}
-
-.Collapsible__trigger:after {
-    content: url(../public/arrow.svg);
-    position: absolute;
-    right: 5px;
-    top: 7px;
-    display: block;
-    transition: transform 300ms; }
-  .Collapsible__trigger.is-open:after {
-    transform: rotateZ(180deg);
-    top: 7px;
- }
-  .Collapsible__trigger.is-disabled {
-    opacity: 0.5;
-    background-color: grey; }
