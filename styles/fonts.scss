@@ -7,18 +7,27 @@ Google Font Imports (and font variable names):
 =============================================================================
 */ 
 
+@font-face {
+    font-family: "SPACEWORM";
+  src: url("../public/spaceworm.ttf");
+}
+
+@font-face {
+    font-family: "SpacePatrol";
+    src: url("../public/spacepatrol.TTF")
+}
 .main {
     font-family: var(--font-exo);
 }
 
 .main-topic {
-    font-family: var(--font-exo);
-    font-size: 32px;
+    font-family: "SpacePatrol";
+    font-size: 36px;
 }
 
 .nav-title {
-    font-family: var(--font-exo);
-    font-size: 27px;
+    font-family: "SpacePatrol";
+    font-size: 30px;
 }
 
 .topic-summary {

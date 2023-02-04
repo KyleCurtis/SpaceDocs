@@ -165,7 +165,7 @@ const JsPage = () => {
 
       <Navbar />
       <Header
-        main_topic={"JavaScript Page"}
+        main_topic={"JavaScript"}
         topic_summary={"Explore the programming language that powers interactive websites, video games, and more!"}
       />
 
