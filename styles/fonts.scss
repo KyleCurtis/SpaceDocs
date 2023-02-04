@@ -8,26 +8,31 @@ Google Font Imports (and font variable names):
 */ 
 
 @font-face {
-    font-family: "SPACEWORM";
-  src: url("../public/spaceworm.ttf");
+    font-family: "Impact Label";
+  src: url("../public/fonts/Impact-Label.ttf");
 }
 
 @font-face {
-    font-family: "SpacePatrol";
-    src: url("../public/spacepatrol.TTF")
+    font-family: "Impact Label Reversed";
+    src: url("../public/fonts/Impact-Label-Reversed.ttf")
 }
 .main {
     font-family: var(--font-exo);
 }
 
 .main-topic {
-    font-family: "SpacePatrol";
+    font-family: "Impact Label";
     font-size: 36px;
 }
 
+.card-header {
+    font-family: "Impact Label Reversed" !important;
+    font-size: 32px !important;
+}
+
 .nav-title {
-    font-family: "SpacePatrol";
-    font-size: 30px;
+    font-family: "Impact Label Reversed";
+    font-size: 25px;
 }
 
 .topic-summary {

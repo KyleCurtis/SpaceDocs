@@ -114,19 +114,15 @@ export default function Home() {
       >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading size="md" className="text-[var(--cat-mocha-text)]">
+          <SiJavascript className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+          <br />
+            <Heading size="md" className="card-header text-[var(--cat-mocha-text)]">
               {" "}
               JavaScript
             </Heading>
           </CardHeader>
           <CardBody>
-            <SiJavascript className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
-            <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">
-              ⚠️ WORK IN PROGRESS ⚠️
-            </p>
-            <br />
-            <Text className="text-[var(--cat-mocha-text)]">
+            <Text className="text-center text-[var(--cat-mocha-text)]">
               Learn the programming language that powers interactive websites,
               video games, desktop applications, and more!
             </Text>
@@ -147,18 +143,14 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-[var(--cat-mocha-text)]" size="md">
-              C++
+          <SiCplusplus className="mt-7 text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
+            <br />
+            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+              C-Plus-Plus
             </Heading>
           </CardHeader>
           <CardBody>
-            <SiCplusplus className="text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
-            <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">
-              ⚠️ WORK IN PROGRESS ⚠️
-            </p>
-            <br />
-            <Text className="text-[var(--cat-mocha-text)]">
+            <Text className="text-center text-[var(--cat-mocha-text)]">
               Learn the programming language that powers operating systems,
               robotics, video games, desktop applications and more!
             </Text>
@@ -179,19 +171,15 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-[var(--cat-mocha-text)]" size="md">
+          <SiPython className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <br />
+            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
               {" "}
               Python
             </Heading>
           </CardHeader>
           <CardBody>
-            <SiPython className="text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
-            <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">
-              ⚠️ WORK IN PROGRESS ⚠️
-            </p>
-            <br />
-            <Text className="text-[var(--cat-mocha-text)]">
+            <Text className="text-center text-[var(--cat-mocha-text)]">
               Learn the programming language that powers Artificial
               Intelligence, Machine Learning, Websites, automation, mathematics,
               and more!
@@ -213,24 +201,20 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-[var(--cat-mocha-text)]" size="md">
-              {" "}
-              Go
-            </Heading>
-          </CardHeader>
-          <CardBody>
-            <Image
+          <Image
               alt="test"
               width={100}
               height={100}
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-              className="m-auto"
+              className="mt-7 m-auto"
             />
             <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">
-              ⚠️ WORK IN PROGRESS ⚠️
-            </p>
-            <br />
+            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+              {" "}
+              Go-Lang
+            </Heading>
+          </CardHeader>
+          <CardBody>
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the programming language that powers Artificial
               Intelligence, Machine Learning, Websites, automation, mathematics,
@@ -253,18 +237,14 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <Heading className="text-[var(--cat-mocha-text)]" size="md">
+          <TbMath className="mt-7 text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
+            <br />
+            <Heading className="card-header text-center text-[var(--cat-mocha-text)]" size="md">
               {" "}
               Mathematics
             </Heading>
           </CardHeader>
           <CardBody>
-            <TbMath className="text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
-            <br />
-            <p className="text-center text-[var(--cat-mocha-red)]">
-              ⚠️ WORK IN PROGRESS ⚠️
-            </p>
-            <br />
             <Text className="text-[var(--cat-mocha-text)]">
               Learn the version control tool that collaborators use to work
               together around the world!

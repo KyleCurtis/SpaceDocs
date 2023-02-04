@@ -1,6 +1,3 @@
-import localFont from '@next/font/local'
-
-const myFont = localFont({ src: "../public/spaceworm.ttf" })
 
 {
   /* NPM IMPORTS
