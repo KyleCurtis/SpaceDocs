@@ -50,7 +50,7 @@ import {
 
 const JsPage = () => {
   return (
-    <MainLayout title={"🚀 Rocket Docs: JS Page"}>
+    <MainLayout title={"SpaceDocs: JS Page"}>
       <SideNav
         window={
           <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
