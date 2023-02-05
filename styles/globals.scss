@@ -65,16 +65,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* This is for theme transitions but chrome doesn't want to be cool like firefox so it's
-disabled until I can figure out why.
-body * {
-    @apply transition-colors duration-200;
-}*/
-
 .content {
-   
   min-height: 100%;
-
 }
 
 .main {
@@ -82,7 +74,6 @@ body * {
   /*border: 1px solid white;*/
   z-index: var(--paralax-mid);
 }
-
 
 .content-br {
   padding-top: 90px;
@@ -106,10 +97,9 @@ h2 {
 }
 
 h3 {
-  color: var(--cat-mocha-peach);
-  padding-bottom:10px;
-  font-size: 20px;
+  padding-bottom: 10px;
 }
+
 
 .term {
   color: var(--cat-mocha-green);
@@ -155,4 +145,13 @@ h3 {
 .dropdown-content {
     font-size: 15px;
     padding: 20px;
+}
+
+header {
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
 }

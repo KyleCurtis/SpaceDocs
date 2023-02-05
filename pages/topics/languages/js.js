@@ -32,7 +32,7 @@ import {
 /* CODE IMPORTS
 ============================================================================ */
 import {
-  HelloWorld,
+  Output,
   Comments,
   Variables,
   Types,
@@ -54,7 +54,7 @@ const JsPage = () => {
       <SideNav
         window={
           <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-            <SiJavascript className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-yellow)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[62px] flex items-center" />
+            <SiJavascript className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[62px] flex items-center" />
           </div>
         }
       >
@@ -166,7 +166,9 @@ const JsPage = () => {
       <Navbar />
       <Header
         main_topic={"JavaScript"}
-        topic_summary={"Explore the programming language that powers interactive websites, video games, and more!"}
+        topic_summary={
+          "Explore the programming language that powers interactive websites, video games, and more!"
+        }
       />
 
       <br />
@@ -218,25 +220,23 @@ const JsPage = () => {
       <h2>JavaScript Basics</h2>
       <div id="hello-world" className="content-br"></div>
 
-      {/* HELLO WORLD SECTION
+      {/* OUTPUT SECTION
       ====================================================================================================== */}
-      <h3>Hello, World!</h3>
-      <CodeBlock>
-        <Clipboard code={HelloWorld}></Clipboard>
-        <Code lang="javascript">{HelloWorld}</Code>
+      <CodeBlock codeBlockHeader={"Printing Output"}>
+        <Clipboard code={Output}></Clipboard>
+        <Code lang="javascript">{Output}</Code>
       </CodeBlock>
       <Dropdown
         buttonTitle={"Result"}
-        contentSection={"Hello, World!"}
+        contentSection={"All systems go!"}
       ></Dropdown>
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
       <div id="comments" className="content-br"></div>
 
-      <h3>Comments</h3>
-      <CodeBlock>
-        <Clipboard code={HelloWorld}></Clipboard>
+      <CodeBlock codeBlockHeader={"Comments (single & multi-line)"}>
+        <Clipboard code={Output}></Clipboard>
         <Code lang="javascript">{Comments}</Code>
       </CodeBlock>
       <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
@@ -245,8 +245,7 @@ const JsPage = () => {
       ====================================================================================================== */}
       <div id="variables" className="content-br"></div>
 
-      <h3>Variables</h3>
-      <CodeBlock>
+      <CodeBlock codeBlockHeader={"Variables (let/const)"}>
         <Clipboard code={Variables}></Clipboard>
         <Code lang="javascript">{Variables}</Code>
       </CodeBlock>

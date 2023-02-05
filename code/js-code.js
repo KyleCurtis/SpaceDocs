@@ -1,9 +1,9 @@
 /* HELLO WORLD
 ======================================================================================================== */
-export const HelloWorld = `// Hello, World!
+export const Output = `// Printing Output
 
-const greeting = 'Hello, World!';
-console.log(greeting);`;
+let message = 'All systems go!';
+console.log(message);`;
 
 /* COMMENTS
 ======================================================================================================== */
@@ -20,11 +20,11 @@ line comment syntax like this. */`;
 export const Variables = `// Variables 
 
 // let keyword (for mutable values)
-let lunar_mission; // Declare
-lunar_mission = "Apollo 11"; // Initialize
+let mission; // Declare
+mission = "Apollo 11"; // Initialize
 
 // It's recommended to declare and initialize a variable at the same time:
-let mission_commander = "Neil Armstrong";
+let commander = "Neil Armstrong";
 
 // Declaring multiple variables on same line
 let lunar_pilot = "Edwin Aldrin", commander_pilot = "Michael Collins";
@@ -34,8 +34,8 @@ const year = 1969;
 
 /* Output
 ========================================================== */
-console.log(lunar_mission, year);
-console.log(mission_commander, lunar_mod_pilot, commander_mod_pilot);`
+console.log(mission, year);
+console.log(commander, lunar_pilot, commander_pilot);`
 
 /* PRIMITIVE DATA TYPES
 ======================================================================================================== */

@@ -8,31 +8,33 @@ Google Font Imports (and font variable names):
 */ 
 
 @font-face {
-    font-family: "Impact Label";
-  src: url("../public/fonts/Impact-Label.ttf");
+    font-family: "Quantify";
+    src: url("../public/fonts/Quantify.ttf")
 }
 
-@font-face {
-    font-family: "Impact Label Reversed";
-    src: url("../public/fonts/Impact-Label-Reversed.ttf")
+h3 {
+    font-family: "Quantify";
+    font-size: 22px !important;
+    text-align: left;
 }
+
 .main {
     font-family: var(--font-exo);
 }
 
 .main-topic {
-    font-family: "Impact Label";
+    font-family: "Quantify";
     font-size: 36px;
 }
 
 .card-header {
-    font-family: "Impact Label Reversed" !important;
-    font-size: 32px !important;
+    font-family: "Quantify" !important;
+    font-size: 36px !important;
 }
 
 .nav-title {
-    font-family: "Impact Label Reversed";
-    font-size: 25px;
+    font-family: "Quantify";
+    font-size: 30px;
 }
 
 .topic-summary {

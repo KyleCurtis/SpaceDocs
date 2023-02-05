@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import SideNav from "../components/SideNav/SideNav";
 import NavDropdown from "../components/SideNav/NavDropdown";
 
-import { IoMdRocket } from "react-icons/io";
+import { IoMdRocket, IoMdPlanet } from "react-icons/io";
 
 import Image from "next/image";
 
@@ -52,7 +52,7 @@ export default function Home() {
       <SideNav
         window={
           <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-            <IoMdRocket className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[80px] flex items-center" />
+            <IoMdPlanet className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[80px] flex items-center" />
           </div>
         }
       >

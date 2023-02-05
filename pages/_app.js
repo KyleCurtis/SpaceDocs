@@ -12,7 +12,6 @@ import { MathJaxContext } from "better-react-mathjax";
 ================================================================================================= */
 }
 import "../styles/globals.scss";
-import "../styles/components/Header.scss";
 import "../styles/fonts.scss";
 
 {

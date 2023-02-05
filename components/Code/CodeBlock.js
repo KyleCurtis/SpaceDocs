@@ -1,9 +1,12 @@
-const CodeBlock = ({children}) => {
-    return (
-        <div className="relative">
-            {children}
-        </div>
-    )
-}
+const CodeBlock = ({ children, codeBlockHeader }) => {
+  return (
+    <div className="relative">
+      <h3 className="text-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-subtext0)]">
+        {codeBlockHeader}
+      </h3>
+      {children}
+    </div>
+  );
+};
 
 export default CodeBlock;
