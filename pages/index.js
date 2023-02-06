@@ -1,11 +1,17 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import Link from "next/link";
 
+import Navbar from "../components/Navbar";
 import Header from "../components/Header";
+import MainLayout from "../components/Layouts/MainLayout";
 import SideNav from "../components/SideNav/SideNav";
 import NavDropdown from "../components/SideNav/NavDropdown";
 
 import { IoMdRocket, IoMdPlanet } from "react-icons/io";
+
+import { TbMath, TbMathSymbols } from "react-icons/tb";
+
+import { FaRust } from "react-icons/fa";
 
 import Image from "next/image";
 
@@ -33,12 +39,7 @@ import {
   StackDivider,
   Box,
 } from "@chakra-ui/react";
-
-import { TbMath } from "react-icons/tb";
-import Link from "next/link";
-
-import { TbMathSymbols } from "react-icons/tb";
-import MainLayout from "../components/Layouts/MainLayout";
+import Far from "react-syntax-highlighter/dist/cjs/styles/hljs/far";
 
 export default function Home() {
   return (
@@ -235,6 +236,38 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+
+        <Card className="!bg-[var(--cat-mocha-base)]">
+          <CardHeader>
+          <FaRust className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <br />
+            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+              {" "}
+              Rust
+            </Heading>
+          </CardHeader>
+          <CardBody>
+            <Text className="text-center text-[var(--cat-mocha-text)]">
+              Learn the programming language that powers Artificial
+              Intelligence, Machine Learning, Websites, automation, mathematics,
+              and more!
+            </Text>
+          </CardBody>
+          <CardFooter>
+            <Link href="/topics/languages/rs">
+              <Button
+                _hover={"none"}
+                _active={{
+                  transform: "scale(0.95)",
+                }}
+                className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
+              >
+                Explore
+              </Button>
+            </Link>
+          </CardFooter>
+        </Card>
+
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
           <TbMath className="mt-7 text-[var(--cat-mocha-teal)] text-[100px] m-auto" />

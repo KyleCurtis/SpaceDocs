@@ -266,8 +266,7 @@ const JsPage = () => {
       <h2>Value Types</h2>
       <br />
 
-      <h3>Primitive Data Types (Value Types)</h3>
-      <CodeBlock>
+      <CodeBlock codeBlockHeader={"Primitive Data Types (Value Types)"}>
         <Clipboard code={Types}></Clipboard>
         <Code lang="javascript">{Types}</Code>
       </CodeBlock>
@@ -277,8 +276,7 @@ const JsPage = () => {
       ====================================================================================================== */}
       <div id="type-checking" className="content-br"></div>
 
-      <h3>Checking the Type</h3>
-      <CodeBlock>
+      <CodeBlock codeBlockHeader={"Checking the Type"}>
         <Clipboard code={TypeOf}></Clipboard>
         <Code lang="javascript">{TypeOf}</Code>
       </CodeBlock>
@@ -288,6 +286,8 @@ const JsPage = () => {
           <div>
             string <br />
             number <br />
+            bigint <br />
+            boolean <br />
             boolean <br />
             undefined <br />
             object <br />
@@ -299,8 +299,7 @@ const JsPage = () => {
       {/* TYPE CONVERSION SECTION
       ====================================================================================================== */}
       <div id="type-conversions" className="content-br"></div>
-      <h3>Type Conversions</h3>
-      <CodeBlock>
+      <CodeBlock codeBlockHeader={"Type Conversions"}>
         <Clipboard code={TypeConversions}></Clipboard>
         <Code lang="javascript">{TypeConversions}</Code>
       </CodeBlock>

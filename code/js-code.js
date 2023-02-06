@@ -2,7 +2,7 @@
 ======================================================================================================== */
 export const Output = `// Printing Output
 
-let message = 'All systems go!';
+let message = "All systems go!";
 console.log(message);`;
 
 /* COMMENTS
@@ -40,7 +40,7 @@ console.log(commander, lunar_pilot, commander_pilot);`
 /* PRIMITIVE DATA TYPES
 ======================================================================================================== */
 export const Types = `// String
-const planet = 'Earth;'
+const planet = "Earth";
 
 // Number
 const orbit_in_days = 365;
@@ -50,6 +50,7 @@ const moon_distance_ft = 1261000000n;
 
 // Boolean
 const is_habitable = true;
+const is_primitive = false;
 
 // Undefined
 const value = undefined;
@@ -62,14 +63,18 @@ const selection = null;`;
 export const TypeOf = `// Let's take the variables from the previous section:
 const planet = "Earth";
 const orbit_in_days = 365;
+const moon_distance_ft = 1261000000n;
 const is_habitable = true;
+const is_primitive = false;
 const value = undefined;
 const selection = null;
 
 // Getting the data type using typeof:
 console.log(typeof planet);
 console.log(typeof orbit_in_days);
+console.log(typeof moon_distance_ft);
 console.log(typeof is_habitable);
+console.log(typeof is_primitive);
 console.log(typeof value);
 console.log(typeof selection);
 
@@ -95,6 +100,10 @@ console.log(typeof num2); // verification
 
 /* Using Parse
 ========================================================== */
+let num3 = "32.0";
+console.log(typeof num3);
+
+
 `
 
 /* OBJECTS
