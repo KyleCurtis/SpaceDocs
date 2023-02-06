@@ -15,6 +15,10 @@ import { FaRust } from "react-icons/fa";
 
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
+import { FaMeteor } from "react-icons/fa";
+
 import {
   SiCplusplus,
   SiJavascript,
@@ -37,7 +41,7 @@ import {
   Text,
   Stack,
   StackDivider,
-  Box,
+  Badge,
 } from "@chakra-ui/react";
 import Far from "react-syntax-highlighter/dist/cjs/styles/hljs/far";
 
@@ -99,14 +103,11 @@ export default function Home() {
           }
         ></NavDropdown>
       </SideNav>
-
       <Navbar />
-
       <Header
         main_topic={"SpaceDocs.info"}
         topic_summary={"Explore a new world by learning a new technology!"}
       />
-
       <div className="content-br"></div>
 
       <SimpleGrid
@@ -115,23 +116,38 @@ export default function Home() {
       >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-          <SiJavascript className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
-          <br />
-            <Heading size="md" className="card-header text-[var(--cat-mocha-text)]">
-              {" "}
+            <SiJavascript className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <br />
+            <Heading
+              size="md"
+              className="card-header text-[var(--cat-mocha-text)]"
+            >
               JavaScript
             </Heading>
           </CardHeader>
           <CardBody>
+            <div className="text-center">
+              <Badge variant="outline" colorScheme="green">
+                WEB
+              </Badge>{" "}
+              <Badge variant="outline" colorScheme="blue">
+                Mobile
+              </Badge>{" "}
+              <Badge variant="outline" colorScheme="pink">
+                Games
+              </Badge>
+            </div>
+            <br />
             <Text className="text-center text-[var(--cat-mocha-text)]">
-              Learn the programming language that powers interactive websites,
-              video games, desktop applications, and more!
+              Explore the JavaScript programming language!
             </Text>
           </CardBody>
           <CardFooter>
             <Link href="/topics/languages/js">
               <Button
-                _hover={"none"}
+                _hover={{
+                  transform: "scale(1.1)",
+                }}
                 _active={{
                   transform: "scale(0.95)",
                 }}
@@ -142,18 +158,33 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-          <SiCplusplus className="mt-7 text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
+            <SiCplusplus className="mt-7 text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
             <br />
-            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+            <Heading
+              className="card-header text-[var(--cat-mocha-text)]"
+              size="md"
+            >
               C-Plus-Plus
             </Heading>
           </CardHeader>
           <CardBody>
+            <div className="text-center">
+              <Badge variant="outline" colorScheme="yellow">
+                Systems
+              </Badge>{" "}
+              <Badge variant="outline" colorScheme="blue">
+                Mobile
+              </Badge>{" "}
+              <Badge variant="outline" colorScheme="purple">
+                Desktop
+              </Badge>
+            </div>
+            <br />
             <Text className="text-center text-[var(--cat-mocha-text)]">
-              Learn the programming language that powers operating systems,
-              robotics, video games, desktop applications and more!
+              Explore the C++ programming language!
             </Text>
           </CardBody>
           <CardFooter>
@@ -172,18 +203,19 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-          <SiPython className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <SiPython className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
             <br />
-            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+            <Heading
+              className="card-header text-[var(--cat-mocha-text)]"
+              size="md"
+            >
               {" "}
               Python
             </Heading>
           </CardHeader>
           <CardBody>
             <Text className="text-center text-[var(--cat-mocha-text)]">
-              Learn the programming language that powers Artificial
-              Intelligence, Machine Learning, Websites, automation, mathematics,
-              and more!
+              Explore the Python programming language!
             </Text>
           </CardBody>
           <CardFooter>
@@ -202,7 +234,7 @@ export default function Home() {
         </Card>
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-          <Image
+            <Image
               alt="test"
               width={100}
               height={100}
@@ -210,16 +242,17 @@ export default function Home() {
               className="mt-7 m-auto"
             />
             <br />
-            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+            <Heading
+              className="card-header text-[var(--cat-mocha-text)]"
+              size="md"
+            >
               {" "}
               Go-Lang
             </Heading>
           </CardHeader>
           <CardBody>
             <Text className="text-[var(--cat-mocha-text)]">
-              Learn the programming language that powers Artificial
-              Intelligence, Machine Learning, Websites, automation, mathematics,
-              and more!
+              Explore the Go programming language!
             </Text>
           </CardBody>
           <CardFooter>
@@ -239,18 +272,19 @@ export default function Home() {
 
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-          <FaRust className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <FaRust className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
             <br />
-            <Heading className="card-header text-[var(--cat-mocha-text)]" size="md">
+            <Heading
+              className="card-header text-[var(--cat-mocha-text)]"
+              size="md"
+            >
               {" "}
               Rust
             </Heading>
           </CardHeader>
           <CardBody>
             <Text className="text-center text-[var(--cat-mocha-text)]">
-              Learn the programming language that powers Artificial
-              Intelligence, Machine Learning, Websites, automation, mathematics,
-              and more!
+              Explore the Rust programming language!
             </Text>
           </CardBody>
           <CardFooter>
@@ -270,17 +304,19 @@ export default function Home() {
 
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-          <TbMath className="mt-7 text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
+            <TbMath className="mt-7 text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
             <br />
-            <Heading className="card-header text-center text-[var(--cat-mocha-text)]" size="md">
+            <Heading
+              className="card-header text-center text-[var(--cat-mocha-text)]"
+              size="md"
+            >
               {" "}
               Mathematics
             </Heading>
           </CardHeader>
           <CardBody>
             <Text className="text-[var(--cat-mocha-text)]">
-              Learn the version control tool that collaborators use to work
-              together around the world!
+              Explore various topics of mathematics!
             </Text>
           </CardBody>
           <CardFooter>
@@ -298,12 +334,12 @@ export default function Home() {
           </CardFooter>
         </Card>
       </SimpleGrid>
-
       <div className="content-br"></div>
-
+      <FaMeteor className="m-auto text-white text-[100px]" />
+      <div className="content-br"></div>
       <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
         <div>
-          <p className="card-header font-bold text-center text-white p-5">
+          <p className="card-header font-bold text-center text-white p-2">
             FAQ
           </p>
         </div>
@@ -322,12 +358,12 @@ export default function Home() {
           <br />
         </div>
       </div>
-
       <div className="content-br"></div>
-
+      <FaMeteor className="m-auto text-white text-[100px]" />
+      <div className="content-br"></div>
       <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
         <div className="">
-          <p className="card-header text-center text-white p-5">
+          <p className="card-header text-center text-white p-2">
             Rocket Docs Info
           </p>
         </div>
@@ -389,7 +425,6 @@ export default function Home() {
           <br /> <br />
         </div>
       </div>
-
       <br />
       <br />
       <div className="content-br"></div>

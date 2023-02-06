@@ -27,6 +27,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Badge,
 } from "@chakra-ui/react";
 
 /* CODE IMPORTS
@@ -222,7 +223,19 @@ const JsPage = () => {
 
       {/* OUTPUT SECTION
       ====================================================================================================== */}
-      <CodeBlock codeBlockHeader={"Printing Output"}>
+      <CodeBlock
+        codeBlockHeader={
+          <div>
+            {"Printing Output:"}
+            <Badge className="ml-2" colorScheme="green">
+              Easy
+            </Badge>
+            <Badge className="ml-2" colorScheme="blue">
+              Basics
+            </Badge>
+          </div>
+        }
+      >
         <Clipboard code={Output}></Clipboard>
         <Code lang="javascript">{Output}</Code>
       </CodeBlock>
@@ -235,7 +248,15 @@ const JsPage = () => {
       ====================================================================================================== */}
       <div id="comments" className="content-br"></div>
 
-      <CodeBlock codeBlockHeader={"Comments (single & multi-line)"}>
+      <CodeBlock codeBlockHeader={<div>
+            {"Single/Double Comments:"}
+            <Badge className="ml-2" colorScheme="green">
+              Easy
+            </Badge>
+            <Badge className="ml-2" colorScheme="blue">
+              Basics
+            </Badge>
+          </div>}>
         <Clipboard code={Output}></Clipboard>
         <Code lang="javascript">{Comments}</Code>
       </CodeBlock>

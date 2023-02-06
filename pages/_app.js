@@ -7,6 +7,8 @@ import { ThemeProvider } from "next-themes";
 import { ChakraProvider } from "@chakra-ui/react";
 import { MathJaxContext } from "better-react-mathjax";
 
+
+
 {
   /* STYLE IMPORTS
 ================================================================================================= */
