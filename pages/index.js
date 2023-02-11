@@ -1,22 +1,35 @@
+{
+  /* NPM IMPORTS
+====================================================================================================== */
+}
+import { useInView } from "react-intersection-observer";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
+{
+  /* COMPONENT IMPORTS
+====================================================================================================== */
+}
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import MainLayout from "../components/Layouts/MainLayout";
 import SideNav from "../components/SideNav/SideNav";
 import NavDropdown from "../components/SideNav/NavDropdown";
+import Code from "../components/Code/Code";
+import CodeBlock from "../components/Code/CodeBlock";
 
-import { IoMdRocket, IoMdPlanet } from "react-icons/io";
+import { Output as jsOutput } from "../code/js-code";
+import { Output as cppOutput } from "../code/cpp-code";
 
+{
+  /* ICON IMPORTS
+====================================================================================================== */
+}
+import { IoRocket, IoMdPlanet } from "react-icons/io";
 import { TbMath, TbMathSymbols } from "react-icons/tb";
-
-import { FaRust } from "react-icons/fa";
-
-import Image from "next/image";
-
-import { motion } from "framer-motion";
-
+import { FaRust, FaSpaceShuttle } from "react-icons/fa";
 import { FaMeteor } from "react-icons/fa";
 
 import {
@@ -30,6 +43,10 @@ import {
   SiGo,
 } from "react-icons/si";
 
+{
+  /* CHAKRA IMPORTS
+====================================================================================================== */
+}
 import {
   SimpleGrid,
   Card,
@@ -43,9 +60,19 @@ import {
   StackDivider,
   Badge,
 } from "@chakra-ui/react";
-import Far from "react-syntax-highlighter/dist/cjs/styles/hljs/far";
 
+/* HOME PAGE
+====================================================================================================== */
 export default function Home() {
+
+  {
+    /* JavaScript Card */
+  }
+  const { ref: JsRef, inView: jsInView } = useInView({
+    threshold: 0,
+    triggerOnce: false,
+  });
+
   return (
     <MainLayout title={"SpaceDocs: Home Page"}>
       <Head>
@@ -108,105 +135,164 @@ export default function Home() {
         main_topic={"SpaceDocs.info"}
         topic_summary={"Explore a new world by learning a new technology!"}
       />
+
       <div className="content-br"></div>
 
-      <SimpleGrid
-        spacing={8}
-        templateColumns="repeat(auto-fill, minmax(250px, 1fr))"
+      {/* JAVASCRIPT CARD
+        ====================================================================================================== */}
+      <div ref={JsRef} className={`${jsInView ? "fadeIn" : "fadeInDefault"}`}>
+        <div className="animate-this bg-transparent p-10 rounded-xl border-2 border-[var(--cat-mocha-surface0)]">
+          <br />
+          <SiJavascript className="mt-7 text-[#ead41c] text-[100px] m-auto" />
+          <br />
+          <p className="card-header text-center text-black dark:text-[var(--cat-mocha-text)]">
+            JavaScript
+          </p>
+          <p className="text-black text-center dark:text-[var(--cat-mocha-text)]">
+            Explore the programming language that powers the interactive web!
+          </p>
+          <div className="text-center pt-2">
+            <Badge className="mr-2" variant="outline" colorScheme="cyan">
+              Console
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="purple">
+              Desktop
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="pink">
+              Games
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="blue">
+              Mobile
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="gray">
+              Server / Cloud
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="green">
+              WEB
+            </Badge>
+          </div>
+          <br />
+
+          <CodeBlock>
+            <Code lang="javascript">{jsOutput}</Code>
+          </CodeBlock>
+
+          <motion.button
+            className="block bg-[var(--cat-mocha-base)] m-auto text-white dark:text-[#ead41c] rounded-md p-2 
+            border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
+          >
+            Explore JavaScript!
+          </motion.button>
+        </div>
+      </div>
+
+      <div className="content-br"></div>
+
+      {/* C++ CARD
+        ====================================================================================================== */}
+      
+        <div className="p-10 rounded-xl border-2 border-black dark:border-[var(--cat-mocha-surface1)]">
+          <br />
+          <SiCplusplus className="mt-7 text-[#6295cb] text-[100px] m-auto" />
+          <br />
+          <p className="card-header text-center text-black dark:text-[var(--cat-mocha-text)]">
+            JavaScript
+          </p>
+          <p className="text-black text-center dark:text-[var(--cat-mocha-text)]">
+            Explore the programming language that powers the interactive web!
+          </p>
+          <div className="text-center pt-2">
+            <Badge className="mr-2" variant="outline" colorScheme="cyan">
+              Console
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="purple">
+              Desktop
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="pink">
+              Games
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="blue">
+              Mobile
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="gray">
+              Server / Cloud
+            </Badge>
+            <Badge className="mr-2" variant="outline" colorScheme="green">
+              WEB
+            </Badge>
+          </div>
+          <br />
+          <br />
+          <motion.button
+            className="block bg-[var(--cat-mocha-base)] m-auto text-white dark:text-[#ead41c] rounded-md p-2 
+            border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
+          >
+            Explore C++
+          </motion.button>
+          <br />
+
+          <CodeBlock>
+            <Code lang="cpp">{cppOutput}</Code>
+          </CodeBlock>
+        </div>
+
+
+      <div className="content-br"></div>
+
+      {/* PYTHON CARD
+        ====================================================================================================== */}
+
+      <div className="text-center rounded-xl border-2 border-black dark:border-[#ffd343]">
+        <br />
+        <SiPython className="mt-7 text-[#ffd343] text-[100px] m-auto" />
+        <br />
+        <p className="card-header text-black dark:text-[var(--cat-mocha-text)]">
+          Python
+        </p>
+        <p className="text-black dark:text-[var(--cat-mocha-text)]">
+          Explore one of the fastest systems programming languages!
+        </p>
+        <div className="text-center pt-2">
+          <Badge className="mr-2" variant="outline" colorScheme="cyan">
+            Console
+          </Badge>
+          <Badge className="mr-2" variant="outline" colorScheme="purple">
+            Desktop
+          </Badge>
+          <Badge className="mr-2" variant="outline" colorScheme="pink">
+            Games
+          </Badge>
+          <Badge className="mr-2" variant="outline" colorScheme="blue">
+            Mobile
+          </Badge>
+          <Badge className="mr-2" variant="outline" colorScheme="gray">
+            Server / Cloud
+          </Badge>
+          <Badge className="mr-2" variant="outline" colorScheme="green">
+            WEB
+          </Badge>
+        </div>
+        <br />
+        <button
+          className="bg-[var(--cat-mocha-base)] text-white dark:text-[#ffd343] rounded-md p-2 
+            border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
+        >
+          Explore!
+        </button>
+        <br />
+        <br />
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
       >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <SiJavascript className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <SiPython className="mt-7 text-[#ffd343] text-[100px] m-auto" />
             <br />
             <Heading
-              size="md"
-              className="card-header text-[var(--cat-mocha-text)]"
-            >
-              JavaScript
-            </Heading>
-          </CardHeader>
-          <CardBody>
-            <div className="text-center">
-              <Badge variant="outline" colorScheme="green">
-                WEB
-              </Badge>{" "}
-              <Badge variant="outline" colorScheme="blue">
-                Mobile
-              </Badge>{" "}
-              <Badge variant="outline" colorScheme="pink">
-                Games
-              </Badge>
-            </div>
-            <br />
-            <Text className="text-center text-[var(--cat-mocha-text)]">
-              Explore the JavaScript programming language!
-            </Text>
-          </CardBody>
-          <CardFooter>
-            <Link href="/topics/languages/js">
-              <Button
-                _hover={{
-                  transform: "scale(1.1)",
-                }}
-                _active={{
-                  transform: "scale(0.95)",
-                }}
-                className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
-              >
-                Explore
-              </Button>
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card className="!bg-[var(--cat-mocha-base)]">
-          <CardHeader>
-            <SiCplusplus className="mt-7 text-[var(--cat-mocha-blue)] text-[100px] m-auto" />
-            <br />
-            <Heading
-              className="card-header text-[var(--cat-mocha-text)]"
-              size="md"
-            >
-              C-Plus-Plus
-            </Heading>
-          </CardHeader>
-          <CardBody>
-            <div className="text-center">
-              <Badge variant="outline" colorScheme="yellow">
-                Systems
-              </Badge>{" "}
-              <Badge variant="outline" colorScheme="blue">
-                Mobile
-              </Badge>{" "}
-              <Badge variant="outline" colorScheme="purple">
-                Desktop
-              </Badge>
-            </div>
-            <br />
-            <Text className="text-center text-[var(--cat-mocha-text)]">
-              Explore the C++ programming language!
-            </Text>
-          </CardBody>
-          <CardFooter>
-            <Link href="/topics/languages/cpp">
-              <Button
-                _hover={"none"}
-                _active={{
-                  transform: "scale(0.95)",
-                }}
-                className="bg-white dark:bg-[var(--cat-mocha-crust)] text-black dark:text-[var(--cat-mocha-text)]"
-              >
-                Explore
-              </Button>
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="!bg-[var(--cat-mocha-base)]">
-          <CardHeader>
-            <SiPython className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
-            <br />
-            <Heading
-              className="card-header text-[var(--cat-mocha-text)]"
+              className="underline card-header text-[var(--cat-mocha-text)]"
               size="md"
             >
               {" "}
@@ -214,8 +300,28 @@ export default function Home() {
             </Heading>
           </CardHeader>
           <CardBody>
-            <Text className="text-center text-[var(--cat-mocha-text)]">
-              Explore the Python programming language!
+            <div className="text-center">
+              <Badge variant="outline" colorScheme="green">
+                WEB
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="pink">
+                Games
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="red">
+                AI/ML
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="gray">
+                Server
+              </Badge>
+              {" " * 2}
+            </div>
+            <br />
+            <Text className="underline text-center text-[var(--cat-mocha-text)]">
+              Explore the programming language preferred by data scientists and
+              engineers!
             </Text>
           </CardBody>
           <CardFooter>
@@ -232,6 +338,14 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+      </motion.div>
+
+      {/* GO-LANG CARD
+        ====================================================================================================== */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+      >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
             <Image
@@ -251,7 +365,18 @@ export default function Home() {
             </Heading>
           </CardHeader>
           <CardBody>
-            <Text className="text-[var(--cat-mocha-text)]">
+            <div className="text-center">
+              <Badge variant="outline" colorScheme="green">
+                WEB
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="gray">
+                Server
+              </Badge>
+              {" " * 2}
+            </div>
+            <br />
+            <Text className="underline text-center text-[var(--cat-mocha-text)]">
               Explore the Go programming language!
             </Text>
           </CardBody>
@@ -269,13 +394,20 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+      </motion.div>
 
+      {/* RUST CARD
+        ====================================================================================================== */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+      >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
-            <FaRust className="mt-7 text-[var(--cat-mocha-yellow)] text-[100px] m-auto" />
+            <FaRust className="mt-7 text-[#f74c00] text-[100px] m-auto" />
             <br />
             <Heading
-              className="card-header text-[var(--cat-mocha-text)]"
+              className="underline card-header text-[var(--cat-mocha-text)]"
               size="md"
             >
               {" "}
@@ -283,7 +415,30 @@ export default function Home() {
             </Heading>
           </CardHeader>
           <CardBody>
-            <Text className="text-center text-[var(--cat-mocha-text)]">
+            <div className="text-center">
+              <Badge variant="outline" colorScheme="green">
+                WEB
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="yellow">
+                Systems
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="purple">
+                Desktop
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="pink">
+                Games
+              </Badge>
+              {" " * 2}
+              <Badge variant="outline" colorScheme="gray">
+                Server
+              </Badge>
+              {" " * 2}
+            </div>
+            <br />
+            <Text className="underline text-center text-[var(--cat-mocha-text)]">
               Explore the Rust programming language!
             </Text>
           </CardBody>
@@ -301,7 +456,14 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
+      </motion.div>
 
+      {/* MATHEMATICS CARD
+        ====================================================================================================== */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+      >
         <Card className="!bg-[var(--cat-mocha-base)]">
           <CardHeader>
             <TbMath className="mt-7 text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
@@ -333,10 +495,12 @@ export default function Home() {
             </Link>
           </CardFooter>
         </Card>
-      </SimpleGrid>
+      </motion.div>
+
       <div className="content-br"></div>
-      <FaMeteor className="m-auto text-white text-[100px]" />
-      <div className="content-br"></div>
+
+      {/* FAQ CARD
+        ====================================================================================================== */}
       <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
         <div>
           <p className="card-header font-bold text-center text-white p-2">
@@ -360,7 +524,11 @@ export default function Home() {
       </div>
       <div className="content-br"></div>
       <FaMeteor className="m-auto text-white text-[100px]" />
+
       <div className="content-br"></div>
+
+      {/* INFO CARD
+        ====================================================================================================== */}
       <div className="bg-[var(--cat-mocha-surface1)] rounded-xl overflow-hidden">
         <div className="">
           <p className="card-header text-center text-white p-2">

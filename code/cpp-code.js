@@ -1,11 +1,13 @@
 
 /* HELLO WORLD
 ======================================================================================================== */
-export const HelloWorld = `#include <iostream>
+export const Output = `// All systems go!
+
+#include <iostream>
     
 int main(void) {
-    std::cout << "Hello, World!" << std::endl;
-
+    const char message[] = "All systems go!";
+    std::cout << message << std::endl;
     return 0;
 }`;
 

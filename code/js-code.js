@@ -1,8 +1,8 @@
 /* HELLO WORLD
 ======================================================================================================== */
-export const Output = `// Printing Output
+export const Output = `// All systems go!
 
-let message = "All systems go!";
+const message = "All systems go!";
 console.log(message);`;
 
 /* COMMENTS

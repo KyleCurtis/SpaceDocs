@@ -1,7 +1,8 @@
 /* NPM IMPORTS
 ============================================================================ */
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { tomorrowNightEighties } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+
 
 /* CODE COMPONENT
 ============================================================================ */
@@ -11,9 +12,9 @@ const Code = ({ lang, children }) => {
       <div className="code-block">
         <SyntaxHighlighter
           language={lang}
-          style={atomOneDark}
+          style={tomorrowNightEighties}
           showLineNumbers={true}
-          className="pr-[199px] !bg-[var(--cat-mocha-base)]"
+          className="pr-[199px] !bg-transparent border-2 border-[var(--cat-mocha-text)] dark:border-[var(--cat-mocha-surface0)]"
         >
           {children}
         </SyntaxHighlighter>

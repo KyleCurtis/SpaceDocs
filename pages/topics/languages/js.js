@@ -227,10 +227,10 @@ const JsPage = () => {
         codeBlockHeader={
           <div>
             {"Printing Output:"}
-            <Badge className="ml-2" colorScheme="green">
+            <Badge variant="outline" className="ml-2" colorScheme="green">
               Easy
             </Badge>
-            <Badge className="ml-2" colorScheme="blue">
+            <Badge variant="outline" className="ml-2" colorScheme="blue">
               Basics
             </Badge>
           </div>
@@ -250,10 +250,10 @@ const JsPage = () => {
 
       <CodeBlock codeBlockHeader={<div>
             {"Single/Double Comments:"}
-            <Badge className="ml-2" colorScheme="green">
+            <Badge variant="outline" className="ml-2" colorScheme="green">
               Easy
             </Badge>
-            <Badge className="ml-2" colorScheme="blue">
+            <Badge variant="outline" className="ml-2" colorScheme="blue">
               Basics
             </Badge>
           </div>}>
