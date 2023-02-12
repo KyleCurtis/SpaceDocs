@@ -31,11 +31,6 @@ const Navbar = () => {
       {/* NAVBAR COMPONENT
       ========================================================================================= */}
       <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
-        <Link href="/">
-          <h2 className="nav-title absolute pl-[15px] left-0 top-4 font-bold text-[var(--cat-mocha-text)]">
-            SpaceDocs
-          </h2>
-        </Link>
         {/* lg:flex nav topic buttons */}
         <ul className="hidden lg:flex">
           <li className="p-4">

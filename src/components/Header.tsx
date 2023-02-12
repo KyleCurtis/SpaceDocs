@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Rocket from "../public/rocket-book.png";
+import Rocket from "../../public/rocket-book.png";
 
 import {IoIosArrowDropdownCircle} from "react-icons/io"
 

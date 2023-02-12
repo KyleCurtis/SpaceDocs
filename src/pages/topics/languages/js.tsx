@@ -46,8 +46,7 @@ import {
   Plus_Minus_Operators,
   Assignment_Operators,
   Comparison_Operators,
-  Mathematics,
-} from "../../../code/js-code";
+} from "../../code/js-code";
 
 const JsPage = () => {
   return (
