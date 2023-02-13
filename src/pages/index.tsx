@@ -67,7 +67,7 @@
   
     {/* JAVASCRIPT CARD */}
     const { ref: jsRef, inView: jsInView } = useInView({
-      threshold: 0,
+      threshold: 0.3,
       triggerOnce: false,
     });
   
@@ -152,14 +152,14 @@
         {/* JAVASCRIPT CARD
           ====================================================================================================== */}
         <div ref={jsRef} className={`${jsInView ? "fadeIn" : "fadeInDefault"}`}>
-          <div className="animate-this bg-transparent p-10 rounded-xl border-2 border-[var(--cat-mocha-surface0)]">
+          <div className="animate-this bg-[var(--mat-dark-contrast)] p-10 rounded-xl border-2 border-[#82aaff]">
             <br />
             <SiJavascript className="mt-7 text-[#ead41c] text-[100px] m-auto" />
             <br />
-            <p className="card-header text-center text-black dark:text-[var(--cat-mocha-text)]">
+            <p className="card-header text-center text-[var(--mat-dark-text)]">
               JavaScript
             </p>
-            <p className="text-black text-center dark:text-[var(--cat-mocha-text)]">
+            <p className="text-center text-[var(--mat-dark-text)]">
               Explore the programming language that powers the interactive web!
             </p>
             <div className="text-center pt-2">
@@ -649,11 +649,11 @@
               target="_blank"
               rel="noreferrer"
             >
-              <p>Catppuccin Mocha</p>
+              <p>Material Darker</p>
             </a>
             <br />
             Code Theme: <br />
-            Atom One Dark (Modified)
+            Visual Studio Code Dark
             <br /> <br />
           </div>
         </div>

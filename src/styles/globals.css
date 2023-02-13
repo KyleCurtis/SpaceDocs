@@ -44,9 +44,11 @@
     --cat-mocha-crust: #11111b;
 
     --mat-dark-bg: #212121;
+    --mat-dark-bg-2: #292929;
     --mat-dark-contrast: #1A1A1A;
 
     --mat-dark-text: #B0BEC5;
+    --mat-dark-border: #292929;
 }
 
 * {
@@ -62,12 +64,13 @@
 
 html {
     height: 100%;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
     height: 100%;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth !important;
 }
 
 .content {
@@ -183,6 +186,17 @@ header {
 
 }
 
+.fadeOut .animate-this {
+    animation-name: fade-out;
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    animation-delay: 0s;
+
+}
+
 .fadeInDefault{
     opacity: 0;
 }
@@ -198,5 +212,18 @@ header {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
     }
 }

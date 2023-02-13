@@ -27,7 +27,7 @@ import ThemeToggler from "./ThemeToggle";
 
 const Navbar = () => {
   return (
-    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--cat-mocha-crust)] border-solid border-b-2 border-[var(--cat-mocha-surface0)]">
+    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--mat-dark-contrast)] border-solid border-b-2 border-[#82aaff]">
       {/* NAVBAR COMPONENT
       ========================================================================================= */}
       <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">

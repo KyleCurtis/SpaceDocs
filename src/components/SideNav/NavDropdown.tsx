@@ -12,7 +12,7 @@ import {
 const NavDropdown = ({ buttonTitle, contentSection }) => {
   return (
     <div>
-      <Accordion allowMultiple border={"none"} borderTopColor="transparent" borderBottomColor="var(--cat-mocha-text)">
+      <Accordion allowMultiple border={"none"} borderTopColor="transparent" borderBottomColor="var(--mat-dark-border)">
         <AccordionItem>
           <h2>
             <AccordionButton p={"2"}>

@@ -6,7 +6,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 /* CODE COMPONENT
 ============================================================================ */
-const Code = ({ lang:any, children }) => {
+const Code = ({ lang, children }) => {
   return (
     <div>
       <div className="code-block">
@@ -14,7 +14,7 @@ const Code = ({ lang:any, children }) => {
           language={lang}
           style={vscDarkPlus}
           showLineNumbers={true}
-          className="pr-[199px] border-2 border-[var(--cat-mocha-text)] dark:border-[var(--cat-mocha-surface0)]"
+          className="pr-[199px]"
         >
           {children}
         </SyntaxHighlighter>

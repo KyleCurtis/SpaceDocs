@@ -1,8 +1,6 @@
 /* HELLO WORLD
 ======================================================================================================== */
-export const Output = `// All systems go!
-
-const message = "All systems go!";
+export const Output = `const message = "All systems go!";
 console.log(message);`;
 
 /* COMMENTS

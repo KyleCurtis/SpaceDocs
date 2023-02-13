@@ -8,8 +8,8 @@ const MainLayout = ({ children, title }) => {
         <Head>
             <title>{title}</title>
         </Head>
-      <div className="main px-[4%] lg:ml-[270px] md:px-[18%] bg-white dark:bg-[var(--cat-mocha-crust)]">
-        <div className="content bg-white dark:bg-[var(--cat-mocha-crust)]">
+      <div className="main px-[4%] lg:ml-[270px] md:px-[18%] bg-[#FAFAFA] dark:bg-[var(--mat-dark-bg)]">
+        <div className="content bg-[#FAFAFA] dark:bg-[var(--mat-dark-bg)]">
           {children}
         </div>
       </div>
