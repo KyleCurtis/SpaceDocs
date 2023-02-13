@@ -9,7 +9,7 @@ import { FaClipboard } from "react-icons/fa";
 
 /* CLIPBOARD COMPONENT
 ============================================================================ */
-const Clipboard = ({ code }) => {
+const Clipboard = ({ code }: any) => {
     const toast = useToast()
 
   return (
