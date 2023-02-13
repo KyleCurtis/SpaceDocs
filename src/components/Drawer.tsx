@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { SiClojure } from "react-icons/si";
 
-const DrawerNav = ({ children }) => {
+const DrawerNav = ({ children }: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 

@@ -9,7 +9,7 @@ import {
     Box,
   } from "@chakra-ui/react";
 
-const Dropdown = ({ buttonTitle, contentSection }) => {
+const Dropdown = ({ buttonTitle, contentSection }: any) => {
   return (
     <div>
       <Accordion allowMultiple borderColor="var(--cat-mocha-text)" className=''>
