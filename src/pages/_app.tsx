@@ -28,7 +28,7 @@
     /* APP
   ================================================================================================= */
   }
-  const App = ({ Component, pageProps }) => {
+  const App = ({ Component, pageProps }: any) => {
     {
       /* MATHJAX CONFIGURATION */
     }
