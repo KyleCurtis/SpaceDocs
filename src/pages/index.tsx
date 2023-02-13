@@ -6,7 +6,6 @@
   import Head from "next/head";
   import Link from "next/link";
   import Image from "next/image";
-  import { motion } from "framer-motion";
   
   {
     /* COMPONENT IMPORTS
@@ -27,7 +26,7 @@
     /* ICON IMPORTS
   ====================================================================================================== */
   }
-  import { IoRocket, IoMdPlanet } from "react-icons/io";
+  import { IoMdPlanet } from "react-icons/io";
   import { TbMath, TbMathSymbols } from "react-icons/tb";
   import { FaRust, FaSpaceShuttle } from "react-icons/fa";
   import { FaMeteor } from "react-icons/fa";
@@ -188,12 +187,12 @@
               <Code lang="javascript">{jsOutput}</Code>
             </CodeBlock>
   
-            <motion.button
+            <button
               className="block bg-[var(--cat-mocha-base)] m-auto text-white dark:text-[#ead41c] rounded-md p-2 
               border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
             >
               Explore JavaScript!
-            </motion.button>
+            </button>
           </div>
         </div>
   
@@ -234,12 +233,12 @@
             </div>
             <br />
             <br />
-            <motion.button
+            <button
               className="block bg-[var(--cat-mocha-base)] m-auto text-white dark:text-[#ead41c] rounded-md p-2 
               border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
             >
               Explore C++
-            </motion.button>
+            </button>
             <br />
   
             <CodeBlock>
@@ -286,12 +285,12 @@
             </div>
             <br />
             <br />
-            <motion.button
+            <button
               className="block bg-[var(--cat-mocha-base)] m-auto text-white dark:text-[#ffd343] rounded-md p-2 
               border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
             >
               Explore C++
-            </motion.button>
+            </button>
             <br />
   
             <CodeBlock>
@@ -347,220 +346,7 @@
           <br />
         </div>
   
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-        >
-          <Card className="!bg-[var(--cat-mocha-base)]">
-            <CardHeader>
-              <SiPython className="mt-7 text-[#ffd343] text-[100px] m-auto" />
-              <br />
-              <Heading
-                className="underline card-header text-[var(--cat-mocha-text)]"
-                size="md"
-              >
-                {" "}
-                Python
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <div className="text-center">
-                <Badge variant="outline" colorScheme="green">
-                  WEB
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="pink">
-                  Games
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="red">
-                  AI/ML
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="gray">
-                  Server
-                </Badge>
-                {" " * 2}
-              </div>
-              <br />
-              <Text className="underline text-center text-[var(--cat-mocha-text)]">
-                Explore the programming language preferred by data scientists and
-                engineers!
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Link href="/topics/languages/py">
-                <Button
-                  _hover={"none"}
-                  _active={{
-                    transform: "scale(0.95)",
-                  }}
-                  className="bg-white dark:bg-[var(--mat-dark-bg)] text-black dark:text-[var(--cat-mocha-text)]"
-                >
-                  Explore
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-        </motion.div>
-  
-        {/* GO-LANG CARD
-          ====================================================================================================== */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-        >
-          <Card className="!bg-[var(--cat-mocha-base)]">
-            <CardHeader>
-              <Image
-                alt="test"
-                width={100}
-                height={100}
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-                className="mt-7 m-auto"
-              />
-              <br />
-              <Heading
-                className="card-header text-[var(--cat-mocha-text)]"
-                size="md"
-              >
-                {" "}
-                Go-Lang
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <div className="text-center">
-                <Badge variant="outline" colorScheme="green">
-                  WEB
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="gray">
-                  Server
-                </Badge>
-                {" " * 2}
-              </div>
-              <br />
-              <Text className="underline text-center text-[var(--cat-mocha-text)]">
-                Explore the Go programming language!
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Link href="/topics/languages/py">
-                <Button
-                  _hover={"none"}
-                  _active={{
-                    transform: "scale(0.95)",
-                  }}
-                  className="bg-white dark:bg-[var(--mat-dark-bg)] text-black dark:text-[var(--cat-mocha-text)]"
-                >
-                  Explore
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-        </motion.div>
-  
-        {/* RUST CARD
-          ====================================================================================================== */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-        >
-          <Card className="!bg-[var(--cat-mocha-base)]">
-            <CardHeader>
-              <FaRust className="mt-7 text-[#f74c00] text-[100px] m-auto" />
-              <br />
-              <Heading
-                className="underline card-header text-[var(--cat-mocha-text)]"
-                size="md"
-              >
-                {" "}
-                Rust
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <div className="text-center">
-                <Badge variant="outline" colorScheme="green">
-                  WEB
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="yellow">
-                  Systems
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="purple">
-                  Desktop
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="pink">
-                  Games
-                </Badge>
-                {" " * 2}
-                <Badge variant="outline" colorScheme="gray">
-                  Server
-                </Badge>
-                {" " * 2}
-              </div>
-              <br />
-              <Text className="underline text-center text-[var(--cat-mocha-text)]">
-                Explore the Rust programming language!
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Link href="/topics/languages/rs">
-                <Button
-                  _hover={"none"}
-                  _active={{
-                    transform: "scale(0.95)",
-                  }}
-                  className="bg-white dark:bg-[var(--mat-dark-bg)] text-black dark:text-[var(--cat-mocha-text)]"
-                >
-                  Explore
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-        </motion.div>
-  
-        {/* MATHEMATICS CARD
-          ====================================================================================================== */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-        >
-          <Card className="!bg-[var(--cat-mocha-base)]">
-            <CardHeader>
-              <TbMath className="mt-7 text-[var(--cat-mocha-teal)] text-[100px] m-auto" />
-              <br />
-              <Heading
-                className="card-header text-center text-[var(--cat-mocha-text)]"
-                size="md"
-              >
-                {" "}
-                Mathematics
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text className="text-[var(--cat-mocha-text)]">
-                Explore various topics of mathematics!
-              </Text>
-            </CardBody>
-            <CardFooter>
-              <Link href="/topics/other/math">
-                <Button
-                  _hover={"none"}
-                  _active={{
-                    transform: "scale(0.95)",
-                  }}
-                  className="bg-white dark:bg-[var(--mat-dark-bg)] text-black dark:text-[var(--cat-mocha-text)]"
-                >
-                  Explore
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-        </motion.div>
-  
+        
         <div className="content-br"></div>
   
         {/* FAQ CARD

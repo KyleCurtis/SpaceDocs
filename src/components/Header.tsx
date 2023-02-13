@@ -3,7 +3,7 @@ import Rocket from "../../public/rocket-book.png";
 
 import {IoIosArrowDropdownCircle} from "react-icons/io"
 
-const Header = ({ children, main_topic, topic_summary }) => {
+const Header = ({ main_topic, topic_summary }: any) => {
   return (
     <div className="h-screen pt-[50px]">
       <header className="text-[var(--cat-mocha-text)]">

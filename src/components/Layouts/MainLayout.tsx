@@ -2,7 +2,7 @@ import Head from "next/head";
 //md:mx-[15%] lg:mx-[22%]
 import SideNav from "../SideNav/SideNav";
 
-const MainLayout = ({ children, title }) => {
+const MainLayout = ({ children, title }: any) => {
   return (
     <div>
         <Head>

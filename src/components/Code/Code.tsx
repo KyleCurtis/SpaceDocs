@@ -6,7 +6,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 /* CODE COMPONENT
 ============================================================================ */
-const Code = ({ lang, children }) => {
+const Code = ({ lang, children }: any) => {
   return (
     <div>
       <div className="code-block">

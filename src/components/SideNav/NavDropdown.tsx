@@ -9,7 +9,7 @@ import {
     Box,
   } from "@chakra-ui/react";
 
-const NavDropdown = ({ buttonTitle, contentSection }) => {
+const NavDropdown = ({ buttonTitle, contentSection }: any) => {
   return (
     <div>
       <Accordion allowMultiple border={"none"} borderTopColor="transparent" borderBottomColor="var(--mat-dark-border)">
