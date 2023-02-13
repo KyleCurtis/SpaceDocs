@@ -19,8 +19,8 @@
   import Code from "../components/Code/Code";
   import CodeBlock from "../components/Code/CodeBlock";
   
-  import { Output as jsOutput } from "./code/js-code";
-  import { Output as cppOutput } from "./code/cpp-code";
+  import { Output as jsOutput } from "../code-examples/js-code";
+  import { Output as cppOutput } from "../code-examples/cpp-code";
   
   {
     /* ICON IMPORTS
