@@ -67,19 +67,19 @@
     {/* JAVASCRIPT CARD */}
     const { ref: jsRef, inView: jsInView } = useInView({
       threshold: 0.3,
-      triggerOnce: false,
+      triggerOnce: true,
     });
   
     {/* C++ CARD */}
     const { ref: cppRef, inView: cppInView } = useInView({
-      threshold: 0,
-      triggerOnce: false,
+      threshold: 0.3,
+      triggerOnce: true,
     });
   
     {/* PYTHON CARD */}
     const { ref: pyRef, inView: pyInView } = useInView({
-      threshold: 0,
-      triggerOnce: false,
+      threshold: 0.3,
+      triggerOnce: true,
     });
   
   
