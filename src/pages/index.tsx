@@ -20,8 +20,11 @@
   import CodeBlock from "../components/Code/CodeBlock";
   
   import { Output as jsOutput } from "../code-examples/js-code";
+
   import { Output as cppOutput } from "../code-examples/cpp-code";
-  
+
+  import { Output as tsOutput } from "../code-examples/ts-code"
+
   {
     /* ICON IMPORTS
   ====================================================================================================== */
@@ -34,6 +37,7 @@
   import {
     SiCplusplus,
     SiJavascript,
+    SiTypescript,
     SiRust,
     SiPython,
     SiPytorch,
@@ -67,19 +71,25 @@
     {/* JAVASCRIPT CARD */}
     const { ref: jsRef, inView: jsInView } = useInView({
       threshold: 0.3,
-      triggerOnce: true,
+      triggerOnce: false,
+    });
+
+    {/* JAVASCRIPT CARD */}
+    const { ref: tsRef, inView: tsInView } = useInView({
+      threshold: 0.3,
+      triggerOnce: false,
     });
   
     {/* C++ CARD */}
     const { ref: cppRef, inView: cppInView } = useInView({
       threshold: 0.3,
-      triggerOnce: true,
+      triggerOnce: false,
     });
   
     {/* PYTHON CARD */}
     const { ref: pyRef, inView: pyInView } = useInView({
       threshold: 0.3,
-      triggerOnce: true,
+      triggerOnce: false,
     });
   
   
@@ -145,20 +155,23 @@
           main_topic={"SpaceDocs.info"}
           topic_summary={"Explore a new world by learning a new technology!"}
         />
-  
+
+
+<div className="content-br"></div>
+        <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
         <div className="content-br"></div>
-  
+
         {/* JAVASCRIPT CARD
           ====================================================================================================== */}
-        <div ref={jsRef} className={`${jsInView ? "fadeIn" : "fadeInDefault"}`}>
-          <div className="animate-this bg-[var(--mat-dark-contrast)] p-10 rounded-xl border-2 border-[#82aaff]">
+        <div ref={jsRef} className={`mx-[18%] ${jsInView ? "fadeIn" : "fadeInDefault"}`}>
+          <div className="animate-this bg-transparent">
             <br />
-            <SiJavascript className="mt-7 text-[#ead41c] text-[100px] m-auto" />
+            <SiJavascript className="text-[#ead41c] text-[100px] m-auto" />
             <br />
             <p className="card-header text-center text-[var(--mat-dark-text)]">
               JavaScript
             </p>
-            <p className="text-center text-[var(--mat-dark-text)]">
+            <p className="mx-[18%] text-center text-[var(--mat-dark-text)]">
               Explore the programming language that powers the interactive web!
             </p>
             <div className="text-center pt-2">
@@ -195,13 +208,67 @@
             </button>
           </div>
         </div>
+
+        <div className="content-br"></div>
+        <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
+        <div className="content-br"></div>
+
+        {/* TYPESCRIPT CARD
+          ====================================================================================================== */}
+        <div ref={tsRef} className={`mx-[18%] ${tsInView ? "fadeIn" : "fadeInDefault"}`}>
+          <div className="animate-this bg-transparent">
+            <br />
+            <SiTypescript className="text-[#3178c6] text-[100px] m-auto" />
+            <br />
+            <p className="card-header text-center text-[var(--mat-dark-text)]">
+              TypeScript
+            </p>
+            <p className="text-center text-[var(--mat-dark-text)]">
+              Explore the programming language that powers the interactive web!
+            </p>
+            <div className="text-center pt-2">
+              <Badge className="mr-2" variant="outline" colorScheme="cyan">
+                Console
+              </Badge>
+              <Badge className="mr-2" variant="outline" colorScheme="purple">
+                Desktop
+              </Badge>
+              <Badge className="mr-2" variant="outline" colorScheme="pink">
+                Games
+              </Badge>
+              <Badge className="mr-2" variant="outline" colorScheme="blue">
+                Mobile
+              </Badge>
+              <Badge className="mr-2" variant="outline" colorScheme="gray">
+                Server / Cloud
+              </Badge>
+              <Badge className="mr-2" variant="outline" colorScheme="green">
+                WEB
+              </Badge>
+            </div>
+            <br />
   
+            <CodeBlock>
+              <Code lang="typescript">{tsOutput}</Code>
+            </CodeBlock>
+  
+            <button
+              className="block bg-[var(--cat-mocha-base)] m-auto text-white dark:text-[#ead41c] rounded-md p-2 
+              border-2 border-black dark:border-[var(--cat-mocha-surface1)]"
+            >
+              Explore TypeScript!
+            </button>
+          </div>
+        </div>
+  
+        <div className="content-br"></div>
+        <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
         <div className="content-br"></div>
   
         {/* C++ CARD
           ====================================================================================================== */}
-         <div ref={cppRef} className={`${cppInView ? "fadeIn" : "fadeInDefault"}`}>
-          <div className="animate-this p-10 rounded-xl border-2 border-black dark:border-[var(--cat-mocha-surface1)]">
+         <div ref={cppRef} className={`h-screen ${cppInView ? "fadeIn" : "fadeInDefault"}`}>
+          <div className="animate-this rounded-xl border-2 border-black dark:border-[var(--cat-mocha-surface1)]">
             <br />
             <SiCplusplus className="mt-7 text-[#6295cb] text-[100px] m-auto" />
             <br />

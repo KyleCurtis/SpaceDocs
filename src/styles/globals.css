@@ -75,6 +75,7 @@ body {
 
 .content {
     min-height: 100%;
+    background-color: transparent !important;
 }
 
 .main {
@@ -82,7 +83,6 @@ body {
     /*border: 1px solid white;*/
     z-index: var(--paralax-mid);
 }
-
 .content-br {
     padding-top: 90px;
     padding-bottom: 50px;
