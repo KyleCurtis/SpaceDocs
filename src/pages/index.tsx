@@ -110,20 +110,20 @@
         >
           <br />
           <br />
-          <NavDropdown buttonTitle={"00. Getting Started"}></NavDropdown>
-          <NavDropdown
-            buttonTitle={"01. Languages"}
-            contentSection={
-              <div>
-                <ul>
-                  <Link href="/topics/languages/cpp">
-                    <li>C++ (20)</li>
+          <div>
+                <p className="text-blue-300 pl-2 text-lg border-b">Topics</p>
+                <ul className="text-white">
+                <Link href="/topics/languages/js">
+                    <li className={`${jsInView ? 'active-link' : 'inactive-link'}`}>JavaScript (ES6)</li>
+                  </Link>
+                  <Link href="/topics/languages/ts">
+                    <li className={`${tsInView ? 'active-link' : 'inactive-link'}`}>TypeScript</li>
+                  </Link>
+                  <Link href="#cpp">
+                    <li className={`${cppInView ? 'active-link' : 'inactive-link'}`}>C++ (20)</li>
                   </Link>
                   <Link href="#variables">
                     <li>Go (1.x)</li>
-                  </Link>
-                  <Link href="/topics/languages/js">
-                    <li>JavaScript (ES6)</li>
                   </Link>
                   <Link href="/topics/languages/py">
                     <li>Python (3.x)</li>
@@ -133,11 +133,7 @@
                   </Link>
                 </ul>
               </div>
-            }
-          ></NavDropdown>
-          <NavDropdown
-            buttonTitle={"02. Other"}
-            contentSection={
+              <p className="text-blue-300 pl-2 text-lg border-b">Other</p>
               <div>
                 <ul>
                   <Link href="/topics/other/math">
@@ -147,8 +143,6 @@
                   </Link>
                 </ul>
               </div>
-            }
-          ></NavDropdown>
         </SideNav>
         <Navbar />
         <Header
@@ -267,7 +261,7 @@
   
         {/* C++ CARD
           ====================================================================================================== */}
-         <div ref={cppRef} className={`h-screen ${cppInView ? "fadeIn" : "fadeInDefault"}`}>
+         <div id="cpp" ref={cppRef} className={`h-screen ${cppInView ? "fadeIn" : "fadeInDefault"}`}>
           <div className="animate-this rounded-xl border-2 border-black dark:border-[var(--cat-mocha-surface1)]">
             <br />
             <SiCplusplus className="mt-7 text-[#6295cb] text-[100px] m-auto" />

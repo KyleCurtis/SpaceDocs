@@ -49,6 +49,12 @@
 
     --mat-dark-text: #B0BEC5;
     --mat-dark-border: #292929;
+
+    --mat-dark-green: #c3e88d;
+    --mat-dark-orange: #f78c6c;
+    --mat-dark-cyan: #89ddff;
+
+    --mat-dark-links: #80cbc4;
 }
 
 * {
@@ -71,6 +77,12 @@ body {
     height: 100%;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth !important;
+}
+
+.active-link {
+    font-weight: bold;
+    color: var(--mat-dark-green);
+
 }
 
 .content {
@@ -183,6 +195,7 @@ header {
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
     animation-delay: 0s;
+    animation-fill-mode: forwards
 
 }
 
@@ -194,11 +207,13 @@ header {
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
     animation-delay: 0s;
+    animation-fill-mode: forwards
 
 }
 
 .fadeInDefault{
     opacity: 0;
+    animation-fill-mode: forwards
 }
 
 
