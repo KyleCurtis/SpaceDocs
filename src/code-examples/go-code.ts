@@ -1,7 +1,7 @@
-export const HelloWorld = `package main
+export const Output = `package main
 
 import "fmt"
 
 func main() {
-    fmt.Println("Hello, World!")
+    fmt.Println("All systems go!")
 }`;

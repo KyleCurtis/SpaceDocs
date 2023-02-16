@@ -5,7 +5,7 @@ import {IoIosArrowDropdownCircle} from "react-icons/io"
 
 const Header = ({ main_topic, topic_summary }: any) => {
   return (
-    <div className="h-screen pt-[50px]">
+    <div className="pt-[50px]">
       <header className="text-[var(--cat-mocha-text)]">
         <br />
         <br />

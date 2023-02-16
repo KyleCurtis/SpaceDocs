@@ -29,12 +29,16 @@ import ThemeToggler from "./ThemeToggle";
 
 const Navbar = () => {
   return (
-    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--mat-dark-contrast)] border-solid border-b-[1px] border-[var(--mat-dark-orange)]">
+    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--mat-dark-contrast)] border-solid border-b-2 border-[var(--mat-dark-cyan)]">
       {/* NAVBAR COMPONENT
       ========================================================================================= */}
-      <nav className="h-[80px] max-w-[100%] m-auto flex justify-end items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
+      <nav className="h-[80px] max-w-[100%] m-auto flex justify-start items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
         {/* lg:flex nav topic buttons */}
+
         <ul className="hidden lg:flex">
+        <li className="p-4">
+            <ThemeToggler />
+          </li>
           <li className="p-4">
             <Link href="/">
               <FaHome className="text-2xl text-yellow-400 hover:text-white" />
@@ -69,9 +73,6 @@ const Navbar = () => {
             <Link href="/topics/other/math">
               <TbMath className="text-2xl text-purple-400" />
             </Link>
-          </li>
-          <li className="p-4">
-            <ThemeToggler />
           </li>
         </ul>
 

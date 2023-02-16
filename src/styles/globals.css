@@ -80,7 +80,6 @@ body {
 }
 
 .active-link {
-    font-weight: bold;
     color: var(--mat-dark-green);
 
 }
@@ -96,8 +95,8 @@ body {
     z-index: var(--paralax-mid);
 }
 .content-br {
-    padding-top: 90px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: transparent;
     transition-duration: 300ms;
 }

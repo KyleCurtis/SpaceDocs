@@ -1,7 +1,5 @@
 /* HELLO WORLD
 ======================================================================================================== */
-export const HelloWorld = `// Hello, World!
-
-greeting = "Hello, World!"
+export const Output = `message = "All systems go!"
 print(greeting)
 `
