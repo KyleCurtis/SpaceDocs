@@ -20,13 +20,9 @@ import Code from "../components/Code/Code";
 import CodeBlock from "../components/Code/CodeBlock";
 
 import { Output as jsOutput } from "../code-examples/js-code";
-
 import { Output as cppOutput } from "../code-examples/cpp-code";
-
 import { Output as tsOutput } from "../code-examples/ts-code";
-
-import { Output as goOutput } from "../code-examples/go-code"
-
+import { Output as goOutput } from "../code-examples/go-code";
 import { Output as pyOutput } from "../code-examples/py-code";
 
 {
@@ -128,21 +124,25 @@ export default function Home() {
       </Head>
       <SideNav
         window={
-          <div className="flex bg-white dark:bg-[var(--mat-dark-bg)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-            <IoMdPlanet className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--mat-dark-bg)] text-[80px] flex items-center" />
+          <div className="flex bg-white dark:bg-[var(--mat-deep-bg)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
+            <IoMdPlanet className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--mat-deep-bg)] text-[80px] flex items-center" />
           </div>
         }
       >
         <br />
         <br />
         <div>
-          <p className="text-blue-300 pl-2 text-lg border-b">Topics</p>
+          <p className="text-blue-300 pl-2 text-lg border-b">SpaceDocs.info</p>
           <ul className="text-white">
             <Link href="#top-section">
               <li className={`${topInView ? "active-link" : "inactive-link"}`}>
                 Top of Page
               </li>
             </Link>
+          </ul>
+          <br />
+          <p className="text-blue-300 pl-2 text-lg border-b">Topics</p>
+          <ul className="text-white">
             <Link href="#js-section">
               <li className={`${jsInView ? "active-link" : "inactive-link"}`}>
                 JavaScript (ES6)
@@ -159,10 +159,14 @@ export default function Home() {
               </li>
             </Link>
             <Link href="#go-section">
-              <li className={`${goInView ? "active-link" : "inactive-link"}`}>Go (1.x)</li>
+              <li className={`${goInView ? "active-link" : "inactive-link"}`}>
+                Go (1.x)
+              </li>
             </Link>
             <Link href="#py-section">
-              <li className={`${pyInView ? "active-link" : "inactive-link"}`}>Python (3.x)</li>
+              <li className={`${pyInView ? "active-link" : "inactive-link"}`}>
+                Python (3.x)
+              </li>
             </Link>
             <Link href="/topics/languages/py">
               <li>Rust (1.x)</li>
@@ -188,23 +192,23 @@ export default function Home() {
       />
 
       <div className="content-br"></div>
-      <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
+      <div className="h-0 border-[1px] border-[var(--mat-deep-border)]"></div>
       <div id="js-section" className="content-br"></div>
 
       {/* JAVASCRIPT CARD
           ====================================================================================================== */}
       <div
         ref={jsRef}
-        className={`mx-[18%] ${jsInView ? "fadeIn" : "fadeInDefault"}`}
+        className={`h-screen ${jsInView ? "fadeIn" : "fadeInDefault"}`}
       >
         <div className="animate-this bg-transparent">
           <br />
           <SiJavascript className="text-[#ead41c] text-[100px] m-auto" />
           <br />
-          <p className="card-header text-center text-[var(--mat-dark-text)]">
+          <p className="card-header text-center text-[var(--mat-deep-text)]">
             JavaScript
           </p>
-          <p className="mx-[18%] text-center text-[var(--mat-dark-text)]">
+          <p className="mx-[15%] text-center text-[var(--mat-deep-text)]">
             Explore the programming language that powers the interactive web!
           </p>
           <div className="text-center pt-2">
@@ -245,23 +249,23 @@ export default function Home() {
       </div>
 
       <div className="content-br"></div>
-      <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
+      <div className="h-0 border-[1px] border-[var(--mat-deep-border)]"></div>
       <div id="ts-section" className="content-br"></div>
 
       {/* TYPESCRIPT CARD
           ====================================================================================================== */}
       <div
         ref={tsRef}
-        className={`mx-[18%] ${tsInView ? "fadeIn" : "fadeInDefault"}`}
+        className={`h-screen ${tsInView ? "fadeIn" : "fadeInDefault"}`}
       >
         <div className="animate-this bg-transparent">
           <br />
           <SiTypescript className="text-[#3178c6] text-[100px] m-auto" />
           <br />
-          <p className="card-header text-center text-[var(--mat-dark-text)]">
+          <p className="card-header text-center text-[var(--mat-deep-text)]">
             TypeScript
           </p>
-          <p className="text-center text-[var(--mat-dark-text)]">
+          <p className="text-center text-[var(--mat-deep-text)]">
             Explore the programming language that powers the interactive web!
           </p>
           <div className="text-center pt-2">
@@ -300,23 +304,23 @@ export default function Home() {
       </div>
 
       <div className="content-br"></div>
-      <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
+      <div className="h-0 border-[1px] border-[var(--mat-deep-border)]"></div>
       <div id="cpp-section" className="content-br"></div>
 
       {/* C++ CARD
           ====================================================================================================== */}
       <div
         ref={cppRef}
-        className={`mx-[18%] ${cppInView ? "fadeIn" : "fadeInDefault"}`}
+        className={`h-screen ${cppInView ? "fadeIn" : "fadeInDefault"}`}
       >
         <div className="animate-this bg-transparent">
           <br />
           <SiCplusplus className="text-[#6295cb] text-[100px] m-auto" />
           <br />
-          <p className="card-header text-center text-[var(--mat-dark-text)]">
+          <p className="card-header text-center text-[var(--mat-deep-text)]">
             C-Plus-Plus
           </p>
-          <p className="text-center text-[var(--mat-dark-text)]">
+          <p className="text-center text-[var(--mat-deep-text)]">
             Explore the programming language that powers the interactive web!
           </p>
           <div className="text-center pt-2">
@@ -355,29 +359,29 @@ export default function Home() {
       </div>
 
       <div className="content-br"></div>
-      <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
+      <div className="h-0 border-[1px] border-[var(--mat-deep-border)]"></div>
       <div id="go-section" className="content-br"></div>
 
       {/* C++ CARD
           ====================================================================================================== */}
       <div
         ref={goRef}
-        className={`mx-[18%] ${goInView ? "fadeIn" : "fadeInDefault"}`}
+        className={`h-screen ${goInView ? "fadeIn" : "fadeInDefault"}`}
       >
         <div className="animate-this bg-transparent">
           <br />
           <Image
-                alt="test"
-                width={100}
-                height={200}
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-                className="m-auto"
-              />
+            alt="test"
+            width={100}
+            height={200}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+            className="m-auto"
+          />
           <br />
-          <p className="card-header text-center text-[var(--mat-dark-text)]">
+          <p className="card-header text-center text-[var(--mat-deep-text)]">
             Go-Lang
           </p>
-          <p className="text-center text-[var(--mat-dark-text)]">
+          <p className="text-center text-[var(--mat-deep-text)]">
             Explore the programming language that powers the interactive web!
           </p>
           <div className="text-center pt-2">
@@ -416,23 +420,23 @@ export default function Home() {
       </div>
 
       <div className="content-br"></div>
-      <div className="h-0 border-[1px] border-[var(--mat-dark-border)]"></div>
+      <div className="h-0 border-[1px] border-[var(--mat-deep-border)]"></div>
       <div id="py-section" className="content-br"></div>
 
       {/* PYTHON CARD
           ====================================================================================================== */}
       <div
         ref={pyRef}
-        className={`mx-[18%] ${pyInView ? "fadeIn" : "fadeInDefault"}`}
+        className={`h-screen ${pyInView ? "fadeIn" : "fadeInDefault"}`}
       >
         <div className="animate-this bg-transparent">
           <br />
           <SiPython className="text-[#ffd343] text-[100px] m-auto" />
           <br />
-          <p className="card-header text-center text-[var(--mat-dark-text)]">
+          <p className="card-header text-center text-[var(--mat-deep-text)]">
             Python
           </p>
-          <p className="text-center text-[var(--mat-dark-text)]">
+          <p className="text-center text-[var(--mat-deep-text)]">
             Explore the programming language that powers the interactive web!
           </p>
           <div className="text-center pt-2">

@@ -1,6 +1,7 @@
 /* NPM IMPORTS
 ============================================================================ */
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
 
 /* COMPONENT IMPORTS
 ============================================================================ */
@@ -49,6 +50,46 @@ import {
 } from "../../../code-examples/js-code";
 
 const JsPage = () => {
+  {
+    /* TOP OF PAGE REF */
+  }
+  const { ref: topRef, inView: topInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  {
+    /* OUTPUT REF */
+  }
+  const { ref: outputRef, inView: outputInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  {
+    /* COMMENTS REF */
+  }
+  const { ref: commentsRef, inView: commentsInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  {
+    /* COMMENTS REF */
+  }
+  const { ref: variablesRef, inView: variablesInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  {
+    /* TYPES REF */
+  }
+  const { ref: typesRef, inView: typesInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
   return (
     <MainLayout title={"SpaceDocs: JS Page"}>
       <SideNav
@@ -60,110 +101,64 @@ const JsPage = () => {
       >
         <br />
         <br />
-        <Accordion allowMultiple>
-          {/* (SIDENAV) HOME SECTION
-        ====================================================================================================== */}
-          <NavDropdown
-            buttonTitle={"00. Getting Started"}
-            contentSection={"Coming Soon..."}
-          ></NavDropdown>
+        <div>
+          <p className="text-[var(--mat-deep-cyan)] pl-2 text-lg border-b-2 border-b-[var(--mat-deep-border)]">
+            SpaceDocs.info
+          </p>
+          <ul className="text-white">
+            <Link href="#top-section">
+              <li className={`${topInView ? "active-link" : "inactive-link"}`}>
+                Top of Page
+              </li>
+            </Link>
+          </ul>
+          <br />
+          <p className="text-[var(--mat-deep-cyan)] pl-2 text-lg border-b-2 border-b-[var(--mat-deep-border)]">
+            00. Introduction
+          </p>
+          <ul className="text-white">
+            <Link href="#output-section">
+              <li
+                className={`${outputInView ? "active-link" : "inactive-link"}`}
+              >
+                Printing Output
+              </li>
+            </Link>
 
-          {/* (SIDENAV) JAVASCRIPT BASICS SECTION
-        ====================================================================================================== */}
-          <NavDropdown
-            buttonTitle={"01. JavaScript Basics"}
-            contentSection={
-              <div>
-                <ul>
-                  <Link href="#hello-world">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Hello,
-                      World!
-                    </li>
-                  </Link>
-                  <Link href="#comments">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Comments
-                    </li>
-                  </Link>
-                  <Link href="#variables">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Variables
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            }
-          ></NavDropdown>
+            <Link href="#comment-section">
+              <li
+                className={`${
+                  commentsInView ? "active-link" : "inactive-link"
+                }`}
+              >
+                Comments
+              </li>
+            </Link>
 
-          {/* (SIDENAV) DATA TYPES SECTION
-        ====================================================================================================== */}
-          <NavDropdown
-            buttonTitle={"02.Value Types"}
-            contentSection={
-              <div>
-                <ul>
-                  <Link href="#data-types">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Value Types
-                    </li>
-                  </Link>
-                  <Link href="#type-checking">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Type
-                      Checking (typeof)
-                    </li>
-                  </Link>
-                  <Link href="#type-conversions">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Type
-                      Conversions
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            }
-          ></NavDropdown>
+            <Link href="#variables-section">
+              <li
+                className={`${
+                  variablesInView ? "active-link" : "inactive-link"
+                }`}
+              >
+                Variables
+              </li>
+            </Link>
 
-          {/* (SIDENAV) OBJECTS SECTION
-        ====================================================================================================== */}
-          <NavDropdown
-            buttonTitle={"03. Objects"}
-            contentSection={
-              <div>
-                <ul>
-                  <Link href="#objects">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Objects
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            }
-          ></NavDropdown>
-
-          {/* (SIDENAV) ARRAYS SECTION
-        ====================================================================================================== */}
-          <NavDropdown
-            buttonTitle={"04. Arrays"}
-            contentSection={
-              <div>
-                <ul>
-                  <Link href="#arrays">
-                    <li>
-                      <SiJavascript className="side-nav-js-logo" /> Arrays
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            }
-          ></NavDropdown>
-        </Accordion>
-
-        <div className="content-br"></div>
+            <Link href="#types-section">
+              <li
+                className={`${typesInView ? "active-link" : "inactive-link"}`}
+              >
+                Value Types
+              </li>
+            </Link>
+          </ul>
+        </div>
       </SideNav>
 
       <Navbar />
+
+      <br id="top-section" ref={topRef} />
       <Header
         main_topic={"JavaScript"}
         topic_summary={
@@ -220,77 +215,98 @@ const JsPage = () => {
       <h2>JavaScript Basics</h2>
       <div id="hello-world" className="content-br"></div>
 
+      <div className="content-br"></div>
+      <div className="h-0 border-[1px] border-gray-100 dark:border-[var(--mat-deep-border)]"></div>
+      <div id="output-section" className="content-br"></div>
+
       {/* OUTPUT SECTION
       ====================================================================================================== */}
-      <CodeBlock
-        codeBlockHeader={
-          <div>
-            {"Printing Output:"}
-            <Badge variant="outline" className="ml-2" colorScheme="green">
-              Easy
-            </Badge>
-            <Badge variant="outline" className="ml-2" colorScheme="blue">
-              Basics
-            </Badge>
-          </div>
-        }
-      >
-        <Clipboard code={Output}></Clipboard>
-        <Code lang="javascript">{Output}</Code>
-      </CodeBlock>
-      <Dropdown
-        buttonTitle={"Result"}
-        contentSection={"All systems go!"}
-      ></Dropdown>
+      <div ref={outputRef}>
+        <div className="animate-this">
+          <CodeBlock
+            codeBlockHeader={
+              <div>
+                {"Printing Output:"}
+                <Badge variant="outline" className="ml-2" colorScheme="green">
+                  Easy
+                </Badge>
+                <Badge variant="outline" className="ml-2" colorScheme="blue">
+                  Basics
+                </Badge>
+              </div>
+            }
+          >
+            <Clipboard code={Output}></Clipboard>
+            <Code lang="javascript">{Output}</Code>
+          </CodeBlock>
+          <Dropdown
+            buttonTitle={"Result"}
+            contentSection={"All systems go!"}
+          ></Dropdown>
+        </div>
+      </div>
+
+      <div className="content-br"></div>
+      <div className="h-0 border-[1px] border-gray-100 dark:border-[var(--mat-deep-border)]"></div>
+      <div id="comment-section" className="content-br"></div>
 
       {/* COMMENTS SECTION
       ====================================================================================================== */}
-      <div id="comments" className="content-br"></div>
+      <div ref={commentsRef}>
+        <CodeBlock
+          codeBlockHeader={
+            <div>
+              {"Single/Double Comments:"}
+              <Badge variant="outline" className="ml-2" colorScheme="green">
+                Easy
+              </Badge>
+              <Badge variant="outline" className="ml-2" colorScheme="blue">
+                Basics
+              </Badge>
+            </div>
+          }
+        >
+          <Clipboard code={Output}></Clipboard>
+          <Code lang="javascript">{Comments}</Code>
+        </CodeBlock>
+        <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
+      </div>
 
-      <CodeBlock codeBlockHeader={<div>
-            {"Single/Double Comments:"}
-            <Badge variant="outline" className="ml-2" colorScheme="green">
-              Easy
-            </Badge>
-            <Badge variant="outline" className="ml-2" colorScheme="blue">
-              Basics
-            </Badge>
-          </div>}>
-        <Clipboard code={Output}></Clipboard>
-        <Code lang="javascript">{Comments}</Code>
-      </CodeBlock>
-      <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
+      <div className="content-br"></div>
+      <div className="h-0 border-[1px] border-gray-100 dark:border-[var(--mat-deep-border)]"></div>
+      <div id="variables-section" className="content-br"></div>
 
       {/* VARIABLES SECTION
       ====================================================================================================== */}
-      <div id="variables" className="content-br"></div>
+      <div ref={variablesRef}>
+        <CodeBlock codeBlockHeader={"Variables (let/const)"}>
+          <Clipboard code={Variables}></Clipboard>
+          <Code lang="javascript">{Variables}</Code>
+        </CodeBlock>
+        <Dropdown
+          buttonTitle={"Result"}
+          contentSection={
+            <div>
+              Apollo 11 1969 <br />
+              Neil Armstrong Edwin Aldrin Michael Collins
+            </div>
+          }
+        ></Dropdown>
+      </div>
 
-      <CodeBlock codeBlockHeader={"Variables (let/const)"}>
-        <Clipboard code={Variables}></Clipboard>
-        <Code lang="javascript">{Variables}</Code>
-      </CodeBlock>
-      <Dropdown
-        buttonTitle={"Result"}
-        contentSection={
-          <div>
-            Apollo 11 1969 <br />
-            Neil Armstrong Edwin Aldrin Michael Collins
-          </div>
-        }
-      ></Dropdown>
+      <div className="content-br"></div>
+      <div className="h-0 border-[1px] border-gray-100 dark:border-[var(--mat-deep-border)]"></div>
+      <div id="types-section" className="content-br"></div>
 
       {/* DATA TYPES SECTION
       ====================================================================================================== */}
-      <div id="data-types" className="content-br"></div>
-
-      <h2>Value Types</h2>
-      <br />
-
-      <CodeBlock codeBlockHeader={"Primitive Data Types (Value Types)"}>
-        <Clipboard code={Types}></Clipboard>
-        <Code lang="javascript">{Types}</Code>
-      </CodeBlock>
-      <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
+      <div ref={typesRef}>
+        <CodeBlock codeBlockHeader={"Primitive Data Types (Value Types)"}>
+          <Clipboard code={Types}></Clipboard>
+          <Code lang="javascript">{Types}</Code>
+        </CodeBlock>
+        <Dropdown buttonTitle={"Result"} contentSection={""}></Dropdown>
+      </div>
 
       {/* TYPEOF SECTION
       ====================================================================================================== */}
