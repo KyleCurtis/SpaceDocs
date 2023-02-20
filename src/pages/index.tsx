@@ -122,26 +122,25 @@ export default function Home() {
           content="A space-themed minimal documentation site for learning various technologies."
         />
       </Head>
-      <SideNav
-        window={
-          <div className="flex bg-white dark:bg-[var(--mat-deep-bg)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-            <IoMdPlanet className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--mat-deep-bg)] text-[80px] flex items-center" />
-          </div>
-        }
-      >
-        <br />
-        <br />
+      <SideNav>
         <div>
-          <p className="text-blue-300 pl-2 text-lg border-b">SpaceDocs.info</p>
+          <p className="text-blue-300 pl-2 text-lg border-b-2 border-[var(--mat-deep-border)]">
+            SpaceDocs.info
+          </p>
           <ul className="text-white">
             <Link href="#top-section">
               <li className={`${topInView ? "active-link" : "inactive-link"}`}>
                 Top of Page
               </li>
             </Link>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
           </ul>
           <br />
-          <p className="text-blue-300 pl-2 text-lg border-b">Topics</p>
+          <p className="text-blue-300 pl-2 text-lg border-b-2 border-[var(--mat-deep-border)]">
+            Topics
+          </p>
           <ul className="text-white">
             <Link href="#js-section">
               <li className={`${jsInView ? "active-link" : "inactive-link"}`}>
@@ -173,7 +172,9 @@ export default function Home() {
             </Link>
           </ul>
         </div>
-        <p className="text-blue-300 pl-2 text-lg border-b">Other</p>
+        <p className="text-blue-300 pl-2 text-lg border-b border-[var(--mat-deep-border)]">
+          Other
+        </p>
         <div>
           <ul>
             <Link href="/topics/other/math">

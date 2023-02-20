@@ -54,7 +54,7 @@ const JsPage = () => {
     /* TOP OF PAGE REF */
   }
   const { ref: topRef, inView: topInView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
@@ -62,7 +62,7 @@ const JsPage = () => {
     /* OUTPUT REF */
   }
   const { ref: outputRef, inView: outputInView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
@@ -70,7 +70,7 @@ const JsPage = () => {
     /* COMMENTS REF */
   }
   const { ref: commentsRef, inView: commentsInView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
@@ -78,7 +78,7 @@ const JsPage = () => {
     /* COMMENTS REF */
   }
   const { ref: variablesRef, inView: variablesInView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
@@ -86,26 +86,21 @@ const JsPage = () => {
     /* TYPES REF */
   }
   const { ref: typesRef, inView: typesInView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: false,
   });
 
   return (
     <MainLayout title={"SpaceDocs: JS Page"}>
-      <SideNav
-        window={
-          <div className="flex bg-white dark:bg-[var(--cat-mocha-crust)] m-auto shadow-sm shadow-black w-[120px] h-[120px] border-2 border-[var(--cat-mocha-text)] rounded-[100%] overflow-hidden">
-            <SiJavascript className="!m-auto text-[var(--cat-mocha-core)] dark:text-[var(--cat-mocha-text)] bg-white dark:bg-[var(--cat-mocha-crust)] text-[62px] flex items-center" />
-          </div>
-        }
-      >
-        <br />
-        <br />
+      <SideNav>
         <div>
           <p className="text-[var(--mat-deep-cyan)] pl-2 text-lg border-b-2 border-b-[var(--mat-deep-border)]">
             SpaceDocs.info
           </p>
           <ul className="text-white">
+            <Link href="/">
+              <li>Home</li>
+            </Link>
             <Link href="#top-section">
               <li className={`${topInView ? "active-link" : "inactive-link"}`}>
                 Top of Page
