@@ -1,8 +1,11 @@
+import Clipboard from "./Clipboard";
+
 const CodeBlock = ({ children, codeBlockHeader }: any) => {
   return (
-    <div className="relative lg:mx-[15%]">
-      <h3 className="text-[var(--cat-mocha-crust)] dark:text-[var(--cat-mocha-subtext0)]">
+    <div className="relative">
+      <h3 className="text-left text-black dark:text-white border-2 p-2 rounded-[5px_5px_0_0] border-[var(--dark-border)]">
         {codeBlockHeader}
+        <Clipboard />
       </h3>
       {children}
     </div>

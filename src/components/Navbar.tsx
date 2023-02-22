@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import DrawerNav from "./Drawer";
+
+
 
 import {
   SimpleGrid,
@@ -25,12 +26,11 @@ import ThemeToggler from "./ThemeToggle";
 
 const Navbar = () => {
   return (
-    <div className="fixed left-0 top-0 w-full z-10 bg-[var(--mat-deep-contrast)] border-solid border-b-2 border-[var(--mat-deep-border)]">
+    <div className="fixed left-0 top-0 w-full z-10 bg-white dark:bg-[var(--dark-bg)] border-solid border-b-2 border-[var(--mat-deep-border)]">
       {/* NAVBAR COMPONENT
       ========================================================================================= */}
-      <nav className="h-[60px] max-w-[100%] m-auto flex justify-start items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
+      <nav className="h-[80px] max-w-[1100px] m-auto flex justify-start items-center p-2 text-black dark:text-[var(--cat-mocha-text)]">
         {/* lg:flex nav topic buttons */}
-
         <ul className="hidden lg:flex">
           <li className="p-4">
             <ThemeToggler />

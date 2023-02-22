@@ -8,7 +8,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 const Code = ({ lang, children }: any) => {
   return (
     <div>
-      <div className="!bg-[var(--mat-deep-contrast)] code-block border-4 rounded-lg border-[var(--mat-deep-border)]">
+      <div className="!bg-black code-block m-auto border-2 rounded-[0_0_5px_5px] border-[var(--dark-border)]">
         <SyntaxHighlighter
           language={lang}
           style={vscDarkPlus}
