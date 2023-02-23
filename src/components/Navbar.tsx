@@ -41,17 +41,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/topics/languages/js">
+            <Link href="/languages/javascript">
               <SiJavascript className="text-2xl text-yellow-400 hover:text-yellow-100" />
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/topics/languages/cpp">
+            <Link href="/languages/cpp">
               <SiCplusplus className="text-2xl text-blue-400" />
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/topics/languages/go">
+            <Link href="/languages/go">
               <Image
                 alt="test"
                 width={27}
@@ -61,12 +61,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/topics/languages/py">
+            <Link href="/languages/py">
               <SiPython className="text-2xl text-yellow-400" />
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/topics/other/math">
+            <Link href="/other/math">
               <TbMath className="text-2xl text-purple-400" />
             </Link>
           </li>

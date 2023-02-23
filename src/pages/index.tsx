@@ -322,7 +322,7 @@ export default function Home() {
         <div ref={jsRef} className={`${jsInView ? "fadeIn" : "fadeInDefault"}`}>
           <div className="animate-this bg-transparent">
 
-            <Link href="./topics/languages/js">
+            <Link href="./languages/javascript">
               <button
                 className="block m-auto lg:ml-0 lg:mb-4 bg-[var(--bg-contrast)] text-black dark:text-white rounded-md p-2 
               border-2 border-black dark:border-[var(--dark-border)] mb-4"
