@@ -7,7 +7,7 @@ import Code from "@/components/Code/Code";
 import { Output, Comments, Variables  } from "@/code-examples/ts-code";
 
 
-const TypeScript = () => {
+const CPlusPlus = () => {
 	return (
 		<div>
 			<Layout
@@ -113,11 +113,10 @@ const TypeScript = () => {
 				}
 			>
 				<Header
-					main_topic={"TypeScript"}
+					main_topic={"C++"}
 					topic_summary={
 						<div>
-							Explore the programming language behind interactive websites,
-							desktop application, mobile apps, video games, and more!
+							Explore the programming language behind operating systems, desktop applications, game engines, and more!
 							<br/> <br/>
 							<p className="pt-2">
 								{" "}
@@ -131,6 +130,7 @@ const TypeScript = () => {
 						</div>
 					}
 				>
+
 				</Header>
 
 				<div className="content-br"></div>
@@ -170,4 +170,4 @@ const TypeScript = () => {
 	);
 };
 
-export default TypeScript;
+export default CPlusPlus;

@@ -202,19 +202,7 @@ export default function Home() {
             </div>
           }
         >
-          <br />
-          <button className="underline decoration-dotted">💻 Github</button>
-          <span className="px-3" />
-          <button className="underline decoration-dotted">
-            ⚠️ Report an issue
-          </button>
-          <span className="px-3" />
-          <a target="_blank" rel="noopener noreferrer" href="https://www.paypal.com/donate/?hosted_button_id=RHCR2JJ6ZZDPS">
-          <button className="underline decoration-dotted">
-            ☕ Buy me a coffee
-          </button>
-          </a>
-          <br />
+
         </Header>
 
         <div className="content-br"></div>
@@ -226,7 +214,7 @@ export default function Home() {
         <div ref={cppRef} className={`${cppInView ? "fadeIn" : "fadeInDefault"}`}>
           <div className="animate-this bg-transparent">
 
-            <Link href="./topics/languages/js">
+            <Link href="./languages/c-plus-plus">
               <button
                 className="w-[100px] block m-auto lg:ml-0 lg:mb-4 bg-[var(--bg-contrast)] text-black dark:text-white rounded-md p-2 
               border-2 border-black dark:border-[var(--dark-border)] mb-4"
@@ -275,7 +263,7 @@ export default function Home() {
         <div ref={goRef} className={`${goInView ? "fadeIn" : "fadeInDefault"}`}>
           <div className="animate-this bg-transparent">
 
-            <Link href="./topics/languages/js">
+            <Link href="./languages/go">
               <button
                 className="w-[100px] block m-auto lg:ml-0 lg:mb-4 bg-[var(--bg-contrast)] text-black dark:text-white rounded-md p-2 
               border-2 border-black dark:border-[var(--dark-border)] mb-4"
@@ -373,7 +361,7 @@ export default function Home() {
         <div ref={tsRef} className={`${tsInView ? "fadeIn" : "fadeInDefault"}`}>
           <div className="animate-this bg-transparent">
 
-            <Link href="./topics/languages/js">
+            <Link href="./languages/typescript">
               <button
                 className="w-[100px] block m-auto lg:ml-0 lg:mb-4 bg-[var(--bg-contrast)] text-black dark:text-white rounded-md p-2 
               border-2 border-black dark:border-[var(--dark-border)] mb-4"

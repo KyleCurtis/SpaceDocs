@@ -18,6 +18,23 @@ const Header = ({ main_topic, topic_summary, children }: any) => {
         </h1>
         <div className="topic-summary">{topic_summary}</div>
         {children}
+        <br/>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/KyleCurtis/SpaceDocs">
+          <button className="underline decoration-dotted">💻 Github</button>
+        </a>
+        <span className="px-3"/>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/KyleCurtis/SpaceDocs/issues">
+          <button className="underline decoration-dotted">
+            ⚠️ Report an issue
+          </button>
+        </a>
+        <span className="px-3"/>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.paypal.com/donate/?hosted_button_id=RHCR2JJ6ZZDPS">
+          <button className="underline decoration-dotted">
+            ☕ Buy me a coffee
+          </button>
+        </a>
+        <br/>
       </header>
     </div>
   );
