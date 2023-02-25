@@ -209,9 +209,11 @@ export default function Home() {
             ⚠️ Report an issue
           </button>
           <span className="px-3" />
+          <a target="_blank" rel="noopener noreferrer" href="https://www.paypal.com/donate/?hosted_button_id=RHCR2JJ6ZZDPS">
           <button className="underline decoration-dotted">
             ☕ Buy me a coffee
           </button>
+          </a>
           <br />
         </Header>
 

@@ -16,7 +16,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import { SiCplusplus, SiJavascript, SiPython } from "react-icons/si";
+import { SiCplusplus, SiJavascript, SiPython, SiRust } from "react-icons/si";
 
 import { FaHome } from "react-icons/fa";
 
@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/languages/cpp">
+            <Link href="/languages/c-plus-plus">
               <SiCplusplus className="text-2xl text-blue-400" />
             </Link>
           </li>
@@ -61,13 +61,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/languages/py">
+            <Link href="/languages/python">
               <SiPython className="text-2xl text-yellow-400" />
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/other/math">
-              <TbMath className="text-2xl text-purple-400" />
+            <Link href="/languages/rust">
+              <SiRust className="text-2xl text-orange-400" />
             </Link>
           </li>
         </ul>

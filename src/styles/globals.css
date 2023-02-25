@@ -67,6 +67,12 @@ code {
   font-size: 16px !important;
 }
 
+h2 {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  padding-bottom: 12px;
+}
+
 .content-br {
   padding-top: 50px;
   padding-bottom: 50px;

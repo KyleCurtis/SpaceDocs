@@ -5,9 +5,7 @@ console.log(message);`;
 
 /* COMMENTS
 ======================================================================================================== */
-export const Comments = `// Comments
-
-// As you can see from the previous section, the double forward-slash declares a 
+export const Comments = `// As you can see from the previous section, the double forward-slash declares a 
 // single-line comment, and can be stacked when needed.
 
 /* If you have multiple lines of comments, it's recommended to use the multi-
@@ -15,9 +13,7 @@ line comment syntax like this. */`;
 
 /* VARIABLES
 ======================================================================================================== */
-export const Variables = `// Variables 
-
-// let keyword (for mutable values)
+export const Variables = `// let keyword (for mutable values)
 let mission; // Declare
 mission = "Apollo 11"; // Initialize
 
