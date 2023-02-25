@@ -4,7 +4,7 @@ import Link from "next/link";
 import CodeBlock from "@/components/Code/CodeBlock";
 import Code from "@/components/Code/Code";
 
-import { Output, Comments, Variables  } from "@/code-examples/rs-code";
+import { Output  } from "@/code-examples/rs-code";
 import {SiJavascript, SiRust} from "react-icons/si";
 
 
@@ -145,18 +145,6 @@ const RustPage = () => {
 				</CodeBlock>
 
 				<div className="content-br"></div>
-
-				<h2 className="text-black dark:text-white">Comments</h2>
-				<CodeBlock codeBlockHeader={"comments.js"}>
-					<Code lang="javascript">{Comments}</Code>
-				</CodeBlock>
-
-				<div className="content-br"></div>
-
-				<h2 className="text-black dark:text-white">Variables</h2>
-				<CodeBlock codeBlockHeader={"variables.js"}>
-					<Code lang="javascript">{Variables}</Code>
-				</CodeBlock>
 
 				<div className="content-br"></div>
 
