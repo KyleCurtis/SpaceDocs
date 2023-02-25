@@ -5,6 +5,9 @@ import CodeBlock from "@/components/Code/CodeBlock";
 import Code from "@/components/Code/Code";
 
 import { Output, Comments, Variables  } from "../../code-examples/js-code";
+import Rocket from "../../../public/rocket-book.png";
+import Image from "next/image";
+import {SiJavascript} from "react-icons/si";
 
 
 const JavaScript = () => {
@@ -114,6 +117,9 @@ const JavaScript = () => {
 			>
 				<Header
 					main_topic={"JavaScript"}
+					hero_image={
+						<SiJavascript className="sm-m-auto sm:block lg:float-right text-[200px] mt-[64px] m-auto"/>
+					}
 					topic_summary={
 						<div>
 							Explore the programming language behind interactive websites,

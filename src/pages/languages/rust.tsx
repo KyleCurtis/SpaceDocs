@@ -4,11 +4,11 @@ import Link from "next/link";
 import CodeBlock from "@/components/Code/CodeBlock";
 import Code from "@/components/Code/Code";
 
-import { Output, Comments, Variables  } from "@/code-examples/ts-code";
-import {SiCplusplus, SiJavascript} from "react-icons/si";
+import { Output, Comments, Variables  } from "@/code-examples/rs-code";
+import {SiJavascript, SiRust} from "react-icons/si";
 
 
-const CPlusPlus = () => {
+const RustPage = () => {
 	return (
 		<div>
 			<Layout
@@ -114,13 +114,13 @@ const CPlusPlus = () => {
 				}
 			>
 				<Header
-					main_topic={"C++"}
+					main_topic={"Rust"}
 					hero_image={
-						<SiCplusplus className="sm-m-auto sm:block lg:float-right text-[200px] mt-[64px] m-auto"/>
+						<SiRust className="sm-m-auto sm:block lg:float-right text-[200px] mt-[64px] m-auto"/>
 					}
 					topic_summary={
 						<div>
-							Explore the programming language behind operating systems, desktop applications, game engines, and more!
+							Explore the increasingly popular systems programming language that has changed the way that safe software is developed.
 							<br/> <br/>
 							<p className="pt-2">
 								{" "}
@@ -174,4 +174,4 @@ const CPlusPlus = () => {
 	);
 };
 
-export default CPlusPlus;
+export default RustPage;

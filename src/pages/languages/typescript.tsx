@@ -5,6 +5,7 @@ import CodeBlock from "@/components/Code/CodeBlock";
 import Code from "@/components/Code/Code";
 
 import { Output, Comments, Variables  } from "@/code-examples/ts-code";
+import {SiRust, SiTypescript} from "react-icons/si";
 
 
 const TypeScript = () => {
@@ -114,6 +115,9 @@ const TypeScript = () => {
 			>
 				<Header
 					main_topic={"TypeScript"}
+					hero_image={
+						<SiTypescript className="sm-m-auto sm:block lg:float-right text-[200px] mt-[64px] m-auto"/>
+					}
 					topic_summary={
 						<div>
 							Explore the programming language behind interactive websites,

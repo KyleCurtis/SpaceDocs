@@ -53,6 +53,8 @@ import {
   StackDivider,
   Badge,
 } from "@chakra-ui/react";
+import Rocket from "../../public/rocket-book.png";
+import Image from "next/image";
 
 export default function Home() {
   {
@@ -184,6 +186,13 @@ export default function Home() {
       >
         <Header
           main_topic={"SpaceDocs.info"}
+          hero_image={
+            <Image
+              src={Rocket}
+              alt="Rocket Launch Logo"
+              className="sm-m-auto sm:block lg:float-right w-[300px] h-[280px] m-auto"
+            />
+          }
           topic_summary={
             <div>
               Explore a new world by learning a new technology!
@@ -410,7 +419,7 @@ export default function Home() {
         <div ref={rustRef} className={`${rustInView ? "fadeIn" : "fadeInDefault"}`}>
           <div className="animate-this bg-transparent">
 
-            <Link href="./topics/languages/js">
+            <Link href="./languages/rust">
               <button
                 className="w-[100px] block m-auto lg:ml-0 lg:mb-4 bg-[var(--bg-contrast)] text-black dark:text-white rounded-md p-2 
               border-2 border-black dark:border-[var(--dark-border)] mb-4"
