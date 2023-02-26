@@ -25,7 +25,7 @@ const Clipboard = ({ code }: any) => {
           isClosable: true,
         })
       } 
-      className="float-right">
+      className="float-right pt-1">
         <FaClipboard className="text-[var(--cat-mocha-blue)]" />
       </button>
     </CopyToClipboard>

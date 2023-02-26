@@ -4,10 +4,9 @@ import Link from "next/link";
 import CodeBlock from "@/components/Code/CodeBlock";
 import Code from "@/components/Code/Code";
 
-import { Output, Comments, Variables  } from "../../code-examples/js-code";
-import Rocket from "../../../public/rocket-book.png";
-import Image from "next/image";
+import {Comments, Output, Variables} from "../../code-examples/js-code";
 import {SiJavascript} from "react-icons/si";
+import {Badge} from "@chakra-ui/react";
 
 
 const JavaScript = () => {
@@ -117,9 +116,6 @@ const JavaScript = () => {
 			>
 				<Header
 					main_topic={"JavaScript"}
-					hero_image={
-						<SiJavascript className="sm-m-auto sm:block lg:float-right text-[200px] mt-[64px] m-auto"/>
-					}
 					topic_summary={
 						<div>
 							Explore the programming language behind interactive websites,
@@ -134,6 +130,27 @@ const JavaScript = () => {
 								<span className="text-[#31cbff] font-bold">Made with</span>:
 								NextJS / TypeScript / TailwindCSS / ChakraUI / ❤️
 							</p>
+							<br/>
+							<div className="pt-2">
+								<Badge className="mr-2" variant="outline" colorScheme="cyan">
+									Console
+								</Badge>
+								<Badge className="mr-2" variant="outline" colorScheme="purple">
+									Desktop
+								</Badge>
+								<Badge className="mr-2" variant="outline" colorScheme="pink">
+									Games
+								</Badge>
+								<Badge className="mr-2" variant="outline" colorScheme="blue">
+									Mobile
+								</Badge>
+								<Badge className="mr-2" variant="outline" colorScheme="gray">
+									Server / Cloud
+								</Badge>
+								<Badge className="mr-2" variant="outline" colorScheme="green">
+									WEB
+								</Badge>
+							</div>
 						</div>
 					}
 				>
